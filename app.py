@@ -23,6 +23,7 @@ load_dotenv(BASE_DIR / ".env")
 
 from core import agent, calc, db, foods, images, llm, mealparse, rag, store, suggest, workout, recipe_steps  # noqa: E402
 
+
 app = Flask(__name__)
 
 # Keep sessions valid across restarts when no explicit secret is configured.
@@ -192,7 +193,15 @@ def food_image(recipe_id):
 
 app.jinja_env.globals.update(csrf_token=csrf_token, food_image=food_image, SLOT_LABELS=SLOT_LABELS)
 
+from flask import send_from_directory, current_app
 
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory(
+        current_app.static_folder,
+        "img/logo/nourish-icon.png",
+        mimetype="image/png"
+    )
 @app.before_request
 def check_csrf():
     if request.method == "POST":

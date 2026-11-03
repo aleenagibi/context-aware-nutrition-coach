@@ -1,6 +1,6 @@
 
 /* Pantry refresh: selected-first, expandable catalogue, and custom food form. */
-.pantry-screen{max-width:760px;margin:0 auto}
+.pantry-screen{margin:0 auto}
 .pantry-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .pantry-heading .sub{max-width:470px;color:var(--muted)}
 .pantry-count{flex:0 0 auto;min-width:64px;padding:9px 12px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center}

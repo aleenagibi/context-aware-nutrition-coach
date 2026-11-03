@@ -1,4 +1,27 @@
 /* Fuel: dark app-style UI, mobile-first from 300px. Re-theme by editing the variables. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --font-main: 'Manrope', sans-serif;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-main);
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    letter-spacing: -0.8px;
+} */
+
+button {
+    font-weight: 700;
+}
 :root {
   --bg: #0b0c0f;
   --card: #14161c;
@@ -117,10 +140,11 @@ a {
 }
 .brand {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 45px;
   color: var(--accent);
   letter-spacing: -0.01em;
 }
+
 .topbar-note {
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -955,7 +979,7 @@ body.noscroll #toast.show {
 }
 @media (max-width: 380px) {
   .hero {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     justify-items: start;
   }
   .main {
@@ -1074,4 +1098,21 @@ body.noscroll #toast.show {
   * {
     transition: none !important;
   }
+}
+
+@media (max-width:650px) {
+  .brand {
+    font-size: 30px;}
+  
+}
+@media (max-width:500px) {
+  .brand {
+    font-size: 20px;}
+  span.topbar-note{
+    display:none;
+  }
+  span.topbar-note span{
+    display:none;
+  }
+  
 }

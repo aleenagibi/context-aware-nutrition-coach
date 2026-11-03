@@ -1,54 +1,176 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="csrf" content="{{ csrf_token() }}">
-  <meta name="theme-color" content="#0b0c0f">
-  <title>Fuel · protein planner</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='pantry.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='coach.css') }}">
-</head>
-<body>
-<div class="shell">
-  <nav class="tabbar" aria-label="Main">
-    <a href="#today" data-tab="today" title="Today"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg><span>Today</span></a>
-    <a href="#log" data-tab="log" title="Log a meal"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Log</span></a>
-    <a href="#pantry" data-tab="pantry" title="Pantry"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM8 8a4 4 0 0 1 8 0"/></svg><span>Pantry</span></a>
-    <a href="#move" data-tab="move" title="Move"><svg viewBox="0 0 24 24"><path d="M13 2.5 5.5 13.5H11l-1 8 7.5-11H12z"/></svg><span>Move</span></a>
-    <a href="#you" data-tab="you" title="You"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>You</span></a>
-    <button type="button" class="tab-ask-fuel" id="tab-ask-fuel" aria-label="Open Ask Fuel"><span aria-hidden="true">✦</span><span>Ask Fuel</span></button>
-  </nav>
-  <main class="main">
-    <header class="topbar"><span class="brand">Fuel</span><span class="topbar-note">estimates only</span>
-      <div style="display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted);min-width:0"><span style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ g.current_user.email }}</span><form method="post" action="{{ url_for('logout') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit" style="border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:transparent;color:var(--text);font:inherit;cursor:pointer">Log out</button></form></div>
-    </header>
-    {% with messages = get_flashed_messages(with_categories=true) %}{% for category, message in messages %}<div class="flash {{ category }}" role="status">{{ message }}</div>{% endfor %}{% endwith %}
-    {% for name in panel_names %}<section class="panel" id="panel-{{ name }}" data-panel="{{ name }}">{{ panels[name]|safe }}</section>{% endfor %}
-  </main>
-  <aside id="detail" class="sheet" aria-label="Details" aria-hidden="true">
-    <button type="button" class="sheet-close" data-close aria-label="Close">×</button>
-    <div id="detail-body"></div>
-  </aside>
-</div>
-<div id="scrim" data-close hidden></div>
-<div id="toast" role="status" aria-live="polite"></div>
-
-<!-- Ask Fuel is mounted here from the You panel so it is available on every tab. -->
-<div class="fuel-assistant" id="fuel-assistant">
-  <section class="fuel-chat-window" id="fuel-chat-window" aria-label="Ask Fuel chat" aria-hidden="true" inert>
-    <div class="fuel-chat-window-top">
-      <div class="fuel-chat-window-brand"><span class="fuel-chat-window-mark" aria-hidden="true">✦</span><span><strong>Ask Fuel</strong><small>Your nutrition companion</small></span></div>
-      <button class="fuel-chat-close" type="button" id="fuel-chat-close" aria-label="Close Ask Fuel">×</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="csrf" content="{{ csrf_token() }}" />
+    <meta name="theme-color" content="#0b0c0f" />
+    <title>Nourish · protein planner</title>
+    
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='pantry.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='coach.css') }}"
+    />
+    <link rel="icon" href="{{ url_for('static', filename='img/logo/nourish-icon.png') }}?v=3" type="image/png">
+  </head>
+  <body>
+    <div class="shell">
+      <nav class="tabbar" aria-label="Main">
+        <a href="#today" data-tab="today" title="Today"
+          ><svg viewBox="0 0 24 24">
+            <path
+              d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"
+            /></svg
+          ><span>Today</span></a
+        >
+        <a href="#log" data-tab="log" title="Log a meal"
+          ><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg
+          ><span>Log</span></a
+        >
+        <a href="#pantry" data-tab="pantry" title="Pantry"
+          ><svg viewBox="0 0 24 24">
+            <path d="M5 8h14l-1 12H6zM8 8a4 4 0 0 1 8 0" /></svg
+          ><span>Pantry</span></a
+        >
+        <a href="#move" data-tab="move" title="Move"
+          ><svg viewBox="0 0 24 24">
+            <path d="M13 2.5 5.5 13.5H11l-1 8 7.5-11H12z" /></svg
+          ><span>Move</span></a
+        >
+        <a href="#you" data-tab="you" title="You"
+          ><svg viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c0-4 4-6 8-6s8 2 8 6" /></svg
+          ><span>You</span></a
+        >
+        <button
+          type="button"
+          class="tab-ask-fuel"
+          id="tab-ask-fuel"
+          aria-label="Open Ask Fuel"
+        >
+          <span aria-hidden="true">✦</span><span>Ask Nourish</span>
+        </button>
+      </nav>
+      <main class="main">
+        <header class="topbar">
+          <span class="brand">NOURISH</span
+          ><span class="topbar-note">estimates only</span>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              font-size: 12px;
+              color: var(--muted);
+              min-width: 0;
+            "
+          >
+            <span
+              style="
+                max-width: 180px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+              >{{ g.current_user.email }}</span
+            >
+            <form method="post" action="{{ url_for('logout') }}">
+              <input
+                type="hidden"
+                name="csrf_token"
+                value="{{ csrf_token() }}"
+              /><button
+                type="submit"
+                style="
+                  border: 1px solid var(--line);
+                  border-radius: 999px;
+                  padding: 7px 11px;
+                  background: transparent;
+                  color: var(--text);
+                  font: inherit;
+                  cursor: pointer;
+                "
+              >
+                Log out
+              </button>
+            </form>
+          </div>
+        </header>
+        {% with messages = get_flashed_messages(with_categories=true) %}{% for
+        category, message in messages %}
+        <div class="flash {{ category }}" role="status">{{ message }}</div>
+        {% endfor %}{% endwith %} {% for name in panel_names %}
+        <section class="panel" id="panel-{{ name }}" data-panel="{{ name }}">
+          {{ panels[name]|safe }}
+        </section>
+        {% endfor %}
+      </main>
+      <aside id="detail" class="sheet" aria-label="Details" aria-hidden="true">
+        <button type="button" class="sheet-close" data-close aria-label="Close">
+          ×
+        </button>
+        <div id="detail-body"></div>
+      </aside>
     </div>
-    <div class="fuel-chat-mount" id="fuel-chat-mount"></div>
-  </section>
-  <button class="fuel-chat-launcher" type="button" id="fuel-chat-launcher" aria-label="Open Ask Fuel" aria-expanded="false" aria-controls="fuel-chat-window">
-    <span class="fuel-launcher-icon" aria-hidden="true">✦</span><span class="fuel-launcher-label">Ask Fuel</span>
-  </button>
-</div>
-<script src="{{ url_for('static', filename='app.js') }}"></script>
-<script src="{{ url_for('static', filename='pantry.js', v=2) }}" defer></script>
-</body>
+    <div id="scrim" data-close hidden></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Ask Fuel is mounted here from the You panel so it is available on every tab. -->
+    <div class="fuel-assistant" id="fuel-assistant">
+      <section
+        class="fuel-chat-window"
+        id="fuel-chat-window"
+        aria-label="Ask Fuel chat"
+        aria-hidden="true"
+        inert
+      >
+        <div class="fuel-chat-window-top">
+          <div class="fuel-chat-window-brand">
+            <span class="fuel-chat-window-mark" aria-hidden="true">✦</span
+            ><span
+              ><strong>Ask Nourish</strong
+              ><small>Your nutrition companion</small></span
+            >
+          </div>
+          <button
+            class="fuel-chat-close"
+            type="button"
+            id="fuel-chat-close"
+            aria-label="Close Ask Fuel"
+          >
+            ×
+          </button>
+        </div>
+        <div class="fuel-chat-mount" id="fuel-chat-mount"></div>
+      </section>
+      <button
+        class="fuel-chat-launcher"
+        type="button"
+        id="fuel-chat-launcher"
+        aria-label="Open Ask Fuel"
+        aria-expanded="false"
+        aria-controls="fuel-chat-window"
+      >
+        <span class="fuel-launcher-icon" aria-hidden="true">✦</span
+        ><span class="fuel-launcher-label">Ask Nourish</span>
+      </button>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script
+      src="{{ url_for('static', filename='pantry.js', v=2) }}"
+      defer
+    ></script>
+  </body>
 </html>

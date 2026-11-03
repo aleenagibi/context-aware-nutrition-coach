@@ -19,11 +19,11 @@
 <section class="coach-shell" aria-labelledby="coach-title">
   <div class="coach-heading">
     <div class="coach-mark" aria-hidden="true">✦</div>
-    <div><p class="eyebrow">YOUR PERSONAL NUTRITION ADVISOR</p><h2 id="coach-title">Ask Fuel</h2>
+    <div><p class="eyebrow">YOUR PERSONAL NUTRITION ADVISOR</p><h2 id="coach-title">Ask Nourish</h2>
       <p class="coach-subtitle">Answers grounded in your profile, today's food and movement logs, and your pantry.</p></div>
     <span class="coach-live"><i></i> Today only</span>
   </div>
-  <div class="coach-scope"><span>✧</span><p><strong>Personal context is on.</strong> Fuel can use your saved profile and preferences, today's entries and pantry. Historical trends are not enabled.</p></div>
+  <div class="coach-scope"><span>✧</span><p><strong>Personal context is on.</strong> Nourish can use your saved profile and preferences, today's entries and pantry. Historical trends are not enabled.</p></div>
   <div class="coach-chat card">
     <div class="messages coach-messages" aria-live="polite" aria-label="Conversation">
       {% for m in chat %}<article class="msg {{ m.role }}"><span class="eyebrow">{{ 'YOU' if m.role == 'user' else 'FUEL COACH' }}</span><div class="coach-markdown" data-markdown>{{ m.content }}</div></article>
@@ -37,8 +37,8 @@
     </div>
     <form method="post" action="{{ url_for('act', name='chat') }}" class="chat-form coach-form" data-ajax>
       {{ csrf() }}<input type="hidden" name="tab" value="you">
-      <label class="sr-only" for="coach-question">Ask Fuel a question</label>
-      <input id="coach-question" name="question" maxlength="500" placeholder="Ask Fuel anything about today…" required {{ '' if has_key else 'disabled' }}>
+      <label class="sr-only" for="coach-question">Ask Nourish a question</label>
+      <input id="coach-question" name="question" maxlength="500" placeholder="Ask Nourish anything about today…" required {{ '' if has_key else 'disabled' }}>
       <button class="btn coach-send" type="submit" aria-label="Send question" {{ '' if has_key else 'disabled' }}>Send <span aria-hidden="true">↗</span></button>
     </form>
     {% if not has_key %}<p class="fineprint">Add GROQ_API_KEY to your .env file and restart Fuel to enable the coach.</p>{% endif %}
@@ -49,14 +49,6 @@
       {% for t in chat_meta.trace %}<p class="src"><strong>{{ t.tool }}</strong><br><code>{{ t.input }}</code><br><small>{{ t.output }}</small></p>{% endfor %}</details>{% endif %}
   </div>
 </section>
-
-<details class="card"><summary>Highest-protein foods for your diet</summary>
-  <div class="table-wrap"><table><thead><tr><th>Food (per 100 g)</th><th>kcal</th><th>Protein</th></tr></thead>
-    <tbody>{% for f in foods_dense %}<tr><td>{{ f.name }}</td><td>{{ f.kcal|round|int }}</td><td>{{ f.protein }}</td></tr>{% endfor %}</tbody></table></div></details>
-
-<details class="card"><summary>Knowledge base ({{ kb|length }} passages)</summary>
-  <p class="fineprint">Entries marked "unchecked" are paraphrases from general knowledge: verify before relying on them.</p>
-  {% for c in kb %}<p class="src"><strong>[{{ c.id }}] {{ c.title }}</strong><br>{{ c.text }}<br><small>{{ c.source }} · status: {{ c.status }}</small></p>{% endfor %}</details>
 
 <div class="card">
   <span class="eyebrow">YOUR DATA</span>

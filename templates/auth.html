@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="csrf" content="{{ csrf_token() }}">
   <meta name="theme-color" content="#0b0c0f">
-  <title>{{ 'Create account' if mode == 'signup' else 'Log in' }} · Fuel</title>
+  <title>{{ 'Create account' if mode == 'signup' else 'Log in' }} · Nourish</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{ url_for('static', filename='img/logo/nourish-icon.png') }}?v=4"
+>
 </head>
 <body class="auth-page">
   <main class="auth-wrap">
-    <a class="auth-brand" href="{{ url_for('login') }}">Fuel<span>✦</span></a>
+    <a class="auth-brand" href="{{ url_for('login') }}">Nourish<span></span></a>
     <section class="auth-card">
       <p class="eyebrow">YOUR PERSONAL NUTRITION COMPANION</p>
       <h1>{{ 'Create your account' if mode == 'signup' else 'Welcome back' }}</h1>
-      <p class="auth-intro">{{ 'Your meals, pantry, workouts and preferences stay in your own account.' if mode == 'signup' else 'Log in to continue with your personal Fuel space.' }}</p>
+      <p class="auth-intro">{{ 'Your meals, pantry, workouts and preferences stay in your own account.' if mode == 'signup' else 'Log in to continue with your personal Nourish space.' }}</p>
       {% if error %}<p class="auth-error" role="alert">{{ error }}</p>{% endif %}
       <form method="post" class="auth-form">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
@@ -38,7 +43,7 @@
         <a href="{{ url_for('login' if mode == 'signup' else 'signup') }}">{{ 'Log in' if mode == 'signup' else 'Sign up' }}</a>
       </p>
     </section>
-    <p class="auth-privacy">Your Fuel data is private to your account on this installation.</p>
+    <p class="auth-privacy">Your Nourish data is private to your account on this installation.</p>
   </main>
 </body>
 </html>
