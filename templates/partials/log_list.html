@@ -1,0 +1,14 @@
+{% from "macros.html" import csrf %}
+{% if log %}
+<ul class="list">
+  {% for e in log %}
+  <li class="entry">
+    <div class="entry-main"><strong>{{ e.label }}</strong>
+      <span>{{ e.kcal|round|int }} kcal · ≈ {{ (e.protein * (1 - e.err))|round|int }}–{{ (e.protein * (1 + e.err))|round|int }} g protein</span></div>
+    <form method="post" action="{{ url_for('act', name='delete_log') }}" data-ajax>{{ csrf() }}<input type="hidden" name="id" value="{{ e.id }}"><input type="hidden" name="tab" value="{{ tab }}">
+      <button class="x" aria-label="Remove {{ e.label }}">×</button></form>
+  </li>
+  {% endfor %}
+</ul>
+<p class="fineprint">Total ≈ {{ take.protein_lo|round|int }}–{{ take.protein_hi|round|int }} g protein, {{ take.kcal|round|int }} kcal. Ranges reflect how reliable each food's numbers and portions are (a rule of thumb, not a measurement).</p>
+{% else %}<p class="muted">Nothing logged yet today.</p>{% endif %}

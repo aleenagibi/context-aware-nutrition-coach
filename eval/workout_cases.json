@@ -1,0 +1,330 @@
+[
+ {
+  "text": "45 min heavy squats and deadlifts",
+  "sessions": [
+   {
+    "category": "strength",
+    "duration_min": 45,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "30 min easy jog",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 30,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "1 hour cycling",
+  "sessions": [
+   {
+    "category": "cycling",
+    "duration_min": 60,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "rest day",
+  "sessions": []
+ },
+ {
+  "text": "20 min intense HIIT",
+  "sessions": [
+   {
+    "category": "hiit",
+    "duration_min": 20,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "60 minutes yoga",
+  "sessions": [
+   {
+    "category": "yoga",
+    "duration_min": 60,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "swam 40 minutes, light",
+  "sessions": [
+   {
+    "category": "swimming",
+    "duration_min": 40,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "brisk walk for 30 min",
+  "sessions": [
+   {
+    "category": "walking",
+    "duration_min": 30,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "45-minute run",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 45,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "1h30 weights",
+  "sessions": [
+   {
+    "category": "strength",
+    "duration_min": 90,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "half an hour of running",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 30,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "an hour of badminton",
+  "sessions": [
+   {
+    "category": "sports",
+    "duration_min": 60,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "two hours football, hard",
+  "sessions": [
+   {
+    "category": "sports",
+    "duration_min": 120,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "30 min walk, then 45 min lifting",
+  "sessions": [
+   {
+    "category": "walking",
+    "duration_min": 30,
+    "intensity": "moderate"
+   },
+   {
+    "category": "strength",
+    "duration_min": 45,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "10 min light stretching, 40 min heavy bench press",
+  "sessions": [
+   {
+    "category": "yoga",
+    "duration_min": 10,
+    "intensity": "light"
+   },
+   {
+    "category": "strength",
+    "duration_min": 40,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "ran 5k in 28 minutes, hard effort",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 28,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "gym session 75 min",
+  "sessions": [
+   {
+    "category": "strength",
+    "duration_min": 75,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "pilates 50 min",
+  "sessions": [
+   {
+    "category": "yoga",
+    "duration_min": 50,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "cycled 90 min, light pace",
+  "sessions": [
+   {
+    "category": "cycling",
+    "duration_min": 90,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "1 hr 15 min swim, vigorous",
+  "sessions": [
+   {
+    "category": "swimming",
+    "duration_min": 75,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "elliptical 30 min",
+  "sessions": [
+   {
+    "category": "other",
+    "duration_min": 30,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "dance class 60 min",
+  "sessions": [
+   {
+    "category": "other",
+    "duration_min": 60,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "20 min sprint intervals",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 20,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "crossfit 45 min intense",
+  "sessions": [
+   {
+    "category": "hiit",
+    "duration_min": 45,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "slow 20 min walk after dinner",
+  "sessions": [
+   {
+    "category": "walking",
+    "duration_min": 20,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "legs day, 60 minutes of heavy lifting",
+  "sessions": [
+   {
+    "category": "strength",
+    "duration_min": 60,
+    "intensity": "hard"
+   }
+  ]
+ },
+ {
+  "text": "cricket for 2 hours",
+  "sessions": [
+   {
+    "category": "sports",
+    "duration_min": 120,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "no workout today",
+  "sessions": []
+ },
+ {
+  "text": "hiked 3 hours",
+  "sessions": [
+   {
+    "category": "walking",
+    "duration_min": 180,
+    "intensity": "moderate"
+   }
+  ]
+ },
+ {
+  "text": "tennis 90 min, hard, then 15 min light stretching",
+  "sessions": [
+   {
+    "category": "sports",
+    "duration_min": 90,
+    "intensity": "hard"
+   },
+   {
+    "category": "yoga",
+    "duration_min": 15,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "1.5 hours running, easy",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 90,
+    "intensity": "light"
+   }
+  ]
+ },
+ {
+  "text": "20 min jog + 30 min strength training",
+  "sessions": [
+   {
+    "category": "running",
+    "duration_min": 20,
+    "intensity": "moderate"
+   },
+   {
+    "category": "strength",
+    "duration_min": 30,
+    "intensity": "moderate"
+   }
+  ]
+ }
+]

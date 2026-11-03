@@ -1,0 +1,199 @@
+code,name,source,energy_kcal,protein_g,carb_g,fat_g,fibre_g
+G509,"Agar, dried",UK FCT,16.0,1.3,0.0,1.2,
+E507,Amla,UK FCT,58.0,0.5,13.7,0.1,
+V500,"Apple juice, clear, ambient and chilled",UK FCT,37.0,0.1,9.7,0.0,0.0
+O500,"Bacon rashers, back, raw",UK FCT,215.0,16.5,0.0,16.5,0.0
+K500,Baking powder,UK FCT,163.0,5.2,37.8,0.0,0.0
+E503,"Bananas, raw, flesh only, weighed with skin",UK FCT,51.0,0.8,12.8,0.0,0.9
+G511,"Basil, dried, ground",UK FCT,251.0,14.4,43.2,4.0,
+G512,"Bay leaf, dried",UK FCT,313.0,7.6,48.6,8.4,
+D508,"Beans, broad, whole, raw",UK FCT,59.0,5.7,7.2,1.0,
+B500,"Beans, chick peas, Kabuli, whole, dried, raw",UK FCT,320.0,21.3,49.6,5.4,
+B501,"Beansprouts, mung, boiled in unsalted water",UK FCT,25.0,2.5,2.8,0.5,
+K501,Bicarbonate of soda,UK FCT,0.0,0.0,0.0,0.0,
+U500,"Biscuits, digestive, plain",UK FCT,463.0,6.2,65.6,21.3,3.8
+E500,Blueberries,UK FCT,40.0,0.9,9.1,0.2,1.5
+U501,"Bread, brown, average",UK FCT,207.0,7.9,42.1,2.0,5.0
+U502,"Bread, brown, toasted",UK FCT,266.0,10.1,54.0,2.6,6.4
+U511,"Bread, white, average",UK FCT,236.0,8.7,48.7,2.1,2.9
+A501,"Breakfast cereal, crunchy clusters type, without nuts, unfortified",UK FCT,399.0,7.2,71.0,11.6,7.2
+C500,"Broccoli, green, raw",UK FCT,34.0,4.3,3.2,0.6,4.0
+A514,"Buckwheat, groats",UK FCT,364.0,8.1,84.9,1.5,
+T500,"Butter, salted",UK FCT,744.0,0.6,0.6,82.2,0.0
+T501,"Butter, unsalted",UK FCT,744.0,0.6,0.6,82.2,0.0
+L500,"Cheese, Cheddar, English",UK FCT,416.0,25.4,0.1,34.9,0.0
+L502,"Cheese, cottage, plain",UK FCT,103.0,9.4,3.1,6.0,0.0
+L506,"Cheese, Feta",UK FCT,250.0,15.6,1.5,20.2,0.0
+L503,"Cheese, Mozzarella, fresh",UK FCT,257.0,18.6,0.0,20.3,0.0
+L505,"Cheese, processed, plain",UK FCT,297.0,17.8,5.0,23.0,0.0
+L511,"Cheese, Ricotta",UK FCT,144.0,9.4,2.0,11.0,
+E511,"Cherries, glace",UK FCT,294.0,0.4,78.1,0.0,0.0
+E504,"Cherries, West Indian, flesh only",UK FCT,24.0,0.4,5.0,0.4,
+N500,"Chicken, whole, corn-fed, raw, meat and skin, weighed with bone",UK FCT,142.0,12.2,0.0,10.3,
+G516,Chilli powder,UK FCT,0.0,13.5,0.0,14.3,34.8
+G517,Chilli sauce,UK FCT,40.0,1.3,7.3,0.8,2.2
+I509,"Chocolate, plain",UK FCT,510.0,5.0,63.5,28.0,0.0
+G518,"Cinnamon, ground",UK FCT,0.0,4.0,0.0,1.2,53.1
+V501,Cocoa powder,UK FCT,312.0,18.5,11.5,21.7,0.0
+H501,Coconut milk,UK FCT,22.0,0.3,4.9,0.3,
+V502,"Coffee, powder, instant",UK FCT,75.0,14.6,4.5,0.0,0.0
+V503,Cola,UK FCT,41.0,0.0,10.9,0.0,0.0
+A502,"Couscous, plain, raw",UK FCT,364.0,12.0,79.2,2.1,3.7
+E501,Cranberries,UK FCT,15.0,0.4,3.4,0.1,
+U505,Cream of tartar,UK FCT,239.0,0.0,0.0,0.0,
+L519,"Cream, fresh, single",UK FCT,193.0,3.3,2.2,19.1,0.0
+L512,"Cream, fresh, whipping",UK FCT,381.0,2.0,2.7,40.3,0.0
+D500,"Curly kale, raw",UK FCT,33.0,3.4,1.4,1.6,0.0
+E510,Currants,UK FCT,267.0,2.3,67.8,0.4,
+G520,Curry powder,UK FCT,233.0,9.5,26.1,10.8,0.0
+K503,Custard powder,UK FCT,354.0,0.6,92.0,0.7,0.0
+X508,"Dips, sour-cream based, assorted flavours",UK FCT,360.0,2.9,4.0,37.0,0.0
+X510,"Dressing, French",UK FCT,335.0,0.3,11.7,32.2,0.5
+X509,"Dressing, thousand island",UK FCT,210.0,0.7,15.9,16.4,0.4
+V504,"Drinking chocolate, powder",UK FCT,377.0,6.4,79.7,5.8,0.0
+V505,"Energy drink, carbonated",UK FCT,42.0,0.0,11.1,0.0,0.0
+G510,Fennel seeds,UK FCT,0.0,15.8,0.0,14.9,
+A503,"Flour, corn",UK FCT,354.0,0.6,92.0,0.7,0.0
+A504,"Flour, gram",UK FCT,353.0,22.7,57.0,5.4,10.1
+A505,"Flour, rice",UK FCT,366.0,6.4,80.1,0.8,
+B503,"Flour, soya",UK FCT,409.0,34.3,18.7,22.4,18.0
+E516,"Fruit cocktail, canned in juice, whole contents",UK FCT,45.0,0.4,11.7,0.0,0.0
+V506,"Fruit cocktail, canned in syrup, whole contents",UK FCT,57.0,0.4,14.8,0.0,0.0
+V507,"Fruit juice drink/squash, diluted",UK FCT,7.0,0.0,1.8,0.0,0.0
+V508,"Fruit juice drink/squash, undiluted",UK FCT,34.0,0.1,8.9,0.0,0.0
+G523,Garam masala,UK FCT,379.0,15.6,45.2,15.1,0.0
+G524,Garlic powder,UK FCT,246.0,18.7,42.7,1.2,
+K504,Gelatine,UK FCT,338.0,84.4,0.0,0.0,0.0
+T506,"Ghee, butter",UK FCT,878.0,0.1,0.0,97.6,0.0
+D505,"Gherkins, pickled, drained",UK FCT,14.0,0.9,2.6,0.1,1.5
+G554,"Ginger, ground",UK FCT,284.0,7.4,60.0,3.3,14.1
+O501,Ham,UK FCT,107.0,18.4,1.0,3.3,0.1
+H502,"Hazelnuts, kernel only",UK FCT,650.0,14.1,6.0,63.5,6.9
+I507,Honey,UK FCT,288.0,0.4,76.4,0.0,0.0
+I501,"Ice cream, dairy, vanilla, soft scoop",UK FCT,169.0,3.2,22.0,8.2,0.2
+W501,"Jelly, made with water",UK FCT,61.0,1.2,15.1,0.0,0.0
+E502,"Kiwi fruit, flesh only, raw",UK FCT,44.0,0.8,8.6,0.9,2.7
+O502,"Lamb, mince, raw",UK FCT,196.0,19.1,0.0,13.3,0.0
+E520,"Lemons, flesh only, raw, weighed with peel and pips",UK FCT,9.0,0.5,1.4,0.2,
+W502,Marmalade,UK FCT,261.0,0.1,69.5,0.0,0.5
+L507,"Mayonnaise, standard, retail",UK FCT,686.0,1.1,2.4,74.8,0.0
+H500,Melon seeds,UK FCT,583.0,28.5,9.9,47.7,
+L508,"Milk, condensed, whole, sweetened",UK FCT,310.0,7.4,55.5,8.0,0.0
+L509,"Milk, evaporated, light",UK FCT,107.0,7.8,10.3,4.1,0.0
+L510,"Milk, skimmed, dried, fortified",UK FCT,348.0,36.1,52.9,0.6,0.0
+X512,"Mint sauce, homemade",UK FCT,85.0,0.8,19.4,0.1,0.0
+G515,Mixed curry spices,UK FCT,0.0,13.2,0.0,13.3,0.0
+G521,"Mixed herbs, dried",UK FCT,261.0,12.1,36.3,8.5,0.0
+G533,Mustard powder,UK FCT,452.0,28.9,20.7,28.7,0.0
+T507,"Oil, coconut",UK FCT,899.0,0.0,0.0,99.9,0.0
+T502,"Oil, olive",UK FCT,899.0,0.0,0.0,99.9,0.0
+T509,"Oil, sesame",UK FCT,898.0,0.2,0.0,99.7,0.0
+T508,"Oil, sunflower",UK FCT,899.0,0.0,0.0,99.9,0.0
+D504,"Olives, green, in brine, drained, flesh and skin",UK FCT,103.0,0.9,0.0,11.0,0.0
+E518,"Orange juice, freshly squeezed",UK FCT,33.0,0.6,8.1,0.0,0.0
+G526,"Oregano, dried, ground",UK FCT,0.0,9.0,0.0,4.3,42.5
+G545,Paprika,UK FCT,0.0,14.1,0.0,12.9,34.9
+A507,"Pasta, white, dried, raw",UK FCT,343.0,11.3,75.6,1.6,0.0
+E508,"Peaches, canned in syrup, whole contents",UK FCT,55.0,0.5,14.0,0.0,0.0
+B504,"Peanut butter, smooth",UK FCT,607.0,22.8,13.1,51.8,6.6
+B505,"Peanuts, dry roasted",UK FCT,590.0,25.7,10.3,49.8,7.6
+E509,"Pears, canned in juice, whole contents",UK FCT,33.0,0.3,8.5,0.0,0.0
+G527,"Pepper, white",UK FCT,0.0,10.4,0.0,2.1,26.2
+D506,"Pickle, sweet",UK FCT,111.0,0.6,28.0,0.1,1.2
+V509,"Pineapple juice, unsweetened",UK FCT,41.0,0.3,10.5,0.1,0.0
+X513,"Pizza base, raw",UK FCT,290.0,7.8,57.5,4.8,2.5
+A508,"Porridge oats, unfortified",UK FCT,381.0,10.9,70.7,8.1,7.8
+H518,Pumpkin seeds,UK FCT,565.0,24.4,15.2,45.6,0.0
+E505,"Redcurrants, raw",UK FCT,21.0,1.1,4.4,0.0,
+G525,"Rosemary, dried",UK FCT,331.0,4.9,46.4,15.2,42.6
+G529,Saffron,UK FCT,310.0,11.4,61.5,5.9,
+I508,"Sago, raw",UK FCT,355.0,0.2,94.0,0.2,
+O503,Salami,UK FCT,438.0,20.9,0.5,39.2,0.4
+G528,Salt,UK FCT,0.0,0.0,0.0,0.0,0.0
+X500,"Sauces, Indian cook in, other",UK FCT,67.0,1.4,8.7,3.2,2.5
+O504,"Sausages, premium, raw",UK FCT,254.0,13.8,2.6,21.0,0.5
+G513,Sesame seeds,UK FCT,598.0,18.2,0.9,58.0,0.0
+G546,"Shallots, raw",UK FCT,20.0,1.5,3.3,0.2,
+X501,"Soy sauce, light and dark varieties",UK FCT,79.0,3.0,17.9,0.0,0.0
+K502,"Spirits, 40% volume",UK FCT,222.0,0.0,0.0,0.0,0.0
+G547,"Spring onions, bulbs and tops, raw",UK FCT,23.0,2.0,3.0,0.5,0.0
+G501,"Spring onions, bulbs only, raw",UK FCT,35.0,0.9,8.5,0.0,
+K506,"Stock cubes, chicken",UK FCT,0.0,15.4,0.0,15.4,0.6
+K507,"Stock cubes, vegetable",UK FCT,0.0,13.5,0.0,17.3,1.8
+I503,"Sugar, brown",UK FCT,380.0,0.1,101.3,0.0,0.0
+I504,"Sugar, icing",UK FCT,393.0,0.0,104.9,0.0,0.0
+I502,"Sugar, white",UK FCT,394.0,0.0,105.0,0.0,0.0
+E506,Sultanas,UK FCT,275.0,2.7,69.4,0.4,0.0
+D503,"Sweetcorn, kernels, raw",UK FCT,60.0,3.4,8.1,1.8,0.0
+I505,"Syrup, corn, dark",UK FCT,282.0,0.0,76.6,0.0,
+V510,"Tea, black, infusion, average",UK FCT,0.0,0.1,0.0,0.0,0.0
+V511,"Tea, green, infusion",UK FCT,0.0,0.1,0.0,0.0,0.0
+G531,"Thyme, dried, ground",UK FCT,276.0,9.1,45.3,7.4,37.0
+B506,"Tofu, soya bean, steamed",UK FCT,73.0,8.1,0.7,4.2,0.0
+X503,Tomato ketchup,UK FCT,115.0,1.6,28.6,0.1,0.9
+X504,Tomato puree,UK FCT,67.0,4.4,12.9,0.2,4.7
+X505,"Tomato sauce, homemade",UK FCT,89.0,2.2,8.6,5.5,
+D502,"Tomatoes, cherry, raw",UK FCT,22.0,1.1,3.6,0.5,1.3
+F501,"Turnip, flesh only, raw",UK FCT,23.0,0.9,4.7,0.3,
+G532,Vinegar,UK FCT,22.0,0.4,0.6,0.0,0.0
+U509,"Wafers, plain ice cream wafers, not filled",UK FCT,368.0,10.5,79.7,3.0,3.4
+K505,"Water, distilled",UK FCT,0.0,0.0,0.0,0.0,0.0
+C502,"Watercress, raw",UK FCT,10.0,1.9,0.0,0.3,1.5
+X506,"White sauce, savoury, made with whole milk, homemade",UK FCT,158.0,4.4,11.6,10.8,0.3
+X507,Worcestershire sauce,UK FCT,113.0,1.4,28.3,0.1,0.0
+G534,Yeast extract,UK FCT,180.0,40.7,3.5,0.4,0.0
+L520,"Yogurt, whole milk, plain",UK FCT,79.0,5.7,7.8,3.0,0.0
+G536,AJWAIN SEED WHOLE ORGANIC SPICES,US FCT,238.0,23.81,47.62,0.0,47.6
+A513,"ALMOND FLOUR, ALMOND",US FCT,571.0,21.43,21.43,50.0,14.3
+H507,ALMOND MILK,US FCT,17.0,0.42,0.83,1.25,0.4
+G539,BALSAMIC VINEGAR,US FCT,100.0,0.0,20.0,0.0,
+B507,BLACK BEANS,US FCT,55.0,3.94,15.8,0.79,5.5
+A509,BLACK RICE,US FCT,372.0,11.6,79.1,3.49,4.7
+X517,"CAJUN SEASONING, CAJUN",US FCT,0.0,0.0,0.0,0.0,
+I510,"Candies, gum drops, no sugar or low calorie (sorbitol)",US FCT,354.0,0.0,88.1,0.2,0.0
+G542,"Capers, canned",US FCT,23.0,2.36,4.89,0.86,3.2
+L501,"Cheese spread, cream cheese, regular",US FCT,295.0,7.1,3.5,28.6,0.0
+L518,"Cheese, cream, low fat",US FCT,208.0,7.85,6.73,16.7,0.0
+L513,"Cheese, provolone",US FCT,351.0,25.6,2.14,26.6,0.0
+H506,Chia seeds,US FCT,534.0,18.29,28.88,42.16,27.3
+B509,"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",US FCT,378.0,20.5,63.0,6.04,12.2
+A510,CRACKED WHEAT,US FCT,350.0,12.5,75.0,1.25,12.5
+L515,"Cream, fluid, light (coffee cream or table cream)",US FCT,195.0,2.96,3.66,19.1,0.0
+X518,CREAMED CORN,US FCT,159.0,3.54,17.7,7.96,1.8
+X515,"DIJON MUSTARD, DIJON",US FCT,100.0,0.0,0.0,0.0,0.0
+E514,DRIED MANGO,US FCT,350.0,0.0,85.0,0.0,2.5
+G548,"GINGER JUICE, GINGER",US FCT,67.0,0.0,16.67,0.0,0.0
+E515,"Gooseberries, raw",US FCT,44.0,0.88,10.2,0.58,4.3
+G540,HIMALAYAN BLACK SALT,US FCT,0.0,0.0,0.0,0.0,0.0
+U506,HOT DOG BUNS,US FCT,245.0,9.43,45.28,2.83,1.9
+W504,JAM,US FCT,200.0,0.0,50.0,0.0,0.0
+G551,"Lemon grass (citronella), raw",US FCT,99.0,1.82,25.3,0.49,
+G550,"Lemon peel, raw",US FCT,47.0,1.5,16.0,0.3,10.6
+T504,MARGARINE,US FCT,714.0,0.0,0.0,78.57,
+L521,"Milk, buttermilk, fluid, whole",US FCT,62.0,3.21,4.88,3.31,0.0
+L516,"Milk, dry, nonfat, regular, without added vitamin A and vitamin D",US FCT,362.0,36.2,52.0,0.77,0.0
+H505,"MIXED NUTS CASHEWS, ALMONDS, HAZELNUTS, PISTACHIOS, PECANS, MIXED NUTS",US FCT,607.0,17.86,25.0,50.0,7.1
+G541,MSG MONOSODIUM GLUTAMATE,US FCT,0.0,0.0,0.0,0.0,
+X514,MUSTARD SAUCE,US FCT,643.0,3.57,3.57,71.43,0.0
+H508,"Nuts, coconut water (liquid from coconuts)",US FCT,19.0,0.72,3.71,0.2,1.1
+T510,"Oil, mustard",US FCT,884.0,0.0,0.0,100.0,0.0
+G552,"Orange peel, raw",US FCT,97.0,1.5,25.0,0.2,10.6
+G549,"Peppers, jalapeno, raw",US FCT,29.0,0.91,6.5,0.37,2.8
+D507,PITTED BLACK OLIVES,US FCT,133.0,0.0,6.67,13.33,0.0
+E513,"Raspberries, raw",US FCT,52.0,1.2,11.9,0.65,6.5
+G543,RICE VINEGAR,US FCT,0.0,0.0,0.0,0.0,
+B511,ROASTED CHICKPEAS,US FCT,286.0,17.86,60.71,7.14,21.4
+H503,"Seeds, lotus seeds, dried",US FCT,332.0,15.4,64.5,1.97,
+G535,"SIVA'S, AMHUR POWDER (DRY MANGO POWDER)",US FCT,360.0,0.0,90.0,0.0,20.0
+L514,"Sour cream, regular",US FCT,198.0,2.44,4.63,19.35,0.0
+B508,"Soybeans, mature seeds, raw",US FCT,446.0,36.5,30.2,19.9,9.3
+G555,"Spices, onion powder",US FCT,341.0,10.4,79.1,1.04,15.2
+G537,STAR ANISE,US FCT,0.0,0.0,0.0,0.0,
+W505,STRAWBERRY JAM,US FCT,225.0,0.0,60.0,0.0,0.0
+A512,"SWEET SUNNAH, WHOLE BLACK SEEDS NIGELLA SATIVA",US FCT,400.0,16.67,50.0,33.33,0.0
+I511,"TUTTI FRUTTI GUMBALLS, TUTTI FRUTTI",US FCT,500.0,0.0,100.0,0.0,0.0
+G544,Vanilla extract,US FCT,288.0,0.06,12.6,0.06,0.0
+G538,"Vinegar, distilled",US FCT,18.0,0.0,0.04,0.0,0.0
+L517,"Whey, acid, fluid",US FCT,24.0,0.76,5.12,0.09,0.0
+U507,WHITE HAMBURGER BUNS,US FCT,256.0,9.3,48.84,3.49,2.3
+U508,WHOLE WHEAT HAMBURGER BUNS,US FCT,245.0,11.32,45.28,3.77,5.7

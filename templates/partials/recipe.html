@@ -1,0 +1,43 @@
+{% from "macros.html" import art, csrf %}
+<div class="recipe">
+  <div class="recipe-art">{{ art(r.id, r.art, 'big') }}</div>
+  <h2>{{ r.name }}</h2>
+  <div class="tags"><span class="tag">{{ SLOT_LABELS[r.slot] }}</span><span class="tag">{{ r.minutes }} min</span><span class="tag">{{ '%g'|format(servings) }} serving{{ '' if servings == 1 else 's' }}</span></div>
+  <p class="fineprint">Nutrition source: {{ r.nutrition_source }}{% if r.nutrition_source == 'INDB per-serving values' %}. Individual ingredient matches may be incomplete, but the displayed total uses the INDB per-serving record.{% endif %}</p>
+  <div class="stats macro-row">
+    <div><span class="eyebrow">PROTEIN</span><strong>≈ {{ lo }}–{{ hi }}<small> g</small></strong></div>
+    <div><span class="eyebrow">KCAL</span><strong>{{ kcal }}</strong></div>
+    <div><span class="eyebrow">CARBS</span><strong>{{ (r.carbs * servings)|round|int }}<small> g</small></strong></div>
+    <div><span class="eyebrow">FAT</span><strong>{{ (r.fat * servings)|round|int }}<small> g</small></strong></div>
+  </div>
+  <div class="stepper" role="group" aria-label="Servings">
+    <button type="button" class="x" data-open="{{ url_for('recipe_detail', recipe_id=r.id, servings=[servings - 0.5, 0.5]|max) }}" aria-label="Fewer servings">−</button>
+    <span>{{ '%g'|format(servings) }} serving{{ '' if servings == 1 else 's' }}</span>
+    <button type="button" class="x" data-open="{{ url_for('recipe_detail', recipe_id=r.id, servings=[servings + 0.5, 4]|min) }}" aria-label="More servings">+</button>
+  </div>
+  <div class="subtabs" role="tablist"><button type="button" class="on" data-subtab="ing">Ingredients</button><button type="button" data-subtab="steps">Steps</button></div>
+  <div data-subpanel="ing">
+    <ul class="ing">
+      {% for it in r.items %}{% set missing = it.name in need %}
+      <li class="{{ 'need' if missing }}"><span>{{ it.name }}</span><span>{{ (it.grams * servings)|round|int }} g</span>
+        <em>{% if it.staple %}staple{% elif missing %}need{% elif it.name in have %}have{% endif %}</em></li>
+      {% endfor %}
+    </ul>
+    {% if r.extras %}<p class="fineprint">{% if r.nutrition_source == 'INDB per-serving values' %}Ingredients without a verified individual food match: {% else %}Also (not counted in the numbers): {% endif %}{{ r.extras|join(', ') }}</p>{% endif %}
+  </div>
+  <div data-subpanel="steps" hidden>
+    {% if r.steps %}
+      <p class="fineprint">{% if r.steps_source == 'source' %}Instructions extracted from the original recipe source.{% elif r.steps_source == 'ai' %}AI-generated instructions based on this recipe's listed ingredients. Check the method against your preferences.{% else %}Curated recipe instructions.{% endif %}</p>
+      <ol class="steps">{% for s in r.steps %}<li>{{ s }}</li>{% endfor %}</ol>
+    {% else %}
+      <p class="fineprint">Cooking instructions aren't available for this recipe yet. Check the original recipe source or use the video recipe search below.</p>
+    {% endif %}
+  </div>
+  <form method="post" action="{{ url_for('act', name='log_recipe') }}" data-ajax class="sheet-actions">
+    {{ csrf() }}<input type="hidden" name="recipe_id" value="{{ r.id }}"><input type="hidden" name="servings" value="{{ servings }}">
+    {% if r.source_url %}<a class="link" href="{{ r.source_url }}" target="_blank" rel="noopener noreferrer">Original recipe source</a>{% endif %}
+    <a class="link" href="{{ video }}" target="_blank" rel="noopener noreferrer">Find a video recipe</a>
+    <button class="btn" type="submit">I ate this</button>
+  </form>
+  <p class="fineprint">Nutrition is computed from the food table. The video link opens a search, nothing is scraped. Food photography is AI-generated for visual reference; it is not a portion-size guide.</p>
+</div>

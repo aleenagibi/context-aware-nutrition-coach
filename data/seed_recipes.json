@@ -1,0 +1,1158 @@
+[
+ {
+  "id": "oats_milk_pb",
+  "name": "Oats with milk & peanut butter",
+  "slot": "breakfast",
+  "minutes": 5,
+  "art": "bowl",
+  "items": [
+   [
+    "oats",
+    50
+   ],
+   [
+    "milk",
+    200
+   ],
+   [
+    "peanut_butter",
+    15
+   ]
+  ],
+  "extras": [
+   "pinch of cinnamon (optional)"
+  ],
+  "steps": [
+   "Simmer the oats in the milk for 3-4 minutes, stirring.",
+   "Take off the heat and stir in the peanut butter.",
+   "Serve warm. Add sliced fruit if you like."
+  ]
+ },
+ {
+  "id": "greek_yogurt_bowl",
+  "name": "Greek yogurt bowl",
+  "slot": "breakfast",
+  "minutes": 5,
+  "art": "bowl",
+  "items": [
+   [
+    "greek_yogurt",
+    200
+   ],
+   [
+    "banana",
+    100
+   ],
+   [
+    "almonds",
+    15
+   ],
+   [
+    "chia_seeds",
+    10
+   ]
+  ],
+  "extras": [],
+  "steps": [
+   "Spoon the yogurt into a bowl.",
+   "Slice the banana on top.",
+   "Add the almonds and chia seeds."
+  ]
+ },
+ {
+  "id": "egg_toast",
+  "name": "Eggs on toast",
+  "slot": "breakfast",
+  "minutes": 10,
+  "art": "toast",
+  "items": [
+   [
+    "egg",
+    100
+   ],
+   [
+    "bread_wheat",
+    60
+   ],
+   [
+    "butter",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "black pepper"
+  ],
+  "steps": [
+   "Boil the eggs for 8-9 minutes, then peel and slice.",
+   "Toast the bread and spread the butter.",
+   "Top with the eggs, salt and pepper."
+  ]
+ },
+ {
+  "id": "omelette_toast",
+  "name": "Omelette with toast",
+  "slot": "breakfast",
+  "minutes": 10,
+  "art": "egg",
+  "items": [
+   [
+    "omelette",
+    110
+   ],
+   [
+    "bread_wheat",
+    60
+   ]
+  ],
+  "extras": [
+   "salt",
+   "green chilli (optional)"
+  ],
+  "steps": [
+   "Beat two eggs with salt and chopped chilli.",
+   "Cook in a lightly oiled pan until set, folding once.",
+   "Serve with toasted bread."
+  ]
+ },
+ {
+  "id": "besan_chilla_curd",
+  "name": "Besan chilla with curd",
+  "slot": "breakfast",
+  "minutes": 15,
+  "art": "pan",
+  "items": [
+   [
+    "besan",
+    50
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "tomato",
+    40
+   ],
+   [
+    "oil",
+    5
+   ],
+   [
+    "curd",
+    100
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "ajwain or cumin",
+   "green chilli"
+  ],
+  "steps": [
+   "Whisk the besan with water into a pourable batter and add the spices.",
+   "Stir in chopped onion and tomato.",
+   "Pour onto a hot oiled pan, cook both sides until golden.",
+   "Serve with the curd."
+  ]
+ },
+ {
+  "id": "paneer_bhurji_toast",
+  "name": "Paneer bhurji with toast",
+  "slot": "breakfast",
+  "minutes": 15,
+  "art": "pan",
+  "items": [
+   [
+    "paneer",
+    80
+   ],
+   [
+    "onion",
+    40
+   ],
+   [
+    "tomato",
+    50
+   ],
+   [
+    "oil",
+    5
+   ],
+   [
+    "bread_wheat",
+    60
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "cumin",
+   "coriander leaves"
+  ],
+  "steps": [
+   "Heat the oil, fry the onion until soft, then add the tomato and spices.",
+   "Crumble in the paneer and cook for 3-4 minutes.",
+   "Serve with toast."
+  ]
+ },
+ {
+  "id": "tofu_scramble_toast",
+  "name": "Tofu scramble on toast",
+  "slot": "breakfast",
+  "minutes": 12,
+  "art": "pan",
+  "items": [
+   [
+    "tofu",
+    150
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "tomato",
+    40
+   ],
+   [
+    "oil",
+    5
+   ],
+   [
+    "bread_wheat",
+    60
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "black pepper"
+  ],
+  "steps": [
+   "Crumble the tofu and fry the onion in the oil.",
+   "Add the tomato, tofu and spices, cook 5 minutes.",
+   "Serve on toast."
+  ]
+ },
+ {
+  "id": "poha_peanuts_curd",
+  "name": "Poha with peanuts & curd",
+  "slot": "breakfast",
+  "minutes": 15,
+  "art": "bowl",
+  "items": [
+   [
+    "poha_raw",
+    50
+   ],
+   [
+    "peanuts",
+    20
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "oil",
+    5
+   ],
+   [
+    "curd",
+    150
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "mustard seeds",
+   "curry leaves",
+   "lemon"
+  ],
+  "steps": [
+   "Rinse the poha in a sieve and let it soften.",
+   "Temper mustard seeds and curry leaves in oil, add peanuts and onion.",
+   "Mix in the poha, salt and turmeric, heat through, finish with lemon.",
+   "Serve with the curd."
+  ]
+ },
+ {
+  "id": "idli_sambar",
+  "name": "Idli & sambar",
+  "slot": "breakfast",
+  "minutes": 10,
+  "art": "bowl",
+  "items": [
+   [
+    "idli",
+    160
+   ],
+   [
+    "sambar",
+    200
+   ]
+  ],
+  "extras": [
+   "ready batter or instant mix"
+  ],
+  "steps": [
+   "Steam the idlis (about 10 minutes) or reheat ready-made ones.",
+   "Warm the sambar.",
+   "Serve together."
+  ]
+ },
+ {
+  "id": "dal_roti_curd",
+  "name": "Dal, roti & curd",
+  "slot": "main",
+  "minutes": 25,
+  "art": "plate",
+  "items": [
+   [
+    "dal_toor",
+    200
+   ],
+   [
+    "roti",
+    80
+   ],
+   [
+    "curd",
+    100
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "cumin",
+   "garlic"
+  ],
+  "steps": [
+   "Pressure-cook the toor dal until soft and mash lightly.",
+   "Temper cumin and garlic in a little oil and pour over.",
+   "Serve with rotis and curd."
+  ]
+ },
+ {
+  "id": "rajma_rice",
+  "name": "Rajma rice",
+  "slot": "main",
+  "minutes": 35,
+  "art": "plate",
+  "items": [
+   [
+    "rajma_cooked",
+    200
+   ],
+   [
+    "rice_cooked",
+    200
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "tomato",
+    50
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "garam masala",
+   "ginger-garlic"
+  ],
+  "steps": [
+   "Cook soaked rajma until soft (pressure cooker, about 30 minutes) if not already cooked.",
+   "Fry onion, ginger-garlic and tomato in oil, add spices.",
+   "Add the rajma with a little water and simmer 10 minutes.",
+   "Serve over rice."
+  ]
+ },
+ {
+  "id": "chole_rice",
+  "name": "Chole rice",
+  "slot": "main",
+  "minutes": 30,
+  "art": "plate",
+  "items": [
+   [
+    "chana_cooked",
+    200
+   ],
+   [
+    "rice_cooked",
+    200
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "tomato",
+    60
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "chole masala",
+   "ginger-garlic"
+  ],
+  "steps": [
+   "Fry onion, ginger-garlic and tomato in oil with the spices.",
+   "Add the cooked chickpeas and simmer 10 minutes.",
+   "Serve with rice."
+  ]
+ },
+ {
+  "id": "paneer_roti_spinach",
+  "name": "Paneer, spinach & roti",
+  "slot": "main",
+  "minutes": 25,
+  "art": "plate",
+  "items": [
+   [
+    "paneer",
+    80
+   ],
+   [
+    "roti",
+    80
+   ],
+   [
+    "spinach",
+    100
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "cumin",
+   "garlic",
+   "garam masala"
+  ],
+  "steps": [
+   "Fry the onion and garlic in the oil, add the spinach and spices.",
+   "Add paneer cubes and cook 3-4 minutes.",
+   "Serve with rotis."
+  ]
+ },
+ {
+  "id": "soya_pulao",
+  "name": "Soya chunk pulao",
+  "slot": "main",
+  "minutes": 25,
+  "art": "plate",
+  "items": [
+   [
+    "soya_chunks",
+    30
+   ],
+   [
+    "rice_cooked",
+    200
+   ],
+   [
+    "onion",
+    40
+   ],
+   [
+    "carrot",
+    40
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "pulao spices",
+   "green peas (optional)"
+  ],
+  "steps": [
+   "Soak the soya chunks in hot water for 10 minutes, then squeeze dry.",
+   "Fry the onion and carrot with spices, add the soya chunks.",
+   "Mix in the cooked rice and heat through."
+  ]
+ },
+ {
+  "id": "chicken_rice_bowl",
+  "name": "Chicken rice bowl",
+  "slot": "main",
+  "minutes": 25,
+  "art": "plate",
+  "items": [
+   [
+    "chicken",
+    120
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "broccoli",
+    80
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "black pepper",
+   "garlic",
+   "lemon"
+  ],
+  "steps": [
+   "Season the chicken with salt, pepper, garlic and lemon.",
+   "Pan-cook in the oil until cooked through (no pink inside), then slice.",
+   "Serve over rice with steamed broccoli."
+  ]
+ },
+ {
+  "id": "egg_curry_rice",
+  "name": "Egg curry with rice",
+  "slot": "main",
+  "minutes": 30,
+  "art": "plate",
+  "items": [
+   [
+    "egg",
+    150
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "onion",
+    50
+   ],
+   [
+    "tomato",
+    80
+   ],
+   [
+    "oil",
+    10
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "coriander powder",
+   "garam masala"
+  ],
+  "steps": [
+   "Boil the eggs for 8-9 minutes and peel.",
+   "Fry onion in the oil, add tomato and spices to make a gravy.",
+   "Add the eggs and simmer 5 minutes. Serve with rice."
+  ]
+ },
+ {
+  "id": "fish_rice_bowl",
+  "name": "Fish, spinach & rice",
+  "slot": "main",
+  "minutes": 25,
+  "art": "plate",
+  "items": [
+   [
+    "fish_white",
+    150
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "spinach",
+    100
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "lemon",
+   "black pepper"
+  ],
+  "steps": [
+   "Rub the fish with salt, turmeric and lemon.",
+   "Pan-cook in the oil 3-4 minutes per side until it flakes.",
+   "Serve with rice and sauteed spinach."
+  ]
+ },
+ {
+  "id": "tuna_quinoa_salad",
+  "name": "Tuna quinoa salad",
+  "slot": "main",
+  "minutes": 10,
+  "art": "bowl",
+  "items": [
+   [
+    "tuna",
+    100
+   ],
+   [
+    "quinoa",
+    150
+   ],
+   [
+    "cucumber",
+    80
+   ],
+   [
+    "tomato",
+    80
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "pepper",
+   "lemon"
+  ],
+  "steps": [
+   "Drain the tuna.",
+   "Toss with the quinoa, chopped cucumber and tomato.",
+   "Dress with oil, lemon, salt and pepper."
+  ]
+ },
+ {
+  "id": "khichdi_curd",
+  "name": "Moong khichdi with curd",
+  "slot": "main",
+  "minutes": 30,
+  "art": "bowl",
+  "items": [
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "dal_moong",
+    150
+   ],
+   [
+    "curd",
+    150
+   ],
+   [
+    "ghee",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "cumin"
+  ],
+  "steps": [
+   "Cook rice and moong dal together with turmeric and salt until soft.",
+   "Temper cumin in the ghee and stir in.",
+   "Serve with the curd."
+  ]
+ },
+ {
+  "id": "palak_dal_rice",
+  "name": "Palak dal with rice",
+  "slot": "main",
+  "minutes": 30,
+  "art": "plate",
+  "items": [
+   [
+    "dal_masoor",
+    200
+   ],
+   [
+    "spinach",
+    100
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "cumin",
+   "garlic"
+  ],
+  "steps": [
+   "Cook the masoor dal until soft.",
+   "Add chopped spinach and cook 3 minutes.",
+   "Temper cumin and garlic in the oil, pour over, and serve with rice."
+  ]
+ },
+ {
+  "id": "tofu_stirfry_rice",
+  "name": "Tofu stir-fry with rice",
+  "slot": "main",
+  "minutes": 20,
+  "art": "pan",
+  "items": [
+   [
+    "tofu",
+    200
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "broccoli",
+    80
+   ],
+   [
+    "carrot",
+    50
+   ],
+   [
+    "oil",
+    8
+   ]
+  ],
+  "extras": [
+   "salt",
+   "soy sauce",
+   "garlic",
+   "ginger"
+  ],
+  "steps": [
+   "Cube the tofu and brown it in the oil.",
+   "Add garlic, ginger, broccoli and carrot, stir-fry 4 minutes.",
+   "Season and serve over rice."
+  ]
+ },
+ {
+  "id": "prawn_stirfry_rice",
+  "name": "Prawn stir-fry with rice",
+  "slot": "main",
+  "minutes": 20,
+  "art": "pan",
+  "items": [
+   [
+    "prawns",
+    120
+   ],
+   [
+    "rice_cooked",
+    150
+   ],
+   [
+    "onion",
+    40
+   ],
+   [
+    "broccoli",
+    80
+   ],
+   [
+    "oil",
+    8
+   ]
+  ],
+  "extras": [
+   "salt",
+   "chilli",
+   "garlic",
+   "lemon"
+  ],
+  "steps": [
+   "Fry the onion and garlic in the oil.",
+   "Add the prawns and cook until pink and firm.",
+   "Add broccoli, season, and serve with rice."
+  ]
+ },
+ {
+  "id": "chickpea_quinoa_bowl",
+  "name": "Chickpea quinoa bowl",
+  "slot": "main",
+  "minutes": 15,
+  "art": "bowl",
+  "items": [
+   [
+    "chana_cooked",
+    150
+   ],
+   [
+    "quinoa",
+    150
+   ],
+   [
+    "cucumber",
+    60
+   ],
+   [
+    "tomato",
+    60
+   ]
+  ],
+  "extras": [
+   "salt",
+   "cumin",
+   "lemon",
+   "coriander leaves"
+  ],
+  "steps": [
+   "Combine the chickpeas and quinoa.",
+   "Add chopped cucumber and tomato.",
+   "Season with salt, cumin, lemon and coriander."
+  ]
+ },
+ {
+  "id": "chicken_roti_wrap",
+  "name": "Chicken roti wrap",
+  "slot": "main",
+  "minutes": 20,
+  "art": "plate",
+  "items": [
+   [
+    "chicken",
+    120
+   ],
+   [
+    "roti",
+    80
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "cucumber",
+    50
+   ],
+   [
+    "curd",
+    50
+   ]
+  ],
+  "extras": [
+   "salt",
+   "pepper",
+   "chaat masala"
+  ],
+  "steps": [
+   "Pan-cook the chicken with salt and pepper, then slice.",
+   "Mix the curd with chaat masala.",
+   "Fill the rotis with chicken, onion, cucumber and the curd sauce."
+  ]
+ },
+ {
+  "id": "egg_bhurji_roti",
+  "name": "Egg bhurji with roti",
+  "slot": "main",
+  "minutes": 15,
+  "art": "plate",
+  "items": [
+   [
+    "egg",
+    150
+   ],
+   [
+    "onion",
+    40
+   ],
+   [
+    "tomato",
+    50
+   ],
+   [
+    "oil",
+    8
+   ],
+   [
+    "roti",
+    80
+   ]
+  ],
+  "extras": [
+   "salt",
+   "turmeric",
+   "green chilli"
+  ],
+  "steps": [
+   "Fry the onion in the oil, add tomato and spices.",
+   "Pour in beaten eggs and scramble until set.",
+   "Serve with rotis."
+  ]
+ },
+ {
+  "id": "paneer_tikka_salad",
+  "name": "Paneer tikka salad",
+  "slot": "main",
+  "minutes": 20,
+  "art": "bowl",
+  "items": [
+   [
+    "paneer",
+    120
+   ],
+   [
+    "curd",
+    50
+   ],
+   [
+    "cucumber",
+    80
+   ],
+   [
+    "tomato",
+    60
+   ],
+   [
+    "oil",
+    5
+   ]
+  ],
+  "extras": [
+   "salt",
+   "red chilli",
+   "garam masala",
+   "lemon"
+  ],
+  "steps": [
+   "Marinate paneer cubes in curd and spices for 10 minutes.",
+   "Pan-grill in the oil until lightly charred.",
+   "Serve over chopped cucumber and tomato with lemon."
+  ]
+ },
+ {
+  "id": "whey_milk_shake",
+  "name": "Whey & milk shake",
+  "slot": "snack",
+  "minutes": 3,
+  "art": "glass",
+  "items": [
+   [
+    "whey",
+    25
+   ],
+   [
+    "milk",
+    250
+   ]
+  ],
+  "extras": [],
+  "steps": [
+   "Blend or shake the whey powder with cold milk until smooth."
+  ]
+ },
+ {
+  "id": "curd_almonds",
+  "name": "Curd with almonds",
+  "slot": "snack",
+  "minutes": 3,
+  "art": "bowl",
+  "items": [
+   [
+    "curd",
+    200
+   ],
+   [
+    "almonds",
+    20
+   ]
+  ],
+  "extras": [
+   "pinch of salt or honey (optional)"
+  ],
+  "steps": [
+   "Spoon the curd into a bowl.",
+   "Top with chopped almonds."
+  ]
+ },
+ {
+  "id": "chickpea_salad",
+  "name": "Chickpea chaat",
+  "slot": "snack",
+  "minutes": 8,
+  "art": "bowl",
+  "items": [
+   [
+    "chana_cooked",
+    150
+   ],
+   [
+    "onion",
+    20
+   ],
+   [
+    "tomato",
+    40
+   ],
+   [
+    "cucumber",
+    50
+   ]
+  ],
+  "extras": [
+   "salt",
+   "chaat masala",
+   "lemon"
+  ],
+  "steps": [
+   "Mix the boiled chickpeas with chopped onion, tomato and cucumber.",
+   "Season with chaat masala, salt and lemon."
+  ]
+ },
+ {
+  "id": "pb_toast",
+  "name": "Peanut butter toast",
+  "slot": "snack",
+  "minutes": 3,
+  "art": "toast",
+  "items": [
+   [
+    "peanut_butter",
+    30
+   ],
+   [
+    "bread_wheat",
+    60
+   ]
+  ],
+  "extras": [],
+  "steps": [
+   "Toast the bread.",
+   "Spread the peanut butter on top."
+  ]
+ },
+ {
+  "id": "boiled_eggs_fruit",
+  "name": "Boiled eggs & apple",
+  "slot": "snack",
+  "minutes": 12,
+  "art": "egg",
+  "items": [
+   [
+    "egg",
+    100
+   ],
+   [
+    "apple",
+    150
+   ]
+  ],
+  "extras": [
+   "salt",
+   "black pepper"
+  ],
+  "steps": [
+   "Boil the eggs for 8-9 minutes, cool and peel.",
+   "Season and eat with a sliced apple."
+  ]
+ },
+ {
+  "id": "peanuts_banana",
+  "name": "Roasted peanuts & banana",
+  "slot": "snack",
+  "minutes": 2,
+  "art": "bowl",
+  "items": [
+   [
+    "peanuts",
+    30
+   ],
+   [
+    "banana",
+    110
+   ]
+  ],
+  "extras": [],
+  "steps": [
+   "Eat the peanuts with the banana."
+  ]
+ },
+ {
+  "id": "greek_yogurt_walnuts",
+  "name": "Greek yogurt with walnuts",
+  "slot": "snack",
+  "minutes": 2,
+  "art": "bowl",
+  "items": [
+   [
+    "greek_yogurt",
+    150
+   ],
+   [
+    "walnuts",
+    20
+   ]
+  ],
+  "extras": [],
+  "steps": [
+   "Spoon the yogurt into a bowl and top with chopped walnuts."
+  ]
+ },
+ {
+  "id": "sprouts_paneer_chaat",
+  "name": "Sprouts & paneer chaat",
+  "slot": "snack",
+  "minutes": 15,
+  "art": "bowl",
+  "items": [
+   [
+    "sprouts",
+    150
+   ],
+   [
+    "paneer",
+    50
+   ],
+   [
+    "onion",
+    30
+   ],
+   [
+    "tomato",
+    50
+   ],
+   [
+    "cucumber",
+    50
+   ]
+  ],
+  "extras": [
+   "salt",
+   "chaat masala",
+   "lemon"
+  ],
+  "steps": [
+   "Steam the sprouts for 5 minutes (or use them raw if you prefer).",
+   "Mix with cubed paneer and chopped onion, tomato and cucumber.",
+   "Season with chaat masala, salt and lemon."
+  ]
+ }
+]

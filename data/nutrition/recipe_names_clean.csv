@@ -1,0 +1,1015 @@
+recipe_code_org,recipe_code,recipe_name_org,recipe_name,primarysource
+5.1,ASC001,Hot Tea,Hot tea (Garam Chai),asc_manual
+5.2,ASC002,Instant Coffee,Instant coffee,asc_manual
+5.3,ASC003,Espreso coffee,Espreso coffee,asc_manual
+5.4,ASC004,Iced Tea,Iced tea,asc_manual
+5.5,ASC005,Raw Mango Panna ,Raw mango drink (Aam panna),asc_manual
+5.6,ASC006,Fruit Punch ( with fresh juices ),Fruit Punch (with fresh juices),asc_manual
+5.7,ASC007,Fruit Punch ( with squashes ),Fruit Punch (with squashes),asc_manual
+5.8,ASC008,Lemonade,Lemonade,asc_manual
+5.8.a,ASC009,Lem-o-gin,Lem-o-gin,asc_manual
+5.9,ASC010,Zeera Pani,Cumin infused water (Jeere/Zeere ka pani),asc_manual
+5.1,ASC011,Coco pine cooler,Coco pine cooler,asc_manual
+5.11,ASC012,Summer Cooler,Summer cooler,asc_manual
+5.13,ASC014,Hot cocoa,Hot cocoa,asc_manual
+5.14,ASC015,Cold coffee with Ice cream,Cold coffee with ice cream,asc_manual
+5.15,ASC016,Banana Milkshake ,Banana milkshake (Kele milkshake),asc_manual
+5.15 a,ASC017,Mango Milkshake ,Mango milkshake (Aam milkshake),asc_manual
+5.15 b,ASC018,Pineapple Milkshake,Pineapple milkshake (Ananas milkshake),asc_manual
+5.15 c,ASC019,Orange Milkshake ,Orange milkshake (Narangi milkshake),asc_manual
+5.16,ASC020,Egg Nog,Egg nog,asc_manual
+5.17,ASC021,Lassi (Sweet),Sweet Lassi (Meethi lassi),asc_manual
+5.17 a,ASC022,Lassi (Salted),Lassi (salted),asc_manual
+6.1,ASC023,Cheese and Chilli sandwich ,Cheese and chilli sandwich ,asc_manual
+6.2,ASC024,Egg Sandwich,Egg sandwich (Ande ka sandwich),asc_manual
+6.3,ASC025,Cucumber sandwich,Cucumber sandwich (Kheere ka sandwich),asc_manual
+6.4,ASC026,Cheese and Pineapple sandwich,Cheese and pineapple sandwich (Cheese aur ananas ka sandwich),asc_manual
+6.5,ASC027,Cheese and Tomato sandwich ,Cheese and tomato sandwich (Cheese aur tamatar ke sandwich),asc_manual
+6.6,ASC028,Chicken sandwich,Chicken sandwich,asc_manual
+6.7,ASC029,Peanut and Tomato sandwich ,Peanut and tomato sandwich (Moongfali aur tamatar ka sandwich),asc_manual
+6.8,ASC030,Rainbow sandwich,Rainbow sandwich,asc_manual
+6.9,ASC031,Club sandwich ,Club sandwich ,asc_manual
+6.9 a,ASC032,Vegetarian club sandwich ,Vegetarian club sandwich,asc_manual
+6.1,ASC033,Pin Wheel sandwich ,Pin wheel sandwich,asc_manual
+6.11,ASC034,Carrot Apple sandwich,Carrot apple sandwich (Gajar aur seb ka sandwich),asc_manual
+6.12,ASC035,Salami sandwich ,Salami sandwich,asc_manual
+6.13,ASC036,Vegetable and mayonnaise sandwich,Vegetable and mayonnaise sandwich,asc_manual
+6.14,ASC037,Egg and tomato sandwich ,Egg and tomato sandwich (Ande aur tamatar ka sandwich),asc_manual
+6.15,ASC038,Sweet open sandwich,Sweet open sandwich,asc_manual
+6.16,ASC039,Mushroom and cheese toast sandwich ,Mushroom and cheese sandwich (toasted),asc_manual
+6.17,ASC040,Tomato and cheese toasted sandwich ,Cheese and tomato sandwich (toasted) (Cheese aur tamatar ke sandwich (toasted)),asc_manual
+6.18,ASC041,Pea Potato toasted sandwich ,Pea potato sandwich (toasted) (Matar aloo ka sandwich),asc_manual
+6.18 a,ASC042,Paneer pea toasted sandwich,Paneer pea sandwich (toasted) (Paneer matar ka sandwich),asc_manual
+6.18 b,ASC043,Chicken toasted sandwich,Chicken sandwich (toasted),asc_manual
+6.18 c,ASC044,Pea keema toasted sandwich,Pea keema sandwich (toasted) (Matar aur keema ka sandwich),asc_manual
+6.19,ASC045,Classic club sandwich,Classic club sandwich,asc_manual
+6.2,ASC046,Sesame taost,Sesame toast,asc_manual
+7.1,ASC047,Cracked Wheat porridge ,Cracked wheat porridge (Meetha daliya),asc_manual
+7.2,ASC048,Semolina Porridge,Semolina porridge (Suji/Rava daliya),asc_manual
+7.4,ASC050,Oatmeal Porridge,Oatmeal Porridge,asc_manual
+7.5 a,ASC051,Cornflakes,Cornflakes with milk,asc_manual
+7.5 b,ASC052,Rice Flakes,Rice flakes (Chiwda/Aval),asc_manual
+7.5 c,ASC053,Wheat Flakes,Wheat flakes,asc_manual
+7.5 d,ASC054,Murmura (puffed rice),Murmura (Puffed rice),asc_manual
+7.5 e,ASC055,Puffed Wheat,Puffed wheat (Murmure/Moori),asc_manual
+7.6,ASC056,Boiled Egg,Boiled egg (Ubla anda),asc_manual
+7.7,ASC057,Fried Egg,Fried Egg ,asc_manual
+7.8,ASC058,Poached Egg,Poached egg,asc_manual
+7.9,ASC059,Scrambled Egg,Scrambled egg (Ande ki bhurji),asc_manual
+7.1,ASC060,Baked Egg,Baked egg ,asc_manual
+7.11,ASC061,Plain Omelette,Plain omelette/omlet,asc_manual
+7.12,ASC062,Stuffed Egg Omelette,Stuffed egg omelette/omlet,asc_manual
+7.13,ASC063,Pancakes,Pancake,asc_manual
+7.14,ASC064,Keema Pancake layer,Keema pancake,asc_manual
+7.15,ASC065,Vegetable pancake,Vegetable pancake,asc_manual
+7.16,ASC066,Jam and Fruit pancake,Jam and fruit pancake,asc_manual
+7.17,ASC067,Khoa and coconut pancake,Khoa and coconut pancake,asc_manual
+8.1,ASC068,Brown stock,Brown stock,asc_manual
+8.2,ASC069,Vegetable stock,Vegetable stock,asc_manual
+8.3,ASC070,Chicken stock,Chicken stock,asc_manual
+8.4,ASC071,White sauce ( Thin),White sauce (thin),asc_manual
+8.4,ASC072,White sauce (Medium),White sauce (medium),asc_manual
+8.4,ASC073,White sauce (Thick),White sauce (thick),asc_manual
+8.4 a,ASC074,Cheese Sauce,Cheese sauce,asc_manual
+8.4 b,ASC075,Egg Sauce,Egg sauce,asc_manual
+8.4 c,ASC076,Mushroom sauce,Mushroom sauce,asc_manual
+8.4 d,ASC077,Mustard Sauce,Mustard sauce,asc_manual
+8.5,ASC078,Brown Sauce,Brown sauce,asc_manual
+8.6,ASC079,Clear Tomato Soup,Clear tomato soup (Tamatar ka soup),asc_manual
+8.7,ASC080,Lentil Soup,Lentil soup,asc_manual
+8.8,ASC081,Chicken consomme (Clear chicken soup),Chicken consomme (Clear chicken soup),asc_manual
+8.9,ASC082,Cream of tomato soup,Cream of tomato soup,asc_manual
+8.1,ASC083,Cream of green peas,Cream of green peas soup,asc_manual
+8.11,ASC084,Cream of spinach soup,Cream of spinach soup,asc_manual
+8.12,ASC085,Cream of Mixed vegetable soup,Cream of mixed vegetable soup,asc_manual
+8.13,ASC086,Cream of Mushroom soup,Cream of mushroom soup,asc_manual
+8.14,ASC087,Chicken sweet corn soup,Chicken sweet corn soup,asc_manual
+8.15,ASC088,Minestrone soup,Minestrone soup,asc_manual
+8.16,ASC089,Egg drop soup,Egg drop soup,asc_manual
+8.17,ASC090,Chinese cabbage and meat ball soup,Chinese cabbage and meat ball soup,asc_manual
+8.18,ASC091,French Onion soup,French onion soup,asc_manual
+8.19,ASC092,Hot and Sour soup,Hot and sour soup,asc_manual
+8.2,ASC093,Talaumein soup,Talaumein soup,asc_manual
+8.21,ASC094,Cold cucumber soup,Cold cucumber soup (Thanda kheere ka soup),asc_manual
+8.22,ASC095,Cold summer garden soup,Cold summer garden soup,asc_manual
+9.1,ASC096,Chapatis,Chapati/Roti,asc_manual
+9.2,ASC097,Plain Parantha,Plain parantha/paratha,asc_manual
+9.3,ASC098,Potato Parantha,Potato parantha/paratha (Aloo ka parantha/paratha),asc_manual
+9.3.a,ASC099,Radish Parantha,Radish parantha/paratha (Mooli ka parantha/paratha),asc_manual
+9.3.b,ASC100,Cauliflower Parantha,Cauliflower parantha/paratha (Phoolgobhi ka parantha/paratha),asc_manual
+9.3.c,ASC101,Dal Parantha,Dal parantha/paratha,asc_manual
+9.3.d,ASC102,Sprouted Dal Parantha,Sprouted moong parantha/paratha,asc_manual
+9.3.e,ASC103,Pea Parantha,Pea parantha/paratha (Matar ka parantha/paratha),asc_manual
+9.3.f,ASC104,Keema Parantha,Keema parantha/paratha,asc_manual
+9.3.g,ASC105,Paneer Parantha,Paneer parantha/paratha,asc_manual
+9.4,ASC106,Besan and Spinach Parantha,Besan and spinach parantha/paratha (Besan aur palak ka parantha/paratha),asc_manual
+9.5,ASC107,Poories,Poori,asc_manual
+9.6,ASC108,Spinach poories,Spinach poori (Palak poori),asc_manual
+9.6,ASC109,Methi poories,Methi poori,asc_manual
+9.7,ASC110,Dal stuffed poories,Dal stuffed poori,asc_manual
+9.8,ASC111,Potato stuffed poories,Potato stuffed poori (Aloo ki poori),asc_manual
+9.9,ASC112,Tandoori Parantha,Tandoori parantha/paratha,asc_manual
+9.1,ASC113,BOILED RICE,Boiled rice (Uble chawal),asc_manual
+9.11,ASC114,Plain Pulao,Plain pulao,asc_manual
+9.12,ASC115,Mixed vegetable Pulao,Mixed vegetable pulao,asc_manual
+9.13,ASC116,Mushroom Pulao,Mushroom pulao,asc_manual
+9.14,ASC117,Sprouted Moong Pulao,Sprouted moong pulao,asc_manual
+9.15,ASC118,Paneer Pulao,Paneer pulao,asc_manual
+9.16,ASC119,Peanut Pulao,Peanut pulao ,asc_manual
+9.17,ASC120,Navratan Pulao,Navratan pulao,asc_manual
+9.18,ASC121,Cholia Pulao,Green chickpeas pulao (Choliya pulao/Hare chane ka pulao),asc_manual
+9.19,ASC122,Mutton Biryani,Mutton biryani/biriyani,asc_manual
+9.2,ASC123,Vegetable Biryani,Vegetable biryani/biriyani,asc_manual
+9.21,ASC124,Lemon Rice,"Lemon rice (Pulihora, Elumichai sadam, Chitranna)",asc_manual
+9.22,ASC125,Sweet Rice,Sweet rice (Meethe chawal),asc_manual
+9.23,ASC126,Curd Rice,Curd rice (Dahi bhaat/Dahi chawal/ Perugu annam/Daddojanam/Thayir saadam),asc_manual
+9.24,ASC127,Tamarind Rice,Tamarind rice (Chintapandu pulihora/Puliyodharai/Puli sadam/Huli anna),asc_manual
+9.25,ASC128,Spanish Rice,Spanish rice,asc_manual
+9.26,ASC129,Chinese fried rice,Chinese fried rice,asc_manual
+9.27,ASC130,Classic italian pasta,Classic italian pasta,asc_manual
+9.28,ASC131,Pasta Spinach Sauce,Pasta spinach sauce,asc_manual
+9.29,ASC132,Pasta Cheese sauce,Pasta cheese sauce,asc_manual
+9.3,ASC133,Macroni cheese pie,Macroni cheese pie,asc_manual
+9.31,ASC134,Vegetable Chowmein,Vegetable chowmein,asc_manual
+9.32,ASC135,Chicken Chowmein,Chicken chowmein,asc_manual
+9.33,ASC136,Cheese noodle ring,Cheese noodle ring,asc_manual
+9.34,ASC137,Spaghetti and cheese balls in tomato sauce,Spaghetti and cheese balls in tomato sauce,asc_manual
+9.35,ASC138,Penne platter,Penne platter,asc_manual
+9.36,ASC139,Pasta hot pot,Pasta hot pot,asc_manual
+9.37,ASC140,Chicken lasagne,Chicken lasagne,asc_manual
+9.38,ASC141,Fettuccine with spinach sauce,Fettuccine with spinach sauce,asc_manual
+9.39,ASC142,Naan,Naan,asc_manual
+9.4,ASC143,BHATURA,Bhatura,asc_manual
+9.41,ASC144,Idli,Idli,asc_manual
+9.43,ASC146,Masala Dosa,Masala dosa,asc_manual
+9.44,ASC147,Rava Dosa,Semolina dosa (Suji/Rava dosa),asc_manual
+9.45,ASC148,Onion tomato Uttapam,Onion tomato uttapam,asc_manual
+9.46,ASC149,Paneer kaathi Roll,Paneer kaathi roll,asc_manual
+9.47,ASC150,Makki ki roti,Makki ki roti,asc_manual
+10.1,ASC151,Washed Moong dal ,Washed moong dal (Dhuli moong ki dal),asc_manual
+10.2,ASC152,Washed Urad dal,Washed urad dal (Dhuli urad ki dal),asc_manual
+10.3,ASC153,Channa dal with ghia,Split bengal gram with bottle gourd (Channa dal with ghiya/lauki),asc_manual
+10.4,ASC154,Dry Washed Urad,Dry washed urad,asc_manual
+10.5,ASC155,Mixed Dal,Mixed dal,asc_manual
+10.6 a,ASC156,Whole Moong,Whole moong (Moong ki dal),asc_manual
+10.6 b,ASC157,Whole Masoor,Whole masoor (Masoor ki dal),asc_manual
+10.6 c,ASC158,Whole Moth,Whole moth (Moth ki dal),asc_manual
+10.6 d,ASC159,Whole Urad,Whole urad (Urad ki dal),asc_manual
+10.7,ASC160,Moti Mahal Dal,Moti mahal dal (Urad rajmah mix dal),asc_manual
+10.8,ASC161,Black channa curry,Black channa curry/Bengal gram curry (Kale chane ki curry),asc_manual
+10.8 a,ASC162,White Channa curry,Chickpeas curry (Safed channa curry),asc_manual
+10.8 b,ASC163,Lobia curry,Lobia curry,asc_manual
+10.8 c,ASC164,Soyabean curry,Soyabean curry,asc_manual
+10.8 d,ASC165,Rajmah curry,Kidney bean curry (Rajmah curry),asc_manual
+10.1,ASC167,Sambar,Sambar,asc_manual
+10.11,ASC168,Kadhi,Besan kadhi with pakodies,asc_manual
+10.12,ASC169,Khatta Channa,Khatta channa,asc_manual
+10.13,ASC170,Sprouted pulse chat,Sprouted moong dal chat,asc_manual
+11.1,ASC171,Aloo Gobhi,Potato cauliflower (Aloo gobhi),asc_manual
+11.2,ASC172,Aloo capsicum,Potato capsicum (Shimla mirch aloo),asc_manual
+11.3,ASC173,Cabbage and peas,Cabbage and peas (Pattagobhi aur matar),asc_manual
+11.4,ASC174,Gajar methi,Carrot and fenugreek leaves (Gajar methi),asc_manual
+11.5,ASC175,Alu Methi,Potato fenugreek (Aloo methi),asc_manual
+11.7,ASC177,Brinjal Bhurtha,Brinjal bhartha (Baingan ka bhartha),asc_manual
+11.8,ASC178,Dry Aloo,Dry potato (Sookhe aloo),asc_manual
+11.9,ASC179,Beans with coconut,Beans with coconut (Nariyal aur sem/phali; Beans thoran),asc_manual
+11.9 a,ASC180,Cauliflower with coconut,Cauliflower with coconut (Nariyal ke saath phoolgobhi),asc_manual
+11.9 b,ASC181,Carrot and cabbage with coconut,Carrot and cabbage with coconut (Nariyal ke saath pattagobhi aur gajar),asc_manual
+11.9 c,ASC182,Raw turnip with coconut,Raw turnip with coconut ,asc_manual
+11.9 c,ASC183,Raw papaya with coconut,Raw papaya with coconut (Papaya thoran),asc_manual
+11.1,ASC184,Stuffed bhindi,Stuffed okra (Bharwa bhindi),asc_manual
+11.11,ASC185,Stuffed Tinda,Stuffed round gourd (Bharwa tinde),asc_manual
+11.12,ASC186,Stuffed Capsicum,Stuffed capsicum (Bharwa shimla mirch),asc_manual
+11.13,ASC187,Stuffed Brinjal,Stuffed brinjal (Bharwa baingan),asc_manual
+11.15,ASC189,Stuffed Tomatoes,Stuffed tomatoes (Bharwa tamatar),asc_manual
+11.16,ASC190,Pea Potato Curry,Pea potato curry (Aloo matar),asc_manual
+11.16 a,ASC191,Pea Paneer curry,Pea paneer curry (Matar paneer),asc_manual
+11.16 b,ASC192,Pea Mushroom curry,Pea mushroom curry (Matar mushroom),asc_manual
+11.16 c,ASC193,Pea Curry,Pea curry (Matar ki sabzi),asc_manual
+11.16 d,ASC194,Pea Vadi curry,Pea vadi curry,asc_manual
+11.16 e,ASC195,Paneer Curry,Paneer curry,asc_manual
+11.16 f,ASC196,Kamal kakdi curry,Lotus stem curry (Kamal kakdi curry),asc_manual
+11.17,ASC197,Gravy for Kofta,Gravy for kofta,asc_manual
+11.18,ASC198,Pea Kofta curry,Pea kofta curry (Matar kofta curry),asc_manual
+11.19,ASC199,Spinach kofta curry,Spinach kofta curry (Palak kofta curry),asc_manual
+11.2,ASC200,Paneer kofta curry,Paneer kofta curry,asc_manual
+11.21,ASC201,Kamal kakri kofta curry,Lotus stem kofta curry (Kamal kakdi kofta curry),asc_manual
+11.22,ASC202,Raw Banana Kofta Curry,Raw banana kofta curry (Kela kofta curry),asc_manual
+11.23,ASC203,Cauliflower Kofta Curry,Cauliflower kofta curry (Phoolgobhi kofta curry),asc_manual
+11.24,ASC204,Cabbage Kofta Curry,Cabbage kofta curry (Pattagobhi kofta curry),asc_manual
+11.25,ASC205,Ghiya Kofta Curry,Ghiya/Lauki Kofta Curry,asc_manual
+11.26,ASC206,Spinach Paneer Kofta Curry,Spinach paneer kofta curry (Palak paneer kofta curry),asc_manual
+11.27,ASC207,Vegetarian Egg Kofta Curry,Vegetarian egg kofta curry,asc_manual
+11.28,ASC208,Baked Vegetables,Baked vegetables,asc_manual
+11.29,ASC209,Gobhi Musallam,Cauliflower musallam (Phoolgobhi musallam),asc_manual
+11.3,ASC210,Baked Vegetable with spinach,Baked vegetables with spinach ,asc_manual
+11.31,ASC211,Baked potato with skin,Baked potato with skin ,asc_manual
+11.32,ASC212,Shepherd's Pie,Shepherd's pie (vegetarian),asc_manual
+11.33,ASC213,Baked brinjal in tomato sauce,Baked brinjal in tomato sauce,asc_manual
+11.34,ASC214,Dum Aloo,Dum aloo,asc_manual
+11.35,ASC215,Palak Paneer,Spinach paneer (Palak paneer),asc_manual
+11.36,ASC216,Methi Chaman,Methi chaman,asc_manual
+11.37,ASC217,Sarson Ka Saag,Sarson ka saag,asc_manual
+11.38,ASC218,Kathal sabzi,Jackfruit sabzi (Kathal ki sabzi),asc_manual
+11.39,ASC219,Avial,Avial,asc_manual
+11.4,ASC220,Ala Yakhani,Al yakhani,asc_manual
+11.41,ASC221,Shahi Paneer,Shahi paneer,asc_manual
+11.42,ASC222,Paneer in butter sauce,Paneer in butter sauce,asc_manual
+11.43,ASC223,Methi Malai Paneer,Methi malai paneer,asc_manual
+11.44,ASC224,Chilli paneer,Chilli paneer,asc_manual
+11.45,ASC225,Paneer Makhana korma,Paneer makhana korma,asc_manual
+11.46,ASC226,Kadai Paneer,Kadhai Paneer,asc_manual
+12.1,ASC227,Roghan Josh,Roghan josh,asc_manual
+12.2,ASC228,Palak Mutton,Spinach mutton (Palak mutton),asc_manual
+12.3,ASC229,Pea Keema Curry,Pea keema curry (Matar keema ki sabzi),asc_manual
+12.4,ASC230,Keema Kofta Curry,Keema kofta curry,asc_manual
+12.5,ASC231,Gushtaba (Kashmiri Mutton Koftas),Kashmiri mutton koftas (Gushtaba),asc_manual
+12.6,ASC232,Mutton Yakhni,Mutton yakhni,asc_manual
+12.6 a,ASC233,Chicken Yakhni,Chicken yakhni,asc_manual
+12.7,ASC234,Mutton Do Piaza,Mutton do piaza,asc_manual
+12.9,ASC236,Mutton Chops,Mutton chops,asc_manual
+12.1,ASC237,Shammi Kebab,Shammi kebab,asc_manual
+12.11,ASC238,Scotch Egg,Scotch egg,asc_manual
+12.13,ASC240,Chicken Curry,Chicken curry,asc_manual
+12.14,ASC241,Tandoori Chicken,Tandoori chicken,asc_manual
+12.15,ASC242,Butter Chicken,Butter chicken,asc_manual
+12.16,ASC243,Chicken Kabab,Chicken kebab,asc_manual
+12.17,ASC244,Chilli Chicken,Chilli chicken,asc_manual
+12.18,ASC245,Fried Chicken with Tomato Sauce,Fried chicken with tomato sauce (Fried chicken tamatar ki chutney kay saath),asc_manual
+12.19,ASC246,Fish Curry,Fish curry (Machli curry),asc_manual
+12.2,ASC247,Fried Fish (Indian Style),Fried fish (Indian style) (Tali hui machli),asc_manual
+12.21,ASC248,Fried Fish and Chips (English Style),Fried fish and Chips (English Style) (Tali hui machli aur chips),asc_manual
+12.22,ASC249,Tomato Fish,Tomato fish,asc_manual
+12.23,ASC250,Baked Fish with Cheese Sauce,Baked fish with cheese sauce,asc_manual
+12.24,ASC251,Fish Tikka,Fish tikka,asc_manual
+12.25,ASC252,Tandoori Fish,Tandoori fish,asc_manual
+13.1,ASC253,"Paneer, Apple and Pineapple Salad","Paneer, apple and pineapple salad",asc_manual
+13.2,ASC254,Russian Salad,Russian salad,asc_manual
+13.3,ASC255,Pasta Salad,Pasta salad,asc_manual
+13.4,ASC256,Devilled Egg,Deviled egg,asc_manual
+13.5,ASC257,Hawain Salad,Hawain salad,asc_manual
+13.6,ASC258,Mixed Pulse and vegetable salad,Mixed pulse and vegetable salad,asc_manual
+13.7,ASC259,Sprouted Moong salad,Sprouted moong salad ,asc_manual
+13.8,ASC260,Tossed Salad,Tossed salad,asc_manual
+13.9,ASC261,Mixed Vegetable salad with Curd Sauce,Mixed vegetable salad with curd sauce,asc_manual
+13.1,ASC262,Potato Salad,Potato salad (Aloo ka salaad),asc_manual
+13.11,ASC263,Waldroff Salad,Waldroff salad,asc_manual
+13.12,ASC264,Coleslaw,Coleslaw,asc_manual
+13.13,ASC265,Fruit Salad,Fruit salad (Phalon ka salaad),asc_manual
+13.14,ASC266,Mayonnaise,Mayonnaise,asc_manual
+13.15,ASC267,Low Calorie Quick Mayonnaise,Low calorie quick mayonnaise,asc_manual
+13.16,ASC268,Thousand Island Dressing,Thousand island dressing,asc_manual
+13.17,ASC269,Tomato Onion Raita,Tomato onion raita (Tamatar aur pyaaz ka raita),asc_manual
+13.17 a,ASC270,Peanut Raita,Peanut raita (Mungfali ka raita),asc_manual
+13.17 b,ASC271,Sprouted Moong Raita,Sprouted moong raita ,asc_manual
+13.17 c,ASC272,Lauki Raita,Bottle gourd raita (Ghiya/Lauki ka raita),asc_manual
+13.17 d,ASC273,Cucumber Raita,Cucumber raita (Kheere ka raita),asc_manual
+13.17 e,ASC274,Carrot and Spinach Raita,Carrot and spinach raita (Gajar aur palak ka raita),asc_manual
+13.17 f,ASC275,Mint Raita,Mint raita (Pudinay ka raita),asc_manual
+13.17 g,ASC276,Potato Raita,Potato raita (Aloo ka raita),asc_manual
+13.18,ASC277,Boondi Raita,Boondi raita,asc_manual
+13.19,ASC278,Sweet Raita,Sweet raita (Meetha raita),asc_manual
+13.2,ASC279,Dahi Vadas,Dahi vadas/Dahi bhalla,asc_manual
+13.21,ASC280,Gunjia,Gunjia,asc_manual
+13.22,ASC281,Saunth,Saunth/Sonth chutney with tamarind/imli,asc_manual
+14.1,ASC282,Rice Kheer,Rice kheer (Chawal ki kheer),asc_manual
+14.2,ASC283,Makhana Kheer,Makhana kheer,asc_manual
+14.3,ASC285,Vermicelli Kheer,Vermicelli kheer (Semiya/Seviyan ki kheer),asc_manual
+14.4,ASC286,Semolina Kheer,Semolina kheer (Suji/Rava kheer),asc_manual
+14.5,ASC287,Paneer Kheer,Paneer kheer,asc_manual
+14.6,ASC288,Cabbage Kheer,Cabbage kheer (Pattagobhi ki kheer),asc_manual
+14.7,ASC289,Carrot Kheer,Carrot kheer (Gajar ki kheer),asc_manual
+14.8,ASC290,Cauliflower Kheer,Cauliflower kheer (Phoolgobhi ki kheer),asc_manual
+14.9,ASC291,Moong Dal Kheer,Moong dal kheer,asc_manual
+14.1,ASC292,Phirni,Phirni,asc_manual
+14.11,ASC293,Suji Halwa,Semolina halwa (Suji ka halwa),asc_manual
+14.12,ASC294,Shahi Suji Halwa,Shahi suji halwa,asc_manual
+14.13,ASC295,Carrot Halwa,Carrot halwa (Gajar ka halwa),asc_manual
+14.14,ASC296,Egg Halwa,Egg halwa (Ande ka halwa),asc_manual
+14.15,ASC297,Potato Halwa,Potato halwa (Aloo ka halwa),asc_manual
+14.16,ASC298,Pumpkin Halwa,Pumpkin halwa (Kaddu ka halwa),asc_manual
+14.17,ASC299,Moong Dal Halwa,Moong dal halwa,asc_manual
+14.18,ASC300,Steamed Caramel Custard,Caramel custard (steamed),asc_manual
+14.19,ASC301,Baked Custard,Baked custard,asc_manual
+14.2,ASC302,Soft Custard (stirred),Soft Custard (stirred),asc_manual
+14.21 a,ASC304,Chocolate Ice Cream,Chocolate ice cream,asc_manual
+14.21 b,ASC305,Mango Ice Cream,Mango ice cream,asc_manual
+14.23,ASC307,Fruit Ice Cream,Fruit Ice cream (Phalon ka Ice cream),asc_manual
+14.24,ASC308,Caramel Ice Cream,Caramel ice cream,asc_manual
+14.25,ASC309,Lemon Souffle,Lemon souffle,asc_manual
+14.25 a,ASC310,Orange Souffle,Orange souffle,asc_manual
+14.25 b,ASC311,Vanilla Souffle,Vanilla souffle,asc_manual
+14.25 c,ASC312,Chocolate Souffle,Chocolate souffle,asc_manual
+14.25 d,ASC313,Pineapple Souffle,Pineapple souffle ,asc_manual
+14.26,ASC314,Apple Mousse,Apple mousse,asc_manual
+14.27,ASC315,Rich Chocolate Mousse,Rich chocolate mousse,asc_manual
+14.28,ASC316,Mango Mousse,Mango mousse,asc_manual
+14.29,ASC317,Orange and Pineapple Cream,Orange and pineapple cream,asc_manual
+14.3,ASC318,Charlotte Rousse,Charlotte rousse,asc_manual
+14.31,ASC319,Triffle Pudding,Triffle pudding,asc_manual
+14.32,ASC320,Snow Flakes Pudding,Snow flakes pudding,asc_manual
+14.33,ASC321,Kulfi,Kulfi,asc_manual
+14.34,ASC322,Steamed Orange Pudding,Steamed orange pudding,asc_manual
+14.35,ASC323,Meringue and Rice Pudding,Meringue and rice pudding,asc_manual
+14.36,ASC324,Cheese Pudding,Cheese pudding,asc_manual
+14.37,ASC325,Chocolate Pudding,Chocolate pudding,asc_manual
+14.38,ASC326,Bread and Butter Pudding,Bread and butter pudding ,asc_manual
+14.39,ASC327,Queen Of Pudding,Queen of pudding,asc_manual
+14.4,ASC328,Pineapple Upside Down Pudding,Pineapple upside down pudding,asc_manual
+14.41,ASC329,Date and Nut Pie,Date and nut pie,asc_manual
+14.42,ASC330,Stewed Apple with Custard,Stewed apple with custard,asc_manual
+14.43,ASC331,Apple Snowballs,Apple snowballs,asc_manual
+14.44,ASC332,Hot Orange Souffle,Hot orange souffle,asc_manual
+14.44 a,ASC333,Hot Chocolate Souffle,Hot chocolate souffle,asc_manual
+14.44 b,ASC334,Hot Vanilla Souffle,Hot vanilla souffle,asc_manual
+15.1,ASC335,Plain Burfi,Plain burfi (Burfi),asc_manual
+15.2,ASC336,Coconut Burfi,Coconut burfi (Nariyal ki burfi),asc_manual
+15.3,ASC337,Ghia Burfi,Bottle gourd burfi (Ghiya/Lauki burfi),asc_manual
+15.4,ASC338,Chocolate Burfi,Chocolate burfi,asc_manual
+15.5,ASC339,Kaju Burfi,Cashewnut burfi (Kaju burfi/Kaju katli),asc_manual
+15.6,ASC340,Besan Burfi,Gram flour burfi (Besan burfi),asc_manual
+15.7,ASC341,Suji Ladoo with Khoya,Semolina ladoo with khoya (Suji/Rava aur khoye ke ladoo ),asc_manual
+15.8,ASC342,Suji Ladoo with Coconut,Semolina ladoo with coconut (Suji/Rava aur nariyal ke ladoo ),asc_manual
+15.9,ASC343,Besan Ladoo,Gram flour ladoo (Besan ladoo),asc_manual
+15.1,ASC344,Til Ladoo,Sesame ladoo (Til ke ladoo),asc_manual
+15.11,ASC345,Chenna Murki,Chenna murki,asc_manual
+15.12,ASC346,Milk Cake,Milk cake,asc_manual
+15.13,ASC347,Gujia/Lavang latika,Ghujia/Lavang latika,asc_manual
+15.14,ASC348,Gulab Jamun,Gulab Jamun with khoya,asc_manual
+15.15,ASC349,Mal Pura,Mal pua,asc_manual
+15.16,ASC350,Shahi Tukre,Shahi tukre,asc_manual
+16.1,ASC351,Potato Pakoda,Potato pakora/pakoda (Aloo pakoda),asc_manual
+16.1 a,ASC352,Onion Pakora,Onion pakora/pakoda (Pyaaz ke pakode),asc_manual
+16.1 b,ASC353,Cauliflower Pakoras,Cauliflower pakora/pakoda (Phoolgobhi ke pakode),asc_manual
+16.1 c,ASC354,Mixed Vegetable Pakoras,Mixed vegetable pakora/pakoda,asc_manual
+16.1 d.1,ASC355,Spinach Pakoras,Spinach pakora/pakoda (Palak pakoda),asc_manual
+16.1 d.2,ASC356,Methi Pakoras,Methi pakora/pakoda (Methi ke pakode),asc_manual
+16.1 e,ASC357,Egg Pakoras,Egg pakora/pakoda (Ande ke pakode),asc_manual
+16.1 f,ASC358,Bread Pakoras,Bread pakora/pakoda,asc_manual
+16.2,ASC359,Paneer Pakoras,Paneer pakora/pakoda,asc_manual
+16.3,ASC360,Potato Bonda,Potato bonda (Aloo bonda),asc_manual
+16.4 a,ASC361,Samosa - Potato Filling,Potato samosa (Aloo ka samosa),asc_manual
+16.4 b,ASC362,Samosa - Keema Filling,Minced meat samosa (Keema ka samosa),asc_manual
+16.4 c,ASC363,Samosa - Paneer and Pea Filling,Paneer and pea samosa (Paneer matar ka samosa),asc_manual
+16.5,ASC364,Mathri,Mathri,asc_manual
+16.6,ASC365,Khasta Kachori,Khasta kachori,asc_manual
+16.7,ASC366,Vegetable Cutlet,Vegetable cutlet,asc_manual
+16.8,ASC367,Chirwa Cutlet,Flattened rice cutlet (Chirwa cutlet/Chivda cutlet/Poha cutlet),asc_manual
+16.9,ASC368,Peanut Cutlet,Peanut cutlet (Mungfali ke cutlet),asc_manual
+16.1,ASC369,Fish Cutlet,Fish cutlet (Machli ka cutlet),asc_manual
+16.11,ASC370,Paneer Potato Cutlet,Paneer potato cutlet (Paneer aloo cutlet),asc_manual
+16.12,ASC371,Spinach Channa Dal Cutlet,Spinach chickpeas cutlet (Palak channa dal cutlet),asc_manual
+16.13,ASC372,Cheese Toast,Cheese toast,asc_manual
+16.16,ASC375,Vegetable Burger,Vegetable burger,asc_manual
+16.17,ASC376,Cheese Pizza,Cheese pizza,asc_manual
+16.18,ASC377,Vegetable Seekh Kebab,Vegetable seekh kebab,asc_manual
+16.19,ASC378,Masala Vada,Masala vada,asc_manual
+16.2,ASC379,Peanut Sago Vadas,Peanut sago vada (Sabudana mungfali vada),asc_manual
+16.21,ASC380,Vegetarian Scotch Egg,Vegeterian scotch egg,asc_manual
+16.22,ASC381,Paneer shaslik,Paneer shaslik/tikka,asc_manual
+16.23,ASC382,Peanut Brittle,Peanut brittle (Moongfali ki chikki),asc_manual
+16.24,ASC383,Spring Roll,Spring roll,asc_manual
+16.25,ASC384,Dry Mango Chutney,Dry mango chutney (Sookhe aam ki chutney),asc_manual
+16.26,ASC385,Peanut Chutney,Peanut chutney (Mungfali ki chutney),asc_manual
+16.27,ASC386,Coconut Chutney,Coconut chutney (Nariyal ki chutney),asc_manual
+16.28,ASC387,Mint and Coriander Chutney,Mint and coriander chutney (Pudinay aur dhaniye ki chutney),asc_manual
+16.29,ASC388,Curd Dip -1,Curd dip,asc_manual
+17.1,ASC394,Short Crust Pastry,Short crust pastry,asc_manual
+17.2,ASC395,Custard Tart,Custard tart,asc_manual
+17.3,ASC396,Lemon Tart,Lemon tart,asc_manual
+17.4,ASC397,Jam Tarts,Jam tart,asc_manual
+17.5,ASC398,Orange Cream Tart,Orange cream tart,asc_manual
+17.6,ASC399,Pineapple Tart,Pineapple tart,asc_manual
+17.7,ASC400,Cheese and Mushroom Tart,Cheese and mushroom tart,asc_manual
+17.8,ASC401,Cottage Cheese Pie,Cottage cheese pie,asc_manual
+17.9,ASC402,Minced Meat Pie,Minced meat pie,asc_manual
+17.1,ASC403,Apple Cinnamon Pie,Apple cinnamon pie,asc_manual
+17.11,ASC404,Lemon Meringue Pie,Lemon meringue pie,asc_manual
+17.12,ASC405,Chocolate Meringue Pie,Chocolate meringue pie,asc_manual
+17.13,ASC406,Choux Pastry,Choux pastry,asc_manual
+17.14,ASC407,Cream Puffs,Cream puffs,asc_manual
+17.15,ASC408,Chocolate Eclairs,Chocolate eclairs,asc_manual
+17.16,ASC409,Cheese Balls,Cheese balls,asc_manual
+17.17,ASC410,Flaky Pastry,Flaky pastry,asc_manual
+17.18,ASC411,Minced Meat Patties,Minced meat patties,asc_manual
+17.19,ASC412,Cheese Patties,Cheese patties,asc_manual
+17.20 a,ASC413,Hot Cheese Souffle,Hot cheese souffle,asc_manual
+17.20 b,ASC414,Hot Potato Souffle,Hot potato souffle,asc_manual
+17.20 c,ASC415,Hot Fish Souffle,Hot fish souffle,asc_manual
+17.20 d,ASC416,Hot Spinach Souffle,Hot spinach souffle,asc_manual
+18.1,ASC417,Plain Cream Cake,Plain cream cake,asc_manual
+18.2,ASC418,Apple cake,Apple cake (Seb ka cake),asc_manual
+18.3,ASC419,Marble Cake,Marble cake,asc_manual
+18.4,ASC420,Chocolate cake,Chocolate cake,asc_manual
+18.5,ASC421,Orange Cake,Orange cake,asc_manual
+18.6,ASC422,Fruit Loaf,Fruit Loaf ,asc_manual
+18.7,ASC423,Banana Cake,Banana cake (Kele ka cake),asc_manual
+18.8,ASC424,Chocolate Chiffon Cake,Chocolate chiffon cake,asc_manual
+18.9,ASC425,Christmas Cake,Christmas cake,asc_manual
+18.1,ASC426,Strawberry and Vanilla Cake with Butter Icing,Strawberry and vanilla cake with butter icing,asc_manual
+18.11,ASC427,Eggless Cake,Eggless cake,asc_manual
+18.12,ASC428,Sponge Cake,Sponge cake ,asc_manual
+18.13,ASC429,Swiss Roll,Swiss roll,asc_manual
+18.14,ASC430,Pineapple Pastry,Pineapple pastry ,asc_manual
+18.15,ASC431,Black Forest Pastry,Black forest pastry,asc_manual
+18.16,ASC432,Coconut Finger,Coconut finger,asc_manual
+18.17,ASC433,Pineapple Cake,Pineapple cake ,asc_manual
+18.18,ASC434,Glace Icing,Glace icing,asc_manual
+18.2,ASC436,Royal Icing,Royal icing,asc_manual
+18.21,ASC437,American Frosting,American frosting,asc_manual
+18.22,ASC438,Gum Icing,Gum icing,asc_manual
+19.1,ASC439,Chocolate Walnut Cookies,Chocolate walnut cookies (Chocolate aur akhrot ke cookies),asc_manual
+19.2,ASC440,Chocolate Chip Cookies,Chocolate chip cookies,asc_manual
+19.3,ASC441,Sweet Plain Biscuit,Sweet plain biscuit,asc_manual
+19.4,ASC442,Chocolate Biscuit,Chocolate biscuit,asc_manual
+19.5,ASC443,Coconut Biscuit,Coconut biscuit (Nariyal ke biscuit),asc_manual
+19.6,ASC444,Sweet And Salty Biscuit,Sweet and salty biscuit (Meethay aur namkeen biscuit),asc_manual
+19.7,ASC445,Peanut Biscuit,Peanut biscuit,asc_manual
+19.8,ASC446,Pin Wheel Biscuit,Pin wheel biscuit,asc_manual
+19.9,ASC447,Kesar Biscuit,Saffron biscuit (Kesar biscuit),asc_manual
+19.1,ASC448,Masala Biscuit,Masala biscuit,asc_manual
+19.11,ASC449,Ice Box Cookies,Ice box cookies,asc_manual
+19.12,ASC450,Ginger Bread Man,Ginger bread man,asc_manual
+19.13,ASC451,Danish Cookies,Danish cookies,asc_manual
+19.14,ASC452,Short Bread Cookies,Short bread cookies,asc_manual
+19.15,ASC453,Coffee Biscuit,Coffee biscuit,asc_manual
+19.16,ASC454,Melting Moments,Melting moments,asc_manual
+19.17,ASC455,Ginger Biscuit,Ginger biscuit (Adarak ke biscuit),asc_manual
+20.1,ASC456,Soyabean Muthias,Soyabean muthias,asc_manual
+20.2,ASC457,Soyabean Tikki,Soyabean tikki,asc_manual
+20.3,ASC458,Soyabean Namakparas,Soyabean namak paras,asc_manual
+20.4,ASC459,Peanut Burfi,Peanut burfi (Moongfali ki burfi),asc_manual
+20.5,ASC460,Spinach Peanut Namakpara,Spinach peanut namak paras (Palak moongfali namak paras),asc_manual
+20.6,ASC461,Besan suji Cheela,Gram flour and semolina chilla/cheela/savory pancake (Besan suji chilla/cheela),asc_manual
+20.7,ASC462,Rice Moong Dal Cheela,Rice moong dal cheela (Chawal aur moong dal ka cheela),asc_manual
+20.8,ASC463,Channa Dal Sweet Rice,Split bengal gram sweet rice (Channa dal sweet rice),asc_manual
+20.9,ASC464,Sweet Poori,Sweet poori (Meethi poori),asc_manual
+20.1,ASC465,Wheat Flour and Dal Burfi,Wheat flour and moong dal burfi (Atta aur moong dal ki burfi),asc_manual
+20.11,ASC466,Spinach Burfi,Spinach burfi (Palak burfi),asc_manual
+20.12,ASC467,Sweet Channa Dal Roti,Sweet split chickpea roti (Sweet channa dal roti/Puranpoli),asc_manual
+20.13,ASC468,Sprouted Moong daliya,Sprouted moong daliya ,asc_manual
+20.14,ASC469,Sprouted Moong Poha,Sprouted moong poha ,asc_manual
+20.15,ASC470,Bajra Ladoo,Pearl millet ladoo (Bajra ladoo),asc_manual
+20.16,ASC471,Paushtik Ladoo,Paushtik ladoo,asc_manual
+20.17,ASC472,Paushtik Roti,Paushtik roti,asc_manual
+20.18,ASC473,Suji Carrot Vadas,Semolina carrot vada (Suji gajar vada),asc_manual
+20.19,ASC474,Dhokla,Dhokla,asc_manual
+21.1,ASC475,Channa Murmura Premix,Channa murmura premix,asc_manual
+21.2,ASC476,Dalia Moong Dal Premix,Cracked wheat and green gram dal premix (Dalia moong dal premix),asc_manual
+21.3,ASC477,Rice Flakes and Roasted Channa,Rice flakes and roasted channa ,asc_manual
+21.5,ASC479,Spinach Soup in Milk,Spinach soup in milk ,asc_manual
+21.6,ASC480,Vegetable Soup,Vegetable soup,asc_manual
+21.7,ASC481,Mashed Banana with Milk,Mashed banana with milk,asc_manual
+21.1,ASC484,Poha With Curd,Poha with curd (Poha aur dahi),asc_manual
+21.11,ASC485,Potato With Curd,Potato with curd,asc_manual
+21.12,ASC486,Sweet Dalia,Sweet wheat porridge (Sweet dalia),asc_manual
+21.13,ASC487,Vegetable Khichri,Vegetable khichdi/khichri,asc_manual
+21.15,ASC489,Moong Dal Mixture,Moong dal mixture,asc_manual
+21.16,ASC490,Dalia Khichri,Cracked wheat khichri/khichdi (Dalia khichri/khichdi),asc_manual
+21.18,ASC492,Stewed apple,Stewed apple,asc_manual
+22.1,ASC493,Lemon squash,Lemon squash (Nimbu ka squash),asc_manual
+22.2,ASC494,Orange squash,Orange squash (Santre ka squash),asc_manual
+22.3,ASC495,Lichi squash,Lichi squash,asc_manual
+22.4,ASC496,Mango squash,Mango squash (Aam ka squash),asc_manual
+22.5,ASC497,Pineapple squash,Pineapple squash (Ananas ka squash),asc_manual
+22.6,ASC498,Lemon and Ginger squash,Lemon and ginger squash (Nimbu aur adrak ka squash),asc_manual
+23.1,ASC499,Apple Jam,Apple jam (Seb ka murabba),asc_manual
+23.2,ASC500,Plum Jam,Plum jam (Aloo bukhara jam),asc_manual
+23.3,ASC501,Pineapple Jam,Pineapple jam ,asc_manual
+23.4,ASC502,Guava Jelly,Guava jelly (Amrood ki jelly),asc_manual
+23.5,ASC503,Orange Marmalade,Orange marmalade (Santray ka murabba),asc_manual
+23.6,ASC504,Carrot Murabba,Carrot murabba (Gajar ka murabba),asc_manual
+23.7,ASC505,Amla Murabba,Gooseberry marmalade (Amla murabba),asc_manual
+23.8,ASC506,Ginger Candy,Ginger candy (Adrak ki candy),asc_manual
+24.1,ASC507,Mango Pickle (1),Mango pickle (Aam ka achaar),asc_manual
+24.3,ASC509,Mixed Vegetable Pickle (1),Mixed vegetable pickle (Sabziyoon ka achaar),asc_manual
+24.5,ASC511,Sweet Lemon Pickle,Sweet lemon pickle (Neembu ka meetha achaar),asc_manual
+25.1,ASC512,Plum Chutney,Plum chutney (Aloo bukhara ki chutney),asc_manual
+25.2,ASC513,Raw Mango Chutney,Raw mango chutney (Kachhe aam/Kairi ki chutney),asc_manual
+25.3,ASC514,Tomato Sauce,Tomato sauce,asc_manual
+25.4,ASC515,Tomato Puree,Tomato puree,asc_manual
+i,BFP001,Garam Masala,Garam masala,bfp_manual
+ii,BFP002,Chat Masala,Chat masala,bfp_manual
+iii,BFP003,Kashmiri Masala,Kashmiri masala,bfp_manual
+iv,BFP004,Rasam Powder,Rasam powder (Rasam masala),bfp_manual
+v,BFP005,Sambar Powder,Sambar powder (Sambar masala),bfp_manual
+2,BFP007,Kashmiri Tea (Kehwa),Kashmiri tea (Kehwa),bfp_manual
+3,BFP008,Steeped Hot Coffee,Steeped hot coffee,bfp_manual
+6,BFP011,HOT CHOCOLATE,Hot chocolate,bfp_manual
+8,BFP013,COLD COFFEE (WITH CREAM),Cold coffee (with cream),bfp_manual
+10,BFP015,(Banana) MILKSHAKE WITH ICE CREAM,Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath),bfp_manual
+13,BFP019,FLAVOURED MILKSHAKE,Flavoured milkshake,bfp_manual
+18,BFP024,JAL JEERA,Jal jeera,bfp_manual
+20,BFP026,GINGO,Gingo,bfp_manual
+21,BFP027,MINTADE,Mintade,bfp_manual
+23,BFP029,CANJEE,Canjee,bfp_manual
+24,BFP030,CAULIFLOWER CANJEE,Cauliflower canjee (Phoolgobhi ki canjee),bfp_manual
+24,BFP031,POTATO CANJEE,Potato canjee (Aloo canjee),bfp_manual
+29,BFP036,VERMICELLI PORRIDGE,Vermicelli porridge (Semiya/Seviyan porridge),bfp_manual
+32,BFP039,SEMOLINA (SUJI) UPMA,Semolina upma (Suji/Rava upma),bfp_manual
+33,BFP040,VERMICELLI UPMA,Vermicelli upma (Semiya/Seviyan upma),bfp_manual
+33,BFP041,RICE UPMA,Rice upma,bfp_manual
+33,BFP042,BREAD UPMA,Bread upma,bfp_manual
+34,BFP043,VEGETABLE UPMA,Vegetable upma,bfp_manual
+35,BFP044,Poha,Poha,bfp_manual
+36,BFP045,VEGETABLE POHA,Vegetable poha,bfp_manual
+37,BFP046,MOONG DAL STUFFED CHEELA,Moong dal stuffed cheela/chilla (Moong dal ka cheela/chilla),bfp_manual
+37,BFP047,PANEER STUFFED CHEELA,Paneer stuffed cheela/chilla,bfp_manual
+42,BFP052,EGG BHUJIA,Indian style egg bhujia (Anda bhujia (Indian style)),bfp_manual
+44,BFP054,FRENCH OMELETTE,French omelette/omlet,bfp_manual
+45,BFP055,PUFFY OMELETTE,Puffy omelette/omlet,bfp_manual
+46,BFP056,ORANGE OMELETTE,Orange omelette/omlet,bfp_manual
+47,BFP057,CHEESE AND MUSHROOM OMELETTE,Cheese and mushroom omelette/omlet,bfp_manual
+48,BFP058,SPANISH OMELETTE,Spanish omelette/omlet,bfp_manual
+49,BFP059,MIXED STOCK,Mixed stock,bfp_manual
+50,BFP060,MEAT STOCK,Meat stock,bfp_manual
+52,BFP062,WHITE STOCK,White stock,bfp_manual
+55,BFP065,MEAT CONSOMME,Meat consomme (with mutton),bfp_manual
+56,BFP066,CONSOMME AU JULIENNE,Consomme au julienne,bfp_manual
+57,BFP067,CONSOMME AU VERMICELLI,Consomme au vermicelli,bfp_manual
+62,BFP072,GREEN PEA SOUP,Green pea soup (Matar ka soup),bfp_manual
+63,BFP073,SPINACH SOUP,Spinach soup (Palak ka soup),bfp_manual
+64,BFP074,MIXED VEGETABLE SOUP,Mixed vegetable soup,bfp_manual
+65,BFP075,CHEESE SOUP,Cheese soup,bfp_manual
+66,BFP076,MULLIGATAWNY SOUP,Mulligatawny soup,bfp_manual
+69,BFP079,CREAM OF CARROT SOUP,Cream of carrot soup,bfp_manual
+70,BFP080,CREAM OF BROCCOLI SOUP,Cream of broccoli soup,bfp_manual
+72,BFP082,CREAM OF POTATO SOUP,Cream of potato soup,bfp_manual
+77,BFP087,ALMOND SOUP,Almond soup (Badam ka soup),bfp_manual
+78,BFP088,COLD CUCUMBER CREAM SOUP,Cold cucumber cream soup ,bfp_manual
+79,BFP089,COLD TOMATO SOUP,Cold tomato soup,bfp_manual
+80,BFP090,CHICKEN STEW,Chicken stew,bfp_manual
+81,BFP091,VEG PANEER STEW,Veg paneer stew,bfp_manual
+85,BFP095,TARTARE SAUCE,Tartare sauce,bfp_manual
+86,BFP096,BARBEQUE SAUCE,Barbeque sauce,bfp_manual
+87,BFP097,BREAD SAUCE,Bread sauce,bfp_manual
+98,BFP108,ONION-GREEN CHILLI PARATHA,Onion-green chilli parantha/paratha (Pyaaz aur hari mirch ka parantha/paratha),bfp_manual
+100,BFP110,METHI PARATHA,Methi parantha/paratha,bfp_manual
+103,BFP114,BATHUA POORIS,Bathua poori,bfp_manual
+104,BFP115,BESAN POORIS,Gram flour poori (Besan poori),bfp_manual
+105,BFP116,BEETROOT POORIS,Beetroot poori (Chukandar ki poori),bfp_manual
+106,BFP117,PEAS POORIS,Peas poori (Matar ki poori),bfp_manual
+107,BFP118,PEAS KACHORIS,Peas kachori (Matar kachori),bfp_manual
+111,BFP122,PIZZA,Pizza,bfp_manual
+113,BFP124,BACON AND MUSHROOM PANCAKES,Bacon and mushroom pancake,bfp_manual
+114,BFP125,CHEESE AND TOMATO PANCAKES,Cheese and tomato pancake,bfp_manual
+116,BFP127,MINCED MEAT PANCAKES,Minced meat pancake (with chicken),bfp_manual
+121,BFP132,VANGI BHAT,Eggplant/Brinjal rice (Vangi bhat),bfp_manual
+122,BFP133,KASHMIRI 'TAHAR',Kashmiri 'tahar',bfp_manual
+123,BFP134,ZEERA PULAO,Cumin pulao (Jeera/Zeera pulao),bfp_manual
+125,BFP136,PEAS PULAO,Peas pulao (Matar pulao),bfp_manual
+126,BFP137,CHANNA DAL AND VEGETABLE PULAO,Split bengal gram dal and vegetable pulao (Channa dal and vegetable pulao),bfp_manual
+127,BFP138,BLACK CHANNA PULAO,Black channa pulao/ Bengal gram pulao (Kale chane ka pulao),bfp_manual
+130,BFP141,MUTTON PULAO,Mutton pulao,bfp_manual
+131,BFP142,CHICKEN PULAO,Chicken pulao,bfp_manual
+132,BFP143,MEXICAN RICE,Mexican rice,bfp_manual
+133,BFP144,PLAIN KHITCHDI,Plain khitchdi (Plain khichri/khichdi),bfp_manual
+136,BFP147,INSTANT IDLI,Instant idli (with semolina),bfp_manual
+137,BFP148,PLAIN DOSA,Plain dosa,bfp_manual
+139,BFP150,MASALA DOSA MIXED VEGETABLE FILLINGS,Masala dosa mixed vegetable fillings,bfp_manual
+140,BFP151,MASALA DOSA PANEER FILLINGS,Masala dosa paneer fillings,bfp_manual
+141,BFP152,UTTAPAM,Uttapam,bfp_manual
+142,BFP153,APPAM,Appam,bfp_manual
+143,BFP154,BEANS AND MACARONI,Beans and macaroni,bfp_manual
+144,BFP155,SPAGHETTI BOLOGNESE,Spaghetti bolognese,bfp_manual
+146,BFP157,MEAT AND MACARONI CASSEROLE,Meat and macaroni casserole,bfp_manual
+147,BFP158,SPAGHETTI WITH MEAT BALLS AND TOMATO SAUCE,Spaghetti with meat balls and tomato sauce,bfp_manual
+148,BFP159,SPAGHETTI WITH PANEER BALLS AND TOMATO SAUCE,Spaghetti with paneer balls and tomato sauce,bfp_manual
+150,BFP161,LASAGNE WITH MEAT SAUCE,Lasagne with meat sauce,bfp_manual
+151,BFP162,LASAGNE WITH VEGETABLES,Lasagne with vegetables,bfp_manual
+152,BFP163,GREEN CHILLI SAUCE,Green chilli sauce,bfp_manual
+153,BFP164,HOME MADE PLAIN NOODLES,Home made plain noodles,bfp_manual
+153,BFP165,HOME MADE EGG NOODLES,Home made egg noodles,bfp_manual
+154,BFP166,DAL MOONG,Dal moong,bfp_manual
+155,BFP167,CUMIN SEEDS BAGHAR,Cumin seeds baghar (Jeera baghar/tadka),bfp_manual
+156,BFP168,ONION TOMATO BAGHAR,Onion tomato baghar (Pyaaz tamatar ka tadka),bfp_manual
+157,BFP169,MUSTARD SEED BAGHAR,Mustard seeds baghar (Mustard seed tadka),bfp_manual
+158,BFP170,SOUR LENTILS,Sour lentils (Khatti dal),bfp_manual
+159,BFP171,URAD SPECIAL DEHUSKED,Urad special dehusked,bfp_manual
+160,BFP172,ARHAR WITH SPINACH,Arhar with spinach (Arhar dal aur palak),bfp_manual
+162,BFP174,MOONG DAL WITH VADI,Moong dal with vadi,bfp_manual
+164,BFP176,RASAM WITH TAMARIND,Rasam with tamarind (Puli rasam/ Chintapandu rasam/ Charu/Saaru),bfp_manual
+165,BFP177,RASAM WITH LEMON,Rasam with lemon (Nimmakaya rasam/Nimmakaya charu/Elumichai rasam/Nimbe hannina saaru),bfp_manual
+166,BFP178,GREEN GRAM WHOLE,Green gram whole with baghar (Sabut moong dal with tadka),bfp_manual
+167,BFP179,URAD SABUT SPECIAL,Urad sabut special,bfp_manual
+170,BFP185,KABULI CHANNA CURRY,Kabuli channa curry,bfp_manual
+171,BFP187,BESAN GATTE CURRY,Besan gatte curry,bfp_manual
+174,BFP190,DRY MASALA CHOPS,Dry masala chops,bfp_manual
+178,BFP194,MUTTON KORMA,Mutton korma,bfp_manual
+180,BFP196,SHAHI KEEMA KOFTA CURRY,Shahi keema kofta curry,bfp_manual
+181,BFP197,MINCED MEAT BALL CURRY,Minced meat ball curry,bfp_manual
+182,BFP198,BOTI KEBAB,Boti kebab,bfp_manual
+183,BFP199,MUTTON SEEKH KEBAB,Mutton seekh kebab,bfp_manual
+185,BFP201,NARGISI KOFTA,Indian lamb and egg curry (Nargisi kofta),bfp_manual
+187,BFP203,NUTRINUGGET SWEET AND SOUR,Soya chunks sweet and sour (Nutrinugget sweet and sour),bfp_manual
+188,BFP204,NUTRINUGGET KORMA,Soya chunks korma (Nutrinugget korma),bfp_manual
+189,BFP205,MUSHROOM MATAR,Mushroom matar,bfp_manual
+190,BFP206,NUTRINUGGET MATAR,Soya chunks and peas (Nutrinugget matar),bfp_manual
+191,BFP207,VEGETABLE YAKANI,Vegetable yakhni,bfp_manual
+192,BFP208,PALAK MUSHROOM,Spinach mushroom (Palak mushroom),bfp_manual
+194,BFP210,VEGETARIAN NARGISI KOFTA CURRY,Vegetarian nargisi kofta curry,bfp_manual
+196,BFP212,ROAST CHICKEN,Roast chicken,bfp_manual
+198,BFP214,SHAHI CHICKEN MASALA,Shahi chicken masala,bfp_manual
+200,BFP216,TOMATO CHICKEN,Tomato chicken,bfp_manual
+201,BFP217,CREAMY CHICKEN,Creamy chicken,bfp_manual
+202,BFP218,BROCCOLI CHICKEN ALA KING,Broccoli chicken ala king,bfp_manual
+204,BFP220,GINGER CHICKEN,Ginger chicken,bfp_manual
+205,BFP221,CHICKEN SWEET AND SOUR,Chicken sweet and sour,bfp_manual
+206,BFP222,CHICKEN KORMA,Chicken korma,bfp_manual
+207,BFP223,BENGAL FISH CURRY,Bengal fish curry (Bengali machli curry),bfp_manual
+210,BFP226,FISH FINGER,Fish finger,bfp_manual
+213,BFP229,FISH IN COCONUT MILK,Fish in coconut milk (Nariyal ke doodh ke saath machli),bfp_manual
+214,BFP230,PRAWN CURRY,Prawn curry (with coconut) (Jhinga curry),bfp_manual
+215,BFP231,BAKED STUFFED FISH,Baked stuffed fish,bfp_manual
+216,BFP232,FISH PIE,Fish pie,bfp_manual
+217,BFP233,CRISPY BAKED FISH,Crispy baked fish,bfp_manual
+218,BFP234,FISH SOUFFLE,Fish souffle,bfp_manual
+223,BFP239,POTATO CURRY,Potato curry (Aloo ki sabzi),bfp_manual
+224,BFP240,EGG CURRY,Egg curry (Anda curry),bfp_manual
+225,BFP241,VEGETABLE CURRY WITH COCONUT,Vegetable curry with coconut ,bfp_manual
+226,BFP242,DAHI ALOO,Curd with potatoes (Dahi aloo),bfp_manual
+230,BFP246,POTATO KOFTA CURRY,Potato kofta curry (Aloo kofta curry),bfp_manual
+233,BFP249,YAM KOFTA,Yam kofta curry (Zimikand/Suran kofta curry),bfp_manual
+234,BFP250,JACK FRUIT KOFTA,Jackfruit kofta curry (Kathal ka kofta curry),bfp_manual
+241,BFP257,PALAK ALOO,Spinach and potato (Palak aloo),bfp_manual
+242,BFP258,MOOLI BHUJIA,Mooli bhujia,bfp_manual
+243,BFP259,BATHUA BHUJIA,Bathua bhujia,bfp_manual
+245,BFP261,CABBAGE ROLLS (Dry),Cabbage rolls (dry) ((Pattagobhi rolls) (dry)),bfp_manual
+245,BFP262,CABBAGE ROLLS (Curried),Cabbage rolls (curry) ((Pattagobhi rolls)(curry)),bfp_manual
+246,BFP263,DRY ARBI,Dry arbi (Sookhi arbi),bfp_manual
+247,BFP264,MASALA ARBI,Masala arbi,bfp_manual
+248,BFP266,MATAR BAINGAN BHARTA,Peas brinjal bhartha (Matar baingan bhartha),bfp_manual
+250,BFP269,BHINDI SABZI (LADY'S FINGERS),Okra/Lady's fingers fry (Bhindi sabzi/sabji/subji),bfp_manual
+251,BFP270,CRISPY BHINDI (LADY'S FINGERS),Crispy okra/Crispy lady's fingers (Karare bhindi),bfp_manual
+253,BFP272,BEANS FOOGATH,Beans foogath,bfp_manual
+254,BFP273,STUFFED KARELA (WET),Stuffed bittergourd (wet) (Bharwa karele),bfp_manual
+256,BFP274,KATHAL/JACKFRUIT (DRY),Jackfruit/Kathal (dry),bfp_manual
+256,BFP275,Zimikand/Yam (DRY),Yam fried (Zimikand/Suran fried),bfp_manual
+257,BFP276,"CAULIFLOWER, PEA AND POTATO Bhujia","Cauliflower, pea and potato bhujia (Phoolgobhi, matar aur aloo bhujia)",bfp_manual
+258,BFP277,VEGETABLE JALFREZI,Vegetable jalfrezi,bfp_manual
+259,BFP278,VEGETABLES STIR FRY,Vegetables stir fry ,bfp_manual
+260,BFP279,BROCCOLI DELIGHT,Broccoli delight,bfp_manual
+261,BFP280,DHANSAK,Dhansak (vegetarian),bfp_manual
+263,BFP282,CAULIFLOWER BASKET,Cauliflower basket,bfp_manual
+265,BFP284,STUFFED VEGETABLE GOURD/GHIA,Stuffed bottle gourd (Stuffed ghiya/lauki),bfp_manual
+267,BFP286,DUCHEESE POTATO,Ducheese potato,bfp_manual
+268,BFP287,ROAST POTATOES,Roast potatoes ,bfp_manual
+269,BFP288,STUFFED BAKED POTATOES,Stuffed baked potatoes ,bfp_manual
+270,BFP289,POTATO NESTS,Potato nests,bfp_manual
+271,BFP290,PARSLEY POTATO,Parsley potato,bfp_manual
+273,BFP291,CREAMED SPINACH AND MUSHROOMS,Creamed spinach and mushroom,bfp_manual
+274,BFP292,FRICASSEE OF MUSHROOM,Fricassee of Mushroom,bfp_manual
+275,BFP293,CAULIFLOWER AU GRATIN,Cauliflower au gratin,bfp_manual
+276,BFP294,VEGETABLE AND CHEESE PIE,Vegetable and cheese pie,bfp_manual
+278,BFP296,SPINACH SOUFFLE,Spinach souffle ,bfp_manual
+281,BFP299,BEETROOT AND EGG SALAD,Beetroot and egg salad (Chukandar aur ande ka salad),bfp_manual
+282,BFP300,SOUR CREAM POTATO SALAD,Sour cream potato salad,bfp_manual
+283,BFP301,TOSSED GREEN SALAD,Tossed green salad,bfp_manual
+284,BFP302,SPRING BASKET SALAD,Spring basket salad,bfp_manual
+285,BFP303,CUCUMBER AND YOGURT SALAD,Cucumber and yogurt salad (Kheere aur dahi ka salad),bfp_manual
+287,BFP305,CHICKEN AND TOMATO TOWERS,Chicken and tomato towers,bfp_manual
+288,BFP306,JELLIED SUNSHINE FRUIT SALAD,Jellied sunshine fruit salad,bfp_manual
+289,BFP307,TOMATO ASPIC,Tomato aspic,bfp_manual
+290,BFP308,FROZEN FROSTY FRUIT SALAD,Frozen frosty fruit salad (Phalon ka salaad),bfp_manual
+292,BFP310,FRENCH DRESSING,French dressing,bfp_manual
+294,BFP312,MAYONNAISE WITHOUT EGGS,Mayonnaise without eggs,bfp_manual
+295,BFP313,CURD DRESSING,Curd dressing ,bfp_manual
+298,BFP316,CARROT RAITA,Carrot raita (Gajar ka raita),bfp_manual
+300,BFP318,PUMPKIN RAITA,Pumpkin raita (Kaddu ka raita),bfp_manual
+302,BFP320,MINT AND PEANUT RAITA,Mint and peanut raita (Pudinay aur moongfali ka raita),bfp_manual
+303,BFP321,SPINACH RAITA,Spinach raita (Palak ka raita),bfp_manual
+303,BFP322,BATHUA RAITA,Bathua raita,bfp_manual
+306,BFP325,PINEAPPLE RAITA,Pineapple raita (Ananas ka raita),bfp_manual
+307,BFP326,BANANA RAITA,Banana raita (Kele ka raita),bfp_manual
+308,BFP327,MANGO RAITA,Mango raita (Aam ka raita),bfp_manual
+309,BFP328,GUAVA RAITA,Guava raita (Amarood ka raita),bfp_manual
+310,BFP329,GRAPES RAITA,Grapes raita (Angoor ka raita),bfp_manual
+315,BFP334,LAUKI KHEER,Bottle gourd kheer (Ghiya/Lauki kheer),bfp_manual
+317,BFP336,PUMPKIN KHEER,Pumpkin kheer (Kaddu ki kheer),bfp_manual
+319,BFP338,APPLE KHEER,Apple kheer (Seb ki kheer),bfp_manual
+326,BFP345,CARAMEL CUSTARD,Caramel custard (baked),bfp_manual
+328,BFP346,VANILLA ICE CREAM WITHOUT EGG,Vanilla ice cream without egg,bfp_manual
+329,BFP347,VANILLA ICE CREAM WITH EGG,Vanilla ice cream with egg,bfp_manual
+330,BFP348,STRAWBERRY ICE CREAM,Strawberry ice cream,bfp_manual
+332,BFP350,CHOCOCHIP ICE CREAM,Chocochip ice cream,bfp_manual
+333,BFP351,CHOCONUT ICE CREAM,Choconut ice cream,bfp_manual
+334,BFP352,PEAR CHOCOLATE SUNDAY,Pear chocholate sunday,bfp_manual
+335,BFP353,CHOCOLATE SAUCE,Chocolate sauce,bfp_manual
+336,BFP354,COFFEE ICE CREAM,Coffee ice cream,bfp_manual
+337,BFP355,COFFEE PEAR ALASKA,Coffee pear alaska,bfp_manual
+338,BFP356,CRUNCHY BUTTERSCOTCH,Crunchy butterscotch,bfp_manual
+340,BFP358,PEACH MELBA ICE CREAM,Peach melba ice cream,bfp_manual
+341,BFP359,VANILLA ICE CREAM WITH APPLES IN HOT CHERRY SAUCE,Vanilla ice cream with apples in hot cherry sauce,bfp_manual
+342,BFP360,HOT CHERRY SAUCE,Hot cherry sauce,bfp_manual
+343,BFP361,GRAPE AND ORANGE WHIP,Grape and orange whip,bfp_manual
+344,BFP362,HONEY BANANA CREAM,Honey banana cream,bfp_manual
+345,BFP363,RASPBERRY BAVARIAN CREAM,Raspberry bavarian cream,bfp_manual
+346,BFP364,FRUIT DELIGHT,Fruit delight,bfp_manual
+347,BFP365,CREAMY CHOCOLATE MOUSSE,Creamy chocolate mousse,bfp_manual
+348,BFP366,COLD LEMON SOUFFLE,Cold lemon souffle,bfp_manual
+349,BFP367,COLD ORANGE SOUFFLE,Cold orange souffle,bfp_manual
+350,BFP368,COLD PINEAPPLE SOUFFLE,Cold pineapple souffle,bfp_manual
+351,BFP369,COLD VANILLA SOUFFLE,Cold vanilla souffle,bfp_manual
+352,BFP370,COLD CHOCOLATE SOUFFLE,Cold chocolate souffle,bfp_manual
+353,BFP371,STEWED FRUIT,Stewed fruit (with pear),bfp_manual
+354,BFP372,APRICOT FOOL,Apricot fool,bfp_manual
+355,BFP373,PAVLOVA,Pavlova,bfp_manual
+361,BFP379,APPLE CRUMB PUDDING,Apple crumb pudding,bfp_manual
+362,BFP380,STEAMED CAKE WITH CHOCOLATE SAUCE,Steamed cake with chocolate sauce,bfp_manual
+364,BFP382,HOT LEMON SOUFFLE,Hot lemon souffle,bfp_manual
+368,BFP386,GULAB JAMUN WITH MILK POWDER,Gulab jamun with milk powder,bfp_manual
+370,BFP388,CHUM CHUM,Chum chum,bfp_manual
+371,BFP389,DIL BAHAR,Dil bahar,bfp_manual
+371,BFP390,RASBHARIS,Rasbhari,bfp_manual
+371,BFP391,RAJBOGHS,Rajbogh,bfp_manual
+372,BFP392,RASGULLAS,Rasgulla,bfp_manual
+373,BFP393,RASMALAI,Rasmalai,bfp_manual
+376,BFP396,KHOA COCONUT BURFI,Khoa coconut burfi,bfp_manual
+377,BFP397,DANEDAR BURFI,Danedar burfi,bfp_manual
+381,BFP401,SEMOLINA BURFI,Semolina burfi (Suji/Rava burfi),bfp_manual
+383,BFP403,PUMPKIN COCONUT BURFI,Pumpkin coconut burfi (Kaddu aur nariyal ki burfi),bfp_manual
+384,BFP404,KHOA LADDOO,Khoa ladoo,bfp_manual
+386,BFP406,ATTA BESAN LADDOO,Wheat and gram flour ladoo (Atta besan ladoo),bfp_manual
+387,BFP407,SUJI LADDOO WITH NUTS,Semolina ladoo with nuts (Suji/Rava ladoo with nuts),bfp_manual
+392,BFP412,TIL AND CHANNA CHIKKI,Sesame chickpeas brittle (Til aur channe ki chikki),bfp_manual
+393,BFP413,MURMURA CHIKKI,Murmura chikki,bfp_manual
+395,BFP415,MASALA ONION PAKORAS,Masala onion pakora/pakoda (Pyaaz ke pakode),bfp_manual
+395,BFP416,MASALA GREEN CHILLI PAKORAS,Masala green chilli pakora/pakoda (Hari mirch kay pakode),bfp_manual
+399,BFP420,CHICKEN PAKORAS,Chicken pakora/pakoda,bfp_manual
+400,BFP421,FISH PAKORAS,Fish pakora/pakoda,bfp_manual
+403,BFP424,PANEER CUTLET,Paneer cutlet,bfp_manual
+404,BFP425,SAGO CUTLET/VADAS,Sago cutlet/vadas (Sabudana cutlet/vadas),bfp_manual
+406,BFP427,POUSHTIK CUTLET,Poshtik cutlet,bfp_manual
+407,BFP428,EGG CUTLET,Egg cutlet (Anda cutlet),bfp_manual
+409,BFP430,MINCED MEAT CUTLET,Minced meat cutlet,bfp_manual
+410,BFP431,VEGETABLE SAMOSAS,Vegetable samosa,bfp_manual
+415,BFP436,PLAIN URAD DAL VADA,Plain urad dal vada (Uzunne vada/Minapa garelu/Ulundu vadai/Medu vada),bfp_manual
+416,BFP437,MASALA URAD DAL VADA,Masala urad dal vada,bfp_manual
+418,BFP439,KHAMAN (DHOKLA),Khaman (dhokla),bfp_manual
+419,BFP440,INSTANT DHOKLA,Instant dhokla,bfp_manual
+421,BFP442,TOMATO GINGER CHUTNEY,Tomato ginger chutney (Tamatar adarak ki chutney),bfp_manual
+422,BFP443,MINT TOMATO CHUTNEY,Mint tomato chutney (Pudinay aur tamatar ki chutney),bfp_manual
+422,BFP444,CORIANDER TOMATO CHUTNEY,Coriander chutney (Hare dhaniye ki chutney),bfp_manual
+423,BFP445,AMLA CHUTNEY,Gooseberry chutney (Amla chutney),bfp_manual
+424,BFP446,WALNUT CHUTNEY,Walnut chutney (Akhrot ki chutney),bfp_manual
+425,BFP447,SONTH CHUTNEY,Saunth/Sonth chutney with ginger,bfp_manual
+426,BFP448,GUN POWDER CHUTNEY,Gun powder chutney,bfp_manual
+428,BFP450,DESSICATED COCONUT CHUTNEY,Dessicated coconut chutney (Sookhe kase nariyal ki chutney) ,bfp_manual
+429,BFP451,CURD MINT DIP,Curd mint dip ,bfp_manual
+430,BFP452,CURD VEGETABLE DIP,Curd vegetable dip,bfp_manual
+431,BFP453,MAYONNAISE VEGETABLE DIP,Mayonnaise vegetable dip,bfp_manual
+433,BFP455,TOMATO AND CUCUMBER SANDWICHES,Tomato and cucumber sandwich (Tamatar aur kheere ka sandwich),bfp_manual
+434,BFP456,TOMATO GRILLED SANDWICHES,Tomato sandwich (grilled),bfp_manual
+435,BFP457,FRENCH TOASTED SANDWICHES,French sandwich (toasted),bfp_manual
+436,BFP458,PEANUT BUTTER CUCUMBER SANDWICHES,Peanut butter cucumber sandwich,bfp_manual
+437,BFP459,MINT AND PEANUT SANDWICHES,Mint and peanut sandwich,bfp_manual
+438,BFP460,SPICY CHUTNEY SANDWICH,Spicy chutney sandwich,bfp_manual
+439,BFP461,CHICKEN WALNUT SANDWICHES,Chicken walnut sandwich (Chicken aur akhrot ke sandwich),bfp_manual
+441,BFP463,ROLLED SANDWICHES,Rolled sandwich,bfp_manual
+444,BFP466,RIBBON SANDWICH,Ribbon sandwich,bfp_manual
+445,BFP467,CHECKER BOARD SANDWICH,Checker board sandwich,bfp_manual
+446,BFP468,SUBMARINE SANDWICHES,Submarine sandwich,bfp_manual
+448,BFP470,CHEESE OPEN SANDWICHES,Cheese open sandwich,bfp_manual
+449,BFP471,SUNSET AND SUNRISE OPEN SANDWICHES,Sunset and sunrise open sandwich,bfp_manual
+450,BFP472,DANISH LUNCHEON SANDWICHES,Danish luncheon sandwich,bfp_manual
+451,BFP473,CHICKEN AND CORN OPEN SANDWICHES,Chicken and corn open sandwich,bfp_manual
+454,BFP476,CHOCOLATE SPONGE,Chocolate sponge cake,bfp_manual
+456,BFP478,CHOCOLATE SWISS ROLL,Chocolate swiss roll,bfp_manual
+457,BFP479,LEMON CURD FILLING,Lemon curd filling,bfp_manual
+458,BFP480,JAM FILLING,Jam filling,bfp_manual
+460,BFP482,CHOCOLATE PASTRY,Chocolate pastry,bfp_manual
+461,BFP483,ASSORTED PASTRY,Assorted pastry,bfp_manual
+462,BFP484,ORANGE GATEAU,Orange gateau,bfp_manual
+463,BFP485,BLACK FOREST GATEAU,Black forest gateau,bfp_manual
+466,BFP489,LEMON CAKE,Lemon cake,bfp_manual
+468,BFP491,DUNDEE CAKE,Dundee cake,bfp_manual
+469,BFP492,VICTORIAN SANDWICH CAKE,Victorian sandwich cake,bfp_manual
+472,BFP495,CHOCOLATE EGGLESS CAKE,Chocolate eggless cake,bfp_manual
+473,BFP496,ORANGE EGGLESS CAKE,Orange eggless cake,bfp_manual
+475,BFP498,CHOCOLATE GLACE ICING,Chocolate glace icing,bfp_manual
+476,BFP499,BUTTER ICING,Butter icing,bfp_manual
+477,BFP500,CHOCOLATE BUTTER ICING,Chocolate butter icing,bfp_manual
+479,BFP502,ALMOND BISCCUIT,Almond biscuit (Badam ke biscuit),bfp_manual
+482,BFP505,ORANGE BISCUITS,Orange biscuit,bfp_manual
+483,BFP506,GINGERMAN BISCUIT,Gingerman biscuit,bfp_manual
+484,BFP507,COFFEE DROPS,Coffee drops,bfp_manual
+485,BFP508,CHRISTMAS BISCUITS,Christmas biscuit,bfp_manual
+486,BFP509,CHRISTMAS WREATH BISCUIT,Christmas wreath biscuit,bfp_manual
+487,BFP510,CHRISTMAS BELL BISCUITS,Christmas bell biscuit,bfp_manual
+488,BFP511,CHRISTMAS STAR BISCUIT,Christmas star biscuit,bfp_manual
+489,BFP512,CHRISTMAS TREE BISCUIT,Christmas tree biscuit,bfp_manual
+490,BFP513,CHOCOLATE CREAM SHELLS,Chocolate cream shells,bfp_manual
+493,BFP516,JELLY BISCUIT,Jelly biscuit,bfp_manual
+494,BFP517,CHERRY AND WALNUT COOKIES,Cherry and walnut cookies,bfp_manual
+495,BFP518,CHEESE STRAWS,Cheese straws,bfp_manual
+496,BFP519,BUTTERFLY BISCUITS,Butterfly biscuit,bfp_manual
+498,BFP521,FLAN PASTRY,Flan pastry,bfp_manual
+499,BFP522,FRUIT FLAN,Fruit flan,bfp_manual
+500,BFP523,ORANGE CREAM FLAN,Orange cream flan,bfp_manual
+504,BFP527,FRUIT PUREE TARTS,Fruit puree tart,bfp_manual
+506,BFP529,APPLE BANANA PIE,Apple banana pie,bfp_manual
+508,BFP531,LEMON CHIFFON PIE,Lemon chiffon pie,bfp_manual
+509,BFP532,ORANGE CHIFFON PIE,Orange chiffon pie,bfp_manual
+511,BFP534,CREAM BUNS,Cream buns,bfp_manual
+512,BFP535,SAVOURY PUFFS,Savoury puffs,bfp_manual
+513,BFP536,CHOUX SWANS,Choux swans,bfp_manual
+516,BFP539,POTATO AIGRETTES,Potato aigrettes,bfp_manual
+518,BFP541,CREAM HORNS,Cream horns,bfp_manual
+519,BFP542,SAVOURY CHEESE HORNS,Savoury cheese horns,bfp_manual
+521,BFP544,PANEER PATTIES,Paneer patties,bfp_manual
+522,BFP545,VEGETABLE PATTIES,Vegetable patties ,bfp_manual
+523,BFP546,BAJRA INFANT FOOD,Pearl millet infant food (Bajra shishu aahaar),bfp_manual
+524,BFP547,SAJINA,Sajina,bfp_manual
+525,BFP548,CEREAL MIX,Cereal mix ,bfp_manual
+526,BFP549,PULSE MIX,Pulse mix,bfp_manual
+527,BFP550,SHISHU AHAR,Shishu ahar,bfp_manual
+529,BFP552,CEREAL PULSE MIX WITH AMYLASE RICE FLOUR,Cereal pulse mix with amylase rice flour,bfp_manual
+530,BFP553,BANANA GROUNDNUT FOOD,Banana groundnut paste/puree,bfp_manual
+531,BFP554,RICE DAL PORRIDGE,Rice dal porridge (Chawal dal ki khichdi/khichri),bfp_manual
+532,BFP555,DAL SUJI PORRIDGE,Lentils and semolina porridge (Dal suji porridge/daliya),bfp_manual
+533,BFP556,SPINACH KHICHRI,Spinach khichri (Palak khichri/khichdi),bfp_manual
+534,BFP557,VEGETABLE MIX,Vegetable mix,bfp_manual
+535,BFP558,DAL WHEAT PORRIDGE,Lentils and wheat porridge (Dal wheat porridge/daliya ),bfp_manual
+536,BFP559,MAIZE PORRIDGE,Maize porridge,bfp_manual
+537,BFP560,SPINACH PEANUT BURFI,Spinach peanut burfi (Palak aur mungfali ki burfi),bfp_manual
+538,BFP561,CHANNA DAL BURFI,Split bengal gram burfi/fudge (Channa dal burfi),bfp_manual
+540,BFP563,SWEET BESAN ROUNDS,Chickpea flour cookies (Sweet besan rounds/cookies),bfp_manual
+541,BFP564,BAJRA MATHRI,Pearl millet mathri (Bajra mathri),bfp_manual
+542,BFP565,TIL BISCUITS,Sesame biscuit (Til ke biscuit),bfp_manual
+543,BFP566,FERMENTED BENGAL GRAM VADA,Fermented bengal gram vada (Khameerikrit/Ufna hua channa dal ka vada),bfp_manual
+545,BFP568,POSHTIK NAMAK PARAS,Poshtik namak paras,bfp_manual
+546,BFP569,SOYA CHIKKI,Soya chikki,bfp_manual
+547,BFP570,BESAN BAHTHUA CHEELA,Besan bathua chilla/cheela,bfp_manual
+548,BFP571,ATTA NUTS LADOOS,Wheat flour and nuts ladoos (Atta nuts ladoos),bfp_manual
+550,BFP573,BESAN SUJI DHOKLA,Gram flour and semolina dhokla (Besan suji dhokla),bfp_manual
+551,BFP574,ATTA DAL BURFI,Atta dal burfi ,bfp_manual
+552,BFP575,SOYA ROTI,Soya roti,bfp_manual
+553,BFP576,POSHTIK KHICHRI,Poshtik khichdi/khichri,bfp_manual
+554,BFP577,NAMKEEN DALIYA,Namkeen daliya,bfp_manual
+555,BFP578,SPROUTS UPMA,Sprouts upma ,bfp_manual
+556,BFP579,SUJI IDLI,Semolina idli (Suji/Rava idli),bfp_manual
+557,BFP580,PAUSHTIK CHEELA,Poshtik chilla/cheela,bfp_manual
+560,BFP583,APPLE JELLY,Apple jelly (Seb ki jelly),bfp_manual
+561,BFP585,MARMALADES,Marmalade (Murabba),bfp_manual
+565,BFP589,PLUM SQUASH,Plum squash (Aloo bukhara squash),bfp_manual
+571,BFP595,LEMON GREEN CHILLI PICKLE,Lemon green chilli pickle (Nimboo aur hari mirch ka achaar),bfp_manual
+573,BFP597,BRINJAL PICKLE,Brinjal pickle (Baingan ka achaar),bfp_manual
+574,BFP598,SWEET AND SOUR TOMATO PICKLE,Sweet and sour tomato pickle (Khatta meetha tamatar ka achaar),bfp_manual
+575,BFP599,JHATPAT ACHAR,Jhatpat achar with carrot (Jhatpat achaar gajar ke saath),bfp_manual
+577,BFP601,TOMATO CHUTNEY,Tomato chutney (Tamatar ki chutney),bfp_manual
+578,BFP602,TOMATO KETCHUP,Tomato ketchup,bfp_manual
+255,BFP604,STUFFED KARELA (DRY),Stuffed bittergourd (dry) (Bharwa karela),bfp_manual
+24,BFP605,Cauliflower/ potato canjee,Cauliflower potato canjee,bfp_manual
+272,BFP606,CREAMED SPINACH,Creamed spinach,bfp_manual
+10,BFP607,(Mango) MILKSHAKE WITH ICE CREAM,Mango milkshake with ice cream (Aam milkshake ice cream ke saath),bfp_manual
+10,BFP608,(Pineapple) MILKSHAKE WITH ICE CREAM,Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath),bfp_manual
+10,BFP609,(Orange) MILKSHAKE WITH ICE CREAM,Orange milkshake with ice cream (Narangi milkshake ice cream ke saath),bfp_manual
+Mona001,OSR001,Wood apple juice,Woodapple juice (Bel ka sharbat),open_source_recipes
+Mona002,OSR002,Sattu drink,Sattu drink,open_source_recipes
+Mona004,OSR004,Apple and Honey Sorbet,Apple and honey sorbet (Seb aur shehad ka sharbat),open_source_recipes
+Mona005,OSR005,Thandai,Thandai,open_source_recipes
+Mona006,OSR006,Cucumber sharbat,Cucumber sharbat (Kheere ka sharbat),open_source_recipes
+Mona007,OSR007,Apple oats chia seed smoothie,Apple oats chia seed smoothie,open_source_recipes
+Mona008,OSR008,Nannari sharbat,Nannari sharbat,open_source_recipes
+Mona009,OSR009,Thari kanji,Semolina milk drink (Thari kanji),open_source_recipes
+Mona061,OSR010,Kesariya doodh/ saffron milk,Saffron milk (Kesariya doodh),open_source_recipes
+Mona010,OSR011,Chak-hao Kheer (black rice kheer),Black rice kheer (Chak-hao kheer),open_source_recipes
+Mona011,OSR012,Coconut kheer,Coconut kheer (Nariyal ki kheer),open_source_recipes
+Mona012,OSR013,Apple sago payasam,Apple sago payasam (Seb aur sabudana ki kheer),open_source_recipes
+Mona013,OSR014,Kesari bath,Kesari bath,open_source_recipes
+Mona014,OSR015,Putharekulu,Putharekulu,open_source_recipes
+Mona015,OSR016,Mango malpua,Mango malpua,open_source_recipes
+Mona016,OSR017,Mango vanilla custard,Mango vanilla custard,open_source_recipes
+Mona017,OSR018,Kiwi granola pudding,Kiwi granola pudding,open_source_recipes
+Mona018,OSR019,Oats burfi,Oats burfi,open_source_recipes
+Mona019,OSR020,Lotus seed halwa (kamal gatta),Lotus seed halwa (Kamal gattay ka halwa),open_source_recipes
+Mona020,OSR021,Amaranth ladoo,Amaranth ladoo (Rajgira ladoo),open_source_recipes
+Mona021,OSR022,Chhena poda,Chhena poda,open_source_recipes
+Mona022,OSR023,Sweet couscous dessert,Sweet couscous dessert,open_source_recipes
+Mona023,OSR024,Shrikhand,Sweetened yogurt (Shrikhand),open_source_recipes
+Mona024,OSR025,Rabri,Thickened sweetened milk (Rabri),open_source_recipes
+Mona025,OSR026,Besan halwa,Gram flour halwa (Besan halwa),open_source_recipes
+Mona026,OSR027,Prawn sandwich,Prawn sandwich,open_source_recipes
+Mona027,OSR028,Watercress sandwich,Watercress sandwich,open_source_recipes
+Mona028,OSR029,Fish sandwich,Fish sandwich ,open_source_recipes
+Mona029,OSR030,Kidney bean sandwich with cottage cheese,Kidney bean sandwich with cottage cheese,open_source_recipes
+Mona030,OSR031,Ragi biscuits,Finger millet biscuit (Ragi biscuit),open_source_recipes
+Mona031,OSR032,Buttermilk biscuits,Buttermilk biscuit,open_source_recipes
+Mona032,OSR033,Lemon cookies,Lemon cookies,open_source_recipes
+Mona033,OSR034,Sweet potato biscuits,Sweet potato biscuit (Shakarkand ke biscuit),open_source_recipes
+Mona034,OSR035,Raspberry Shortbread Cookies,Raspberry shortbread cookies,open_source_recipes
+Mona035,OSR036,Pumpkin cookies,Pumpkin cookies ,open_source_recipes
+Mona036,OSR037,Greenpea cookies,Greenpea cookies,open_source_recipes
+Mona037,OSR038,Sunflower cookies,Sunflower cookies,open_source_recipes
+Mona038,OSR039,Cardamom cookies,Cardamom cookies (Elaichi cookies),open_source_recipes
+Mona039,OSR040,Hazelnut cookies,Hazelnut cookies,open_source_recipes
+Mona040,OSR041,Milk cookies,Milk cookies,open_source_recipes
+Mona041,OSR042,Cranberry cookies,Cranberry cookies,open_source_recipes
+Mona042,OSR043,Olive biscuits,Olive biscuit,open_source_recipes
+Mona044,OSR045,Tutti frutti biscuits,Tutti fruitti biscuit,open_source_recipes
+Mona045,OSR046,Peach blueberry preserves,Peach blueberry preserves,open_source_recipes
+Mona046,OSR047,Pear preserves,Pear preserves (Naashpati ka murabba),open_source_recipes
+Mona047,OSR048,Starfruit preserves,Starfruit preserves ,open_source_recipes
+Mona048,OSR049,Gooseberry pickle,Gooseberry pickle (Amla ka achaar),open_source_recipes
+Mona049,OSR050,Lotus stem pickle,Lotus stem pickle (Kamal kakdi ka achar),open_source_recipes
+Mona050,OSR051,Date pickle,Date pickle (Khajoor ka achaar),open_source_recipes
+Mona051,OSR052,Garlic pickle,Garlic pickle (Lahasun ka achar),open_source_recipes
+Mona052,OSR053,Mesu pickle,Fermented bamboo shoot pickle (Mesu pickle),open_source_recipes
+Mona053,OSR054,Sweet peach pickle,Sweet peach pickle (Aadoo ka achaar),open_source_recipes
+Mona054,OSR055,Pickled mustard greens,Pickled mustard greens ,open_source_recipes
+Mona055,OSR056,Small onion pickle,Small onion pickle ,open_source_recipes
+Mona056,OSR057,Green tomato pickle,Green tomato pickle (Haray tamatar ka achaar),open_source_recipes
+Mona057,OSR058,Pickled cabbage,Pickled cabbage ,open_source_recipes
+Mona058,OSR059,Coconut pickle,Coconut pickle (Nariyal ka aachar),open_source_recipes
+Mona059,OSR060,Potato pickle,Potato pickle (Aloo ka achaar),open_source_recipes
+Mona060,OSR061,Mango murabba candy,Mango murabba candy,open_source_recipes
+Harleen001,OSR062,Afghani chicken,Afghani chicken,open_source_recipes
+Harleen002,OSR063,Fish orly,Fish orly,open_source_recipes
+Harleen003,OSR064,Hariyali fish tikka,Hariyali Fish Tikka,open_source_recipes
+Harleen004,OSR065,Chicken Manchurian,Chicken manchurian,open_source_recipes
+Harleen005,OSR066,Handi chicken,Handi chicken,open_source_recipes
+Harleen006,OSR067,Lemon chicken,Lemon chicken,open_source_recipes
+Harleen007,OSR068,Lemon butter fish,Lemon butter fish,open_source_recipes
+Harleen008,OSR069,Baked Eggs in Tomato Sauce,Baked eggs in tomato sauce,open_source_recipes
+Harleen009,OSR070,Egg in a Pepper,Egg in a pepper,open_source_recipes
+Harleen010,OSR071,Spinach-Mushroom Scrambled Eggs,Spinach mushroom scrambled egg (Palak mushroom bhurji),open_source_recipes
+Harleen011,OSR072,Corn Omelet,Corn omelette/omlet,open_source_recipes
+Harleen012,OSR073,Cajun Chicken,Cajun chicken,open_source_recipes
+Harleen013,OSR074,Paaner do pyaza,Paaner do pyaza,open_source_recipes
+Harleen014,OSR075,Gobi Manchurian,Cabbage manchurian (Pattagobhi manchurian),open_source_recipes
+Harleen015,OSR076,Gobi 65,Gobi 65,open_source_recipes
+Harleen016,OSR077,Paneer Lababdar,Paneer lababdar,open_source_recipes
+Harleen017,OSR078,Roasted Cauliflower Steak,Roasted cauliflower steak,open_source_recipes
+Harleen018,OSR079,Sauteed Radishes with Green Beans,Sauteed radishes with green beans,open_source_recipes
+Harleen019,OSR080,Garlic chutney /poondu chutney,Garlic chutney/Poondu chutney (Lahasun ki chutney),open_source_recipes
+Harleen020,OSR081,Schezwan chutney,Schezwan chutney,open_source_recipes
+Harleen021,OSR082,Bengal 5 Spice Blend (Panch Phoran),Bengal 5 Spice Blend (Panch Phoran),open_source_recipes
+Harleen022,OSR083,Vengaya Chutney/ onion chutney,Onion chutney (Pyaaz ki chutney/Vengaya chutney),open_source_recipes
+Harleen024,OSR085,Dates Chutney,Dates chutney (Khajoor ki chutney),open_source_recipes
+Harleen025,OSR086,Chicken salad,Chicken salad,open_source_recipes
+Harleen026,OSR087,Macaroni salad,Macaroni salad,open_source_recipes
+Harleen027,OSR088,Cabbage raita,Cabbage raita (Pattagobhi raita),open_source_recipes
+Harleen028,OSR089,Pomegranate raita,Pomegranate raita (Anaar ka raita),open_source_recipes
+Harleen029,OSR090,Onion raita,Onion raita (Pyaaz ka raita),open_source_recipes
+Harleen030,OSR091,Green chilli raita,Green chilli raita (Hari mirch ka raita),open_source_recipes
+Harleen031,OSR092,Kale Salad,Kale salad,open_source_recipes
+Harleen032,OSR093,Spinach and Paneer Souffle,Spinach and paneer souffle ,open_source_recipes
+Harleen033,OSR094,Masala Soufflé,Masala souffle ,open_source_recipes
+Harleen034,OSR095,Chicken and Cheese Souffle,Chicken and cheese souffle,open_source_recipes
+Harleen035,OSR096,Tamarind chutney,Tamarind chutney (Chintapandu pachadi/Puli chutney),open_source_recipes
+Harleen036,OSR097,Pav bhaji masala,Pav bhaji masala,open_source_recipes
+Harleen037,OSR098,Green chutney,Green chutney,open_source_recipes
+Namita001,OSR099,Sabudana-khichdi,Sago khitchdi/khichri (Sabudana khitchdi/khichri),open_source_recipes
+Namita002,OSR100,Besan Chilla,Gram flour chilla/cheela (Besan chilla/cheela),open_source_recipes
+Namita003,OSR101,Vegetable Namkeen Jave,Vegetable namkeen jave,open_source_recipes
+Namita004,OSR102,Khakra,Khakhra,open_source_recipes
+Namita005,OSR103,Pesarattu (Moong bean dosa),Moong bean dosa (Pesarattu),open_source_recipes
+Namita006,OSR104,Methi thepla,Methi thepla,open_source_recipes
+Namita007,OSR105,Puttu,Rice puttu (Ari puttu),open_source_recipes
+Namita008,OSR106,Khura (buckwheat pancake),Buckwheat pancake (Khura),open_source_recipes
+Namita009,OSR107,Quinoa khichdi,Quinoa khichdi/khichri,open_source_recipes
+Namita010,OSR108,Khakhra Chaat,Khakhra chaat,open_source_recipes
+Namita012,OSR110,Banana Appam,Banana appam,open_source_recipes
+Namita013,OSR111,Veg Manchurian,Veg manchurian,open_source_recipes
+Namita014,OSR112,Pav bhaji,Pav bhaji,open_source_recipes
+Namita015,OSR113,Rice murukku,Rice murukku,open_source_recipes
+Namita016,OSR114,Bhel puri,Bhel puri ,open_source_recipes
+Namita017,OSR115,Rava dhokla,Semolina dhokla (Suji/Rava dhokla),open_source_recipes
+Namita018,OSR116,Spicy corn chaat,Spicy corn chaat ,open_source_recipes
+Namita020,OSR118,Jackfruit fritters/ ponsa mulik,Jackfruit fritters (Ponsa mulik/Kathal ka pakora),open_source_recipes
+Namita021,OSR119,Banana chips,Banana chips (Kele ke chips),open_source_recipes
+Namita022,OSR120,Wheat cake,Wheat cake,open_source_recipes
+Namita023,OSR121,Mango cheesecake,Mango cheesecake,open_source_recipes
+Namita024,OSR122,Carrot cake,Carrot cake (Gajar ka cake),open_source_recipes
+Namita025,OSR123,Rava cake,Semolina cake (Suji/Rava cake),open_source_recipes
+Namita026,OSR124,Ragi cake,Finger millet cake (Ragi cake),open_source_recipes
+Namita027,OSR125,Honey cake,Honey cake,open_source_recipes
+Namita028,OSR126,Almond cardamom cake,Almond cardamom cake (Badam elaichi cake),open_source_recipes
+Namita029,OSR127,Tutti frutti cake,Tutti frutti cake,open_source_recipes
+Namita030,OSR128,Ham and Bean soup,Ham and Bean soup,open_source_recipes
+Namita031,OSR129,Whey soup,Whey soup,open_source_recipes
+Namita032,OSR130,Lauki soup (Bottle gourd soup),Bottle gourd soup (Ghiya/Lauki soup),open_source_recipes
+Namita033,OSR131,Baked potato soup,Baked potato soup,open_source_recipes
+Namita034,OSR132,Pumpkin soup,Pumpkin soup,open_source_recipes
+Namita035,OSR133,Sweet corn soup,Sweet corn soup,open_source_recipes
+Namita036,OSR134,Paneer soup,Paneer soup,open_source_recipes
+Namita037,OSR135,Curried Cauliflower soup,Curried Cauliflower soup,open_source_recipes
+Namita038,OSR136,Millet soup,Millet soup,open_source_recipes
+Namita039,OSR137,Lemon coriander soup,Lemon coriander soup,open_source_recipes
+Namita040,OSR138,Garlic soup,Garlic soup,open_source_recipes
+Namita041,OSR139,Dal makhani,Dal makhani,open_source_recipes
+Namita043,OSR141,Dalma,Dalma,open_source_recipes
+Namita044,OSR142,Chana Dal,Split bengal gram dal (Channa dal),open_source_recipes
+Namita045,OSR143,Horsegram Dal (Kulthi Dal) ,Horsegram dal (Kulthi dal) ,open_source_recipes
+Namita046,OSR144,Panchmel dal,Panchmel dal,open_source_recipes
+Namita047,OSR145,Dal dhokli,Dal dhokli,open_source_recipes
+Namita048,OSR146,Gujarati handvo ,Gujarati handvo ,open_source_recipes
+Namita049,OSR147,Sev,Sev (Omapodi/Karapusa),open_source_recipes
+Namita050,OSR148,Papdi,Papdi,open_source_recipes
+Namita051,OSR151,Jowar dosa,Jowar dosa,open_source_recipes
+Namita052,OSR152,Bread roll,Bread roll,open_source_recipes
+Namita053,OSR153,Soya seekh kabab,Soya seekh kebab,open_source_recipes
+Namita054,OSR154,Classic seasoned black beans,Classic seasoned black beans,open_source_recipes
+Namita055,OSR155,Maa chaane ki dal,Maa chaane ki dal,open_source_recipes
+Namita056,OSR156,Garlic chickpea soup,Garlic chickpea soup (Lahasun aur chane ka shoraba),open_source_recipes
+12.12,ASC239,Shepherd's pie,Shepherd's pie (with minced meat),asc_manual

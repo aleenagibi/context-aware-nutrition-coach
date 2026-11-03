@@ -1,0 +1,20 @@
+{% from "macros.html" import csrf %}
+<form method="post" action="{{ url_for('act', name='save_meal') }}" data-ajax class="confirm">
+  {{ csrf() }}<input type="hidden" name="n" value="{{ items|length }}"><input type="hidden" name="tab" value="log">
+  <h2>Check what I found</h2>
+  <p class="fineprint">Read by the {{ how }}. {{ note }}</p>
+  <blockquote>{{ text }}</blockquote>
+  {% for it in items %}{% set i = loop.index0 %}
+  <div class="found{{ ' unmatched' if not it.food_id }}">
+    <label class="inc"><input type="checkbox" name="inc_{{ i }}" value="1" {{ 'checked' if it.food_id }}><span class="box" aria-hidden="true"></span><span>{{ it.name }}</span></label>
+    <select name="food_{{ i }}" aria-label="Food for {{ it.name }}"><option value="">Skip (not counted)</option>
+      {% for f in foods %}<option value="{{ f.id }}" {{ 'selected' if f.id == it.food_id }}>{{ f.name }}</option>{% endfor %}</select>
+    <div class="qty"><input name="qty_{{ i }}" type="number" step="any" min="0" max="5000" inputmode="decimal" value="{{ ('%g'|format(it.qty)) if it.qty is not none else '' }}" placeholder="qty" aria-label="Quantity">
+      <select name="unit_{{ i }}" aria-label="Unit">{% for u in it.unit_options %}<option value="{{ u }}" {{ 'selected' if u == (it.unit or '') }}>{{ u or 'default' }}</option>{% endfor %}</select></div>
+    <small>{% if it.food_id %}≈ {{ it.grams }} g · {{ it.protein|round(1) }} g protein{% if it.how != 'alias' %} · <b>check this match</b>{% endif %}{% if it.assumed %} · portion assumed{% endif %}
+      {% else %}Not in the food table, so it will not be counted. Pick a food or skip it.{% endif %}</small>
+  </div>
+  {% endfor %}
+  <p class="fineprint">Totals are recalculated from the food table when you save. Roughly {{ totals.protein_lo|round|int }}–{{ totals.protein_hi|round|int }} g protein as read.</p>
+  <div class="sheet-actions"><button type="button" class="link" data-close>Cancel</button><button class="btn" type="submit">Save to log</button></div>
+</form>

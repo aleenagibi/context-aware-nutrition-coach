@@ -1,0 +1,12 @@
+{
+  "food_composition_records": 198,
+  "foods_inserted": 198,
+  "foods_updated": 0,
+  "dataset_recipes_imported": 1008,
+  "recipe_ingredient_links": 5188,
+  "recipes_with_unmatched_or_unconvertible_ingredients": 999,
+  "unique_unmatched_ingredient_names": 195,
+  "unit_reference_rows": 327,
+  "usda_retention_reference_rows": 270,
+  "note": "INDB per-serving values are preferred for recipe macros. Volume-to-mass conversions are estimates; unknown units are excluded. USDA retention factors are retained as reference data and are not applied a second time to already-reported nutrient values. See coverage JSON."
+}

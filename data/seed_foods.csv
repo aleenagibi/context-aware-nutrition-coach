@@ -1,0 +1,89 @@
+id,name,state,category,diet,kcal,protein,carbs,fat,fibre,confidence,pantry,staple,pantry_key,default_unit,aliases,units,source
+atta,Whole wheat flour (atta),raw,grains,0,340,12,70,2,11,medium,1,0,,tbsp,atta;wheat flour;whole wheat flour,tbsp=8;katori=110,seed-approx
+rice_raw,"Rice, white (raw)",raw,grains,0,365,7.1,80,0.7,1.3,high,1,0,,katori,raw rice;uncooked rice;basmati rice,katori=120;cup=185,seed-approx
+oats,Oats (dry),raw,grains,0,389,16.9,66,6.9,10.6,high,1,0,,serving,oats;rolled oats;oatmeal;dry oats,serving=40;tbsp=7,seed-approx
+besan,Gram flour (besan),raw,grains,0,387,22,58,6.7,10.8,high,1,0,,tbsp,besan;gram flour;chickpea flour,tbsp=8;katori=100,seed-approx
+poha_raw,"Flattened rice (poha, raw)",raw,grains,0,346,6.6,77,1.2,3.2,medium,1,0,,katori,raw poha;flattened rice;poha flakes,katori=60;cup=70,seed-approx
+bread_wheat,Whole wheat bread,prepared,grains,0,247,13,41,3.4,7,high,1,0,,slice,bread;brown bread;whole wheat bread;wheat bread;toast,slice=30,seed-approx
+bread_white,White bread,prepared,grains,0,265,9,49,3.2,2.7,high,1,0,,slice,white bread;sandwich bread,slice=27,seed-approx
+quinoa,Quinoa (cooked),cooked,grains,0,120,4.4,21,1.9,2.8,high,1,0,,katori,quinoa;cooked quinoa,katori=150;cup=185,seed-approx
+toor_dal_raw,Toor dal (raw),raw,pulses,0,343,21.7,62.8,1.5,15,medium,1,0,,katori,raw toor dal;arhar dal raw;toor dal dry,katori=120,seed-approx
+moong_dal_raw,Moong dal (raw),raw,pulses,0,347,23.9,62.6,1.2,16.3,medium,1,0,,katori,raw moong dal;moong dal dry;mung beans,katori=120,seed-approx
+masoor_dal_raw,Masoor dal (raw),raw,pulses,0,352,24.6,63.4,1.1,10.7,medium,1,0,,katori,raw masoor dal;red lentils dry;masoor dal dry,katori=120,seed-approx
+chana_raw,Chickpeas (raw),raw,pulses,0,378,20.5,63,6,12.2,medium,1,0,,katori,raw chickpeas;kabuli chana raw;dry chickpeas,katori=120,seed-approx
+rajma_raw,Kidney beans (raw),raw,pulses,0,333,23.6,60,0.8,24.9,high,1,0,,katori,raw rajma;dry rajma;dry kidney beans,katori=120,seed-approx
+soya_chunks,Soya chunks (dry),raw,pulses,0,345,52,33,0.5,13,medium,1,0,,serving,soya chunks;soy chunks;meal maker;nutrela,serving=30;katori=40,seed-approx
+tofu,Tofu (firm),prepared,pulses,0,76,8,1.9,4.8,0.3,high,1,0,,serving,tofu;bean curd,serving=100;piece=50,seed-approx
+sprouts,Moong sprouts,raw,pulses,0,30,3,5.9,0.2,1.8,high,1,0,,katori,sprouts;moong sprouts;sprouted moong;sprouted beans,katori=100,seed-approx
+rice_cooked,"Rice, white (cooked)",cooked,grains,0,130,2.7,28,0.3,0.4,high,0,0,rice_raw,katori,rice;white rice;steamed rice;plain rice;chawal,katori=150;cup=158;plate=250,seed-approx
+roti,Roti (chapati),cooked,grains,0,297,9.8,46,7.5,5,medium,0,0,atta,roti,roti;chapati;phulka;fulka,roti=40,seed-approx
+paratha,Paratha (plain),cooked,grains,1,326,7.5,47,11,4,low,0,0,atta,paratha,paratha;parantha;plain paratha,paratha=80,seed-approx
+dal_toor,Toor dal (cooked),cooked,pulses,0,121,6.8,23.7,0.4,6.7,medium,0,0,toor_dal_raw,katori,dal;toor dal;arhar dal;tur dal;boiled dal,katori=150;cup=200,seed-approx
+dal_moong,Moong dal (cooked),cooked,pulses,0,105,7,19.2,0.4,7.6,medium,0,0,moong_dal_raw,katori,moong dal;mung dal;moong;green gram dal,katori=150;cup=200,seed-approx
+dal_masoor,Masoor dal (cooked),cooked,pulses,0,116,9,20.1,0.4,7.9,medium,0,0,masoor_dal_raw,katori,masoor dal;red lentils;lentils;masoor,katori=150;cup=200,seed-approx
+chana_cooked,Chickpeas (boiled),cooked,pulses,0,164,8.9,27.4,2.6,7.6,high,0,0,chana_raw,katori,chickpeas;boiled chickpeas;chana;boiled chana;kabuli chana,katori=150;cup=164,seed-approx
+rajma_cooked,Kidney beans (boiled),cooked,pulses,0,127,8.7,22.8,0.5,6.4,high,0,0,rajma_raw,katori,rajma;kidney beans;boiled rajma,katori=150;cup=177,seed-approx
+milk,Milk (whole),raw,dairy,1,61,3.2,4.8,3.3,0,high,1,0,,glass,milk;doodh;full cream milk;whole milk,glass=250;cup=240;katori=150,seed-approx
+curd,Curd (dahi),prepared,dairy,1,61,3.5,4.7,3.3,0,high,1,0,,katori,curd;dahi;yogurt;yoghurt;plain curd,katori=150;cup=245;tbsp=15,seed-approx
+greek_yogurt,Greek yogurt (non-fat),prepared,dairy,1,59,10.2,3.6,0.4,0,high,1,0,,katori,greek yogurt;greek curd;hung curd,katori=150;cup=245,seed-approx
+paneer,Paneer,prepared,dairy,1,296,18,3.4,22,0,medium,1,0,,serving,paneer;cottage cheese;indian cottage cheese,serving=100;piece=25,seed-approx
+cheese,Cheese (cheddar),prepared,dairy,1,403,25,1.3,33,0,high,1,0,,slice,cheese;cheddar;cheese slice,slice=20,seed-approx
+buttermilk,Buttermilk (chaas),prepared,dairy,1,40,3.3,4.8,0.9,0,high,1,0,,glass,buttermilk;chaas;chhaas;mattha,glass=250,seed-approx
+whey,Whey protein powder,prepared,supplements,1,400,80,8,6,0,medium,1,0,,scoop,whey;whey protein;protein powder,scoop=30,seed-approx
+ghee,Ghee,prepared,fats,1,900,0,0,100,0,high,1,0,,tsp,ghee,tsp=5;tbsp=14,seed-approx
+butter,Butter,prepared,fats,1,717,0.9,0.1,81,0,high,1,0,,tsp,butter,tsp=5;tbsp=14,seed-approx
+oil,Cooking oil,raw,fats,0,884,0,0,100,0,high,1,1,,tsp,oil;cooking oil;vegetable oil,tsp=5;tbsp=14,seed-approx
+egg,Egg (boiled),cooked,eggs,2,155,13,1.1,11,0,high,1,0,,egg,egg;boiled egg;anda;eggs,egg=50,seed-approx
+egg_white,Egg white,cooked,eggs,2,52,11,0.7,0.2,0,high,0,0,egg,white,egg white;egg whites,white=33,seed-approx
+chicken,Chicken breast (cooked),cooked,meat,3,165,31,0,3.6,0,high,1,0,,serving,chicken;chicken breast;grilled chicken;boiled chicken,serving=120;piece=120,seed-approx
+fish_white,White fish (cooked),cooked,fish,3,105,23,0,0.9,0,high,1,0,,serving,fish;white fish;fish fillet,serving=120;piece=120,seed-approx
+salmon,Salmon (cooked),cooked,fish,3,206,22,0,12,0,high,1,0,,serving,salmon,serving=120;piece=120,seed-approx
+tuna,Tuna (canned in water),prepared,fish,3,116,26,0,0.8,0,high,1,0,,tin,tuna;canned tuna,tin=120,seed-approx
+prawns,Prawns (cooked),cooked,fish,3,99,24,0.2,0.3,0,high,1,0,,serving,prawns;shrimp;shrimps,serving=100,seed-approx
+onion,Onion,raw,veg,0,40,1.1,9.3,0.1,1.7,high,1,0,,piece,onion;pyaz,piece=110,seed-approx
+tomato,Tomato,raw,veg,0,18,0.9,3.9,0.2,1.2,high,1,0,,piece,tomato,piece=120,seed-approx
+spinach,Spinach (cooked),cooked,veg,0,23,3,3.8,0.3,2.4,high,1,0,,katori,spinach;palak;cooked spinach,katori=100,seed-approx
+broccoli,Broccoli (cooked),cooked,veg,0,35,2.4,7.2,0.4,3.3,high,1,0,,serving,broccoli,serving=100,seed-approx
+cauliflower,Cauliflower (cooked),cooked,veg,0,23,1.8,4.1,0.5,2.3,high,1,0,,serving,cauliflower;gobi;phool gobi,serving=100,seed-approx
+carrot,Carrot,raw,veg,0,41,0.9,9.6,0.2,2.8,high,1,0,,piece,carrot;gajar,piece=60,seed-approx
+cucumber,Cucumber,raw,veg,0,15,0.7,3.6,0.1,0.5,high,1,0,,piece,cucumber;kheera,piece=150,seed-approx
+potato,Potato (boiled),cooked,veg,0,87,1.9,20,0.1,1.8,high,1,0,,piece,potato;boiled potato;aloo,piece=100,seed-approx
+sweet_potato,Sweet potato (boiled),cooked,veg,0,76,1.4,17.7,0.1,2.5,high,1,0,,piece,sweet potato;shakarkandi,piece=130,seed-approx
+banana,Banana,raw,fruit,0,89,1.1,23,0.3,2.6,high,1,0,,piece,banana;kela,piece=110,seed-approx
+apple,Apple,raw,fruit,0,52,0.3,14,0.2,2.4,high,1,0,,piece,apple;seb,piece=180,seed-approx
+orange,Orange,raw,fruit,0,47,0.9,12,0.1,2.4,high,1,0,,piece,orange;santra,piece=130,seed-approx
+guava,Guava,raw,fruit,0,68,2.6,14.3,1,5.4,high,1,0,,piece,guava;amrood,piece=100,seed-approx
+papaya,Papaya,raw,fruit,0,43,0.5,11,0.3,1.7,high,1,0,,katori,papaya;papita,katori=150,seed-approx
+mango,Mango,raw,fruit,0,60,0.8,15,0.4,1.6,high,1,0,,katori,mango;aam,katori=150,seed-approx
+pomegranate,Pomegranate,raw,fruit,0,83,1.7,18.7,1.2,4,high,1,0,,katori,pomegranate;anar,katori=100,seed-approx
+grapes,Grapes,raw,fruit,0,69,0.7,18,0.2,0.9,high,1,0,,katori,grapes;angoor,katori=100,seed-approx
+peanuts,Peanuts,raw,nuts,0,567,25.8,16.1,49.2,8.5,high,1,0,,handful,peanuts;groundnuts;moongphali;roasted peanuts,handful=30;piece=0.8,seed-approx
+almonds,Almonds,raw,nuts,0,579,21.2,21.6,49.9,12.5,high,1,0,,handful,almonds;badam,handful=30;piece=1.2,seed-approx
+cashews,Cashews,raw,nuts,0,553,18.2,30.2,43.8,3.3,high,1,0,,handful,cashews;kaju,handful=30;piece=1.5,seed-approx
+walnuts,Walnuts,raw,nuts,0,654,15.2,13.7,65.2,6.7,high,1,0,,handful,walnuts;akhrot,handful=30;piece=4,seed-approx
+peanut_butter,Peanut butter,prepared,nuts,0,588,25,20,50,6,high,1,0,,tbsp,peanut butter,tbsp=16;tsp=5,seed-approx
+chia_seeds,Chia seeds,raw,nuts,0,486,16.5,42.1,30.7,34.4,high,1,0,,tbsp,chia;chia seeds,tbsp=12,seed-approx
+idli,Idli,prepared,dishes,0,140,4.5,29,0.5,1.5,medium,0,0,,idli,idli,idli=40,seed-dish-estimate
+dosa,Dosa (plain),prepared,dishes,0,168,3.9,29,3.7,1.5,medium,0,0,,dosa,dosa;plain dosa,dosa=90,seed-dish-estimate
+sambar,Sambar,prepared,dishes,0,55,2.5,8,1.5,1.8,low,0,0,,katori,sambar,katori=150,seed-dish-estimate
+poha,Poha (prepared),prepared,dishes,0,130,2.6,24,2.7,1.5,low,0,0,,katori,poha;kanda poha,katori=150;plate=200,seed-dish-estimate
+upma,Upma,prepared,dishes,0,140,3.5,21,4.5,1.5,low,0,0,,katori,upma,katori=150;plate=200,seed-dish-estimate
+khichdi,Khichdi,prepared,dishes,1,110,4,18,2.5,1.5,low,0,0,,katori,khichdi;khichri,katori=200,seed-dish-estimate
+dal_tadka,Dal tadka,prepared,dishes,1,110,5.5,14,3.8,3.5,low,0,0,,katori,dal tadka;dal fry;tadka dal,katori=150,seed-dish-estimate
+rajma_masala,Rajma masala,prepared,dishes,1,120,6,16,3.5,5,low,0,0,,katori,rajma masala;rajma curry,katori=150,seed-dish-estimate
+chole_masala,Chole masala,prepared,dishes,0,150,6.5,20,5,6,low,0,0,,katori,chole;chole masala;chana masala,katori=150,seed-dish-estimate
+palak_paneer,Palak paneer,prepared,dishes,1,150,7,5,11,2,low,0,0,,katori,palak paneer,katori=150,seed-dish-estimate
+paneer_bhurji,Paneer bhurji,prepared,dishes,1,210,12,5,15,1,low,0,0,,katori,paneer bhurji,katori=100,seed-dish-estimate
+paneer_butter_masala,Paneer butter masala,prepared,dishes,1,220,8,9,17,1.5,low,0,0,,katori,paneer butter masala;paneer makhani,katori=150,seed-dish-estimate
+chicken_curry,Chicken curry,prepared,dishes,3,150,14,4,8.5,1,low,0,0,,katori,chicken curry,katori=150,seed-dish-estimate
+egg_curry,Egg curry,prepared,dishes,2,140,8,6,9,1,low,0,0,,katori,egg curry,katori=150,seed-dish-estimate
+fish_curry,Fish curry,prepared,dishes,3,110,12,3,5,0.5,low,0,0,,katori,fish curry,katori=150,seed-dish-estimate
+mutton_curry,Mutton curry,prepared,dishes,3,180,16,4,11,0.8,low,0,0,,katori,mutton curry;mutton;lamb curry,katori=150,seed-dish-estimate
+chicken_biryani,Chicken biryani,prepared,dishes,3,180,9,22,6,1,low,0,0,,plate,chicken biryani;biryani,plate=300;katori=200,seed-dish-estimate
+veg_pulao,Veg pulao,prepared,dishes,1,150,3,25,4,2,low,0,0,,katori,veg pulao;vegetable pulao;pulao,katori=200,seed-dish-estimate
+curd_rice,Curd rice,prepared,dishes,1,115,3,18,3,0.5,low,0,0,,katori,curd rice;thayir sadam,katori=200,seed-dish-estimate
+aloo_gobi,Aloo gobi,prepared,dishes,0,90,2.5,11,4,2.5,low,0,0,,katori,aloo gobi,katori=150,seed-dish-estimate
+mixed_veg_sabzi,Mixed vegetable sabzi,prepared,dishes,0,80,2,9,4,3,low,0,0,,katori,sabzi;mixed veg;mixed vegetables;vegetable curry;sabji,katori=150,seed-dish-estimate
+besan_chilla,Besan chilla,prepared,dishes,0,190,9,20,8,3,low,0,0,,chilla,besan chilla;chilla;cheela,chilla=70,seed-dish-estimate
+omelette,Omelette,prepared,dishes,2,154,10.6,0.6,11.7,0,medium,0,0,,omelette,omelette;omelet,omelette=110,seed-dish-estimate
+egg_bhurji,Egg bhurji (scrambled),prepared,dishes,2,170,11,2,13,0.3,low,0,0,,katori,egg bhurji;scrambled eggs;anda bhurji,katori=100,seed-dish-estimate

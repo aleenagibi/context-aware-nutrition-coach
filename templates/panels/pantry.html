@@ -1,0 +1,78 @@
+{% from "macros.html" import csrf %}
+<section class="pantry-screen">
+  <p class="eyebrow">YOUR KITCHEN</p>
+  <div class="pantry-heading">
+    <div><h1>Your pantry.</h1><p class="sub">Keep track of what you have. Fuel uses it to find meals you can make.</p></div>
+    <div class="pantry-count"><strong>{{ pantry|length + custom_pantry|length }}</strong><span>items</span></div>
+  </div>
+
+  <label class="search pantry-search"><span class="sr-only">Search your pantry</span>
+    <input type="search" data-filter="#pantry-catalogue" placeholder="Search ingredients…" autocomplete="off">
+  </label>
+
+  <form method="post" action="{{ url_for('act', name='set_pantry') }}" data-ajax id="pantry-list">
+    {{ csrf() }}<input type="hidden" name="tab" value="pantry">
+    <div class="pantry-section-head"><h2>In your pantry</h2><span class="fineprint">Selected ingredients</span></div>
+    {% if pantry or custom_pantry %}
+      <div class="pantry-selected">
+      {% for cat, items in pantry_groups.items() %}
+        {% for f in items if f.id in pantry %}
+          <label class="pantry-item selected"><input type="checkbox" name="food" value="{{ f.id }}" checked data-autosubmit><span>{{ f.label }}</span><span class="pantry-remove" aria-hidden="true">×</span></label>
+        {% endfor %}
+      {% endfor %}
+      {% for f in custom_pantry %}
+        <label class="pantry-item selected custom"><input type="checkbox" name="custom_food" value="{{ f.id }}" checked data-autosubmit><span>{{ f.name }}</span><small>Custom</small><span class="pantry-remove" aria-hidden="true">×</span></label>
+      {% endfor %}
+      </div>
+    {% else %}
+      <div class="pantry-empty"><strong>Your pantry is empty</strong><p>Add a few ingredients to get meal ideas based on what you already have.</p></div>
+    {% endif %}
+    <div class="pantry-actions">
+      <button class="btn" type="button" id="pantry-add-toggle" aria-expanded="false" aria-controls="pantry-add-area">＋ Add ingredients</button>
+      <button class="btn btn-quiet" type="button" id="custom-food-toggle" aria-expanded="false" aria-controls="custom-food-area">＋ Add a food not listed</button>
+    </div>
+
+    <div id="pantry-add-area" class="pantry-add-area" hidden>
+      <div class="pantry-section-head"><h2>Browse ingredients</h2><span class="fineprint">Cooked variants are kept out of pantry choices</span></div>
+      <div id="pantry-catalogue">
+      {% for cat, items in pantry_groups.items() %}
+        <details class="pantry-category" {% if loop.first %}open{% endif %}>
+          <summary>{{ cat }} <span>{{ items|length }}</span></summary>
+          <div class="pantry-catalogue-grid">
+            {% for f in items %}
+              {% if f.id not in pantry %}
+              <label class="pantry-item" data-text="{{ f.label|lower }}"><input type="checkbox" name="food" value="{{ f.id }}" data-autosubmit><span>{{ f.label }}</span></label>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </details>
+      {% endfor %}
+      </div>
+    </div>
+    <noscript><button class="btn" type="submit">Save pantry</button></noscript>
+  </form>
+
+  <div id="custom-food-area" class="custom-food-area" hidden>
+    <form method="post" action="{{ url_for('act', name='add_custom_food') }}" data-ajax>
+      {{ csrf() }}<input type="hidden" name="tab" value="pantry">
+      <div class="pantry-section-head"><h2>Add your own food</h2><span class="fineprint">Nutrition is optional</span></div>
+      <label class="field-label">Food name<input name="name" maxlength="80" required placeholder="e.g. Homemade ragi dosa"></label>
+      <p class="fineprint">Optional nutrition values per 100 g. Leave them blank if you don't know.</p>
+      <div class="custom-macro-grid">
+        <label>Calories<input type="number" name="kcal" min="0" max="1000" step="0.1" placeholder="kcal"></label>
+        <label>Protein<input type="number" name="protein" min="0" max="1000" step="0.1" placeholder="g"></label>
+        <label>Carbs<input type="number" name="carbs" min="0" max="1000" step="0.1" placeholder="g"></label>
+        <label>Fat<input type="number" name="fat" min="0" max="1000" step="0.1" placeholder="g"></label>
+      </div>
+      <label class="field-label">Match to a catalogue ingredient (optional)
+        <select name="mapped_food_id"><option value="">No match — keep nutrition unverified</option>
+          {% for cat, items in pantry_groups.items() %}{% for f in items %}
+            <option value="{{ f.id }}">{{ f.label }}</option>
+          {% endfor %}{% endfor %}
+        </select>
+      </label>
+      <button class="btn" type="submit">Save to pantry</button>
+    </form>
+  </div>
+  <p class="fineprint pantry-note">Raw or basic ingredients are shown here. Cooked forms remain available to recipe and meal records. Custom foods without nutrition data are never counted as zero-calorie foods.</p>
+</section>

@@ -1,0 +1,68 @@
+{% from "macros.html" import csrf %}
+<p class="eyebrow">YOU</p>
+<h1>Your details.</h1>
+<p class="sub">These power the estimates. Everything is stored in a local file on this computer.</p>
+<form method="post" action="{{ url_for('act', name='save_profile') }}" class="card grid2" data-ajax>
+  {{ csrf() }}<input type="hidden" name="tab" value="you">
+  <label>Sex (for the BMR formula)<select name="sex">{% for v in ('Female', 'Male') %}<option {{ 'selected' if profile.sex == v }}>{{ v }}</option>{% endfor %}</select></label>
+  <label>Age (18-80)<input type="number" name="age" min="18" max="80" value="{{ profile.age }}" required></label>
+  <label>Height (cm)<input type="number" name="height_cm" min="120" max="220" step="0.5" value="{{ profile.height_cm }}" required></label>
+  <label>Weight (kg)<input type="number" name="weight_kg" min="35" max="200" step="0.1" value="{{ profile.weight_kg }}" required></label>
+  <label>Daily activity<select name="lifestyle">{% for v in lifestyles %}<option {{ 'selected' if profile.lifestyle == v }}>{{ v }}</option>{% endfor %}</select></label>
+  <label>Goal<select name="goal">{% for v in goals %}<option {{ 'selected' if profile.goal == v }}>{{ v }}</option>{% endfor %}</select></label>
+  <label>Food preference<select name="diet">{% for v in diets %}<option {{ 'selected' if profile.diet == v }}>{{ v }}</option>{% endfor %}</select></label>
+  <label>Time to cook (min)<input type="number" name="cook_minutes" min="5" max="120" value="{{ profile.cook_minutes }}" required></label>
+  <label class="full">Foods you dislike (comma separated)<input name="dislikes" maxlength="200" value="{{ profile.dislikes }}" placeholder="e.g. tofu, fish"></label>
+  <div class="full"><p class="fineprint">Estimates only, not medical advice. For medical conditions, pregnancy, under-18s or a history of disordered eating, talk to a doctor or registered dietitian. Allergies are not handled: check every label yourself.</p><button class="btn" type="submit">Save</button></div>
+</form>
+
+<section class="coach-shell" aria-labelledby="coach-title">
+  <div class="coach-heading">
+    <div class="coach-mark" aria-hidden="true">✦</div>
+    <div><p class="eyebrow">YOUR PERSONAL NUTRITION ADVISOR</p><h2 id="coach-title">Ask Fuel</h2>
+      <p class="coach-subtitle">Answers grounded in your profile, today's food and movement logs, and your pantry.</p></div>
+    <span class="coach-live"><i></i> Today only</span>
+  </div>
+  <div class="coach-scope"><span>✧</span><p><strong>Personal context is on.</strong> Fuel can use your saved profile and preferences, today's entries and pantry. Historical trends are not enabled.</p></div>
+  <div class="coach-chat card">
+    <div class="messages coach-messages" aria-live="polite" aria-label="Conversation">
+      {% for m in chat %}<article class="msg {{ m.role }}"><span class="eyebrow">{{ 'YOU' if m.role == 'user' else 'FUEL COACH' }}</span><div class="coach-markdown" data-markdown>{{ m.content }}</div></article>
+      {% else %}<div class="coach-empty"><div class="coach-empty-icon">✳</div><h3>What would you like help with?</h3><p>Ask about today's nutrition, your next meal, or how to use what's in your pantry.</p></div>{% endfor %}
+    </div>
+    {% if chat_meta.unsupported %}<p class="warning-note">Some citations could not be verified: {{ chat_meta.unsupported|join(', ') }}.</p>{% endif %}
+    <div class="coach-prompts" aria-label="Suggested questions">
+      <button type="button" class="coach-prompt" data-coach-prompt="How much protein have I had today, and how much is left?">My protein today</button>
+      <button type="button" class="coach-prompt" data-coach-prompt="What can I make next with my pantry that fits my remaining nutrition targets?">What should I eat next?</button>
+      <button type="button" class="coach-prompt" data-coach-prompt="Can you review today's meals and point out any nutrition gaps?">Review today's meals</button>
+    </div>
+    <form method="post" action="{{ url_for('act', name='chat') }}" class="chat-form coach-form" data-ajax>
+      {{ csrf() }}<input type="hidden" name="tab" value="you">
+      <label class="sr-only" for="coach-question">Ask Fuel a question</label>
+      <input id="coach-question" name="question" maxlength="500" placeholder="Ask Fuel anything about today…" required {{ '' if has_key else 'disabled' }}>
+      <button class="btn coach-send" type="submit" aria-label="Send question" {{ '' if has_key else 'disabled' }}>Send <span aria-hidden="true">↗</span></button>
+    </form>
+    {% if not has_key %}<p class="fineprint">Add GROQ_API_KEY to your .env file and restart Fuel to enable the coach.</p>{% endif %}
+    <div class="coach-footer"><span class="fineprint">Estimates only · Not medical advice · {{ model }}</span>
+      <form method="post" action="{{ url_for('act', name='clear_chat') }}" data-ajax>{{ csrf() }}<button class="link" type="submit">Clear conversation</button></form>
+    </div>
+    {% if chat_meta.trace %}<details class="coach-debug"><summary>Show how the last answer was generated</summary>
+      {% for t in chat_meta.trace %}<p class="src"><strong>{{ t.tool }}</strong><br><code>{{ t.input }}</code><br><small>{{ t.output }}</small></p>{% endfor %}</details>{% endif %}
+  </div>
+</section>
+
+<details class="card"><summary>Highest-protein foods for your diet</summary>
+  <div class="table-wrap"><table><thead><tr><th>Food (per 100 g)</th><th>kcal</th><th>Protein</th></tr></thead>
+    <tbody>{% for f in foods_dense %}<tr><td>{{ f.name }}</td><td>{{ f.kcal|round|int }}</td><td>{{ f.protein }}</td></tr>{% endfor %}</tbody></table></div></details>
+
+<details class="card"><summary>Knowledge base ({{ kb|length }} passages)</summary>
+  <p class="fineprint">Entries marked "unchecked" are paraphrases from general knowledge: verify before relying on them.</p>
+  {% for c in kb %}<p class="src"><strong>[{{ c.id }}] {{ c.title }}</strong><br>{{ c.text }}<br><small>{{ c.source }} · status: {{ c.status }}</small></p>{% endfor %}</details>
+
+<div class="card">
+  <span class="eyebrow">YOUR DATA</span>
+  <p><a class="link" href="{{ url_for('export') }}">Download my data (JSON)</a></p>
+  <form method="post" action="{{ url_for('act', name='wipe') }}" class="grid2" data-ajax>
+    {{ csrf() }}<input type="hidden" name="tab" value="you">
+    <label>Type DELETE to erase everything<input name="confirm" autocomplete="off"></label><button class="btn danger" type="submit">Delete all my data</button>
+  </form>
+</div>

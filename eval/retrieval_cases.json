@@ -1,0 +1,50 @@
+[
+ {
+  "question": "How much protein per day for building muscle?",
+  "expected": "S1"
+ },
+ {
+  "question": "How much protein should I eat in one meal?",
+  "expected": "S8"
+ },
+ {
+  "question": "Is the RDA of 0.8 g/kg enough for athletes?",
+  "expected": "S2"
+ },
+ {
+  "question": "Does more than 1.6 g/kg protein add more muscle?",
+  "expected": "S3"
+ },
+ {
+  "question": "How is BMR calculated?",
+  "expected": "S4"
+ },
+ {
+  "question": "How are calories burned in a workout estimated?",
+  "expected": "S5"
+ },
+ {
+  "question": "How fast should I lose fat?",
+  "expected": "S6"
+ },
+ {
+  "question": "How big a calorie surplus do I need to gain muscle?",
+  "expected": "S7"
+ },
+ {
+  "question": "Protein needs for endurance runners",
+  "expected": "S9"
+ },
+ {
+  "question": "Do vegans need more protein?",
+  "expected": "S10"
+ },
+ {
+  "question": "Who should avoid using this calculator, for example with kidney disease?",
+  "expected": "S11"
+ },
+ {
+  "question": "Should I eat less protein on rest days?",
+  "expected": "S12"
+ }
+]

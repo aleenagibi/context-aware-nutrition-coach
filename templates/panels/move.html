@@ -1,0 +1,37 @@
+{% from "macros.html" import csrf %}
+<p class="eyebrow">MOVEMENT</p>
+<h1>How did you move today?</h1>
+<p class="sub">Tick what you did. The estimate updates your calorie target.</p>
+<form method="post" action="{{ url_for('act', name='add_workouts') }}" class="card" data-ajax>
+  {{ csrf() }}<input type="hidden" name="tab" value="move">
+  {% for cat in categories %}
+  <div class="act-row">
+    <label class="act-check"><input type="checkbox" name="cat" value="{{ cat }}"><span class="box" aria-hidden="true"></span><span>{{ workout_labels[cat] }}</span></label>
+    <select name="min_{{ cat }}" aria-label="Minutes for {{ workout_labels[cat] }}">{% for m in (15, 30, 45, 60, 90) %}<option value="{{ m }}" {{ 'selected' if m == 30 }}>{{ m }} min</option>{% endfor %}</select>
+    <select name="int_{{ cat }}" aria-label="Intensity for {{ workout_labels[cat] }}">{% for i in ('light', 'moderate', 'hard') %}<option {{ 'selected' if i == 'moderate' }}>{{ i }}</option>{% endfor %}</select>
+  </div>
+  {% endfor %}
+  <div class="row"><span class="fineprint">Estimates use standard MET values and can be off by 20% or more.</span><button class="btn" type="submit">Add</button></div>
+</form>
+
+<form method="post" action="{{ url_for('act', name='parse_workout') }}" class="card" data-ajax>
+  {{ csrf() }}<input type="hidden" name="tab" value="move">
+  <label>Or describe it<textarea name="workout_text" rows="2" maxlength="1000" placeholder="45 min heavy squats, then 20 min easy jog"></textarea></label>
+  <div class="row"><span class="fineprint">{% if has_key %}Read by AI.{% else %}Simple reader (no AI key).{% endif %}</span><button class="btn" type="submit">Read workout</button></div>
+</form>
+
+<div class="card">
+  <div class="row"><span class="eyebrow">TODAY'S SESSIONS</span>{% if workouts %}<span class="eyebrow">≈ {{ burn }} kcal burned</span>{% endif %}</div>
+  {% for w in workouts %}
+  <div class="session"><div><strong>{{ w.activity }}</strong><span>{{ w.category }} · {{ w.intensity }}</span></div>
+    <div class="session-min">{{ w.minutes|round|int }}<small> min</small></div>
+    <form method="post" action="{{ url_for('act', name='delete_workout') }}" data-ajax>{{ csrf() }}<input type="hidden" name="id" value="{{ w.id }}"><button class="x" aria-label="Remove session">×</button></form></div>
+  {% else %}<p class="muted">No sessions yet. Rest is fine too.</p>{% endfor %}
+</div>
+<div class="card stats">
+  <div><span class="eyebrow">CALORIES</span><strong>{{ '{:,}'.format(targets.calories) }}</strong><small>kcal / day</small></div>
+  <div><span class="eyebrow">PROTEIN</span><strong>{{ targets.protein_low }}–{{ targets.protein_high }}</strong><small>g / day</small></div>
+  <div><span class="eyebrow">BMR</span><strong>{{ '{:,}'.format(targets.bmr) }}</strong><small>kcal</small></div>
+</div>
+{% for n in targets.notes %}<p class="warning-note">{{ n }}</p>{% endfor %}
+<p class="fineprint">Calories = BMR x lifestyle factor + workout burn, adjusted for your goal. Real needs differ by roughly 10-15%.</p>

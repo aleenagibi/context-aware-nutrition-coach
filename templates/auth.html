@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="csrf" content="{{ csrf_token() }}">
+  <meta name="theme-color" content="#0b0c0f">
+  <title>{{ 'Create account' if mode == 'signup' else 'Log in' }} · Fuel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+</head>
+<body class="auth-page">
+  <main class="auth-wrap">
+    <a class="auth-brand" href="{{ url_for('login') }}">Fuel<span>✦</span></a>
+    <section class="auth-card">
+      <p class="eyebrow">YOUR PERSONAL NUTRITION COMPANION</p>
+      <h1>{{ 'Create your account' if mode == 'signup' else 'Welcome back' }}</h1>
+      <p class="auth-intro">{{ 'Your meals, pantry, workouts and preferences stay in your own account.' if mode == 'signup' else 'Log in to continue with your personal Fuel space.' }}</p>
+      {% if error %}<p class="auth-error" role="alert">{{ error }}</p>{% endif %}
+      <form method="post" class="auth-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <label>Email address
+          <input type="email" name="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required value="{{ request.form.get('email','') }}">
+        </label>
+        <label>Password
+          <input type="password" name="password" autocomplete="{{ 'new-password' if mode == 'signup' else 'current-password' }}" minlength="{{ 10 if mode == 'signup' else 1 }}" maxlength="128" placeholder="{{ 'At least 10 characters' if mode == 'signup' else 'Your password' }}" required>
+        </label>
+        {% if mode == 'signup' %}
+        <label>Confirm password
+          <input type="password" name="confirm_password" autocomplete="new-password" minlength="10" maxlength="128" placeholder="Enter your password again" required>
+        </label>
+        <p class="auth-note">Use at least 10 characters. Your password is stored as a secure hash.</p>
+        {% endif %}
+        <button class="btn auth-submit" type="submit">{{ 'Create account' if mode == 'signup' else 'Log in' }} <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="auth-switch">
+        {{ 'Already have an account?' if mode == 'signup' else "Don't have an account?" }}
+        <a href="{{ url_for('login' if mode == 'signup' else 'signup') }}">{{ 'Log in' if mode == 'signup' else 'Sign up' }}</a>
+      </p>
+    </section>
+    <p class="auth-privacy">Your Fuel data is private to your account on this installation.</p>
+  </main>
+</body>
+</html>

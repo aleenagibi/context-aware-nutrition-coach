@@ -1,0 +1,48 @@
+{% from "macros.html" import art, ring, csrf %}
+<p class="eyebrow">TODAY</p>
+<section class="hero">
+  <div class="ring-wrap">{{ ring(dash.pct) }}<div class="ring-center"><strong>{{ dash.pct }}%</strong><span>of low end</span></div></div>
+  <div class="hero-text"><h1>{{ dash.headline }}</h1><p class="sub">{{ dash.sub }}</p></div>
+</section>
+
+<div class="mini-stats">
+  <div class="card mini"><span class="eyebrow">CALORIES</span><strong>{{ take.kcal|round|int }}<small> / {{ '{:,}'.format(targets.calories) }}</small></strong>
+    <div class="bar"><i style="width:{{ dash.kcal_pct }}%"></i></div></div>
+  <div class="card mini"><span class="eyebrow">PROTEIN GOAL</span><strong>{{ targets.protein_low }}–{{ targets.protein_high }}<small> g</small></strong></div>
+  <div class="card mini"><span class="eyebrow">MOVEMENT</span><strong>{{ minutes }}<small> min</small></strong></div>
+</div>
+
+<h2>Next meal ideas</h2>
+<div class="strip" tabindex="0" aria-label="Meal ideas">
+  {% for d in ideas %}{% set r = d.recipe %}
+  <button type="button" class="idea" data-open="{{ url_for('recipe_detail', recipe_id=r.id) }}">
+    <span class="idea-art">{{ art(r.id, r.art) }}</span>
+    <strong>{{ r.name }}</strong>
+    <span class="idea-protein">+{{ r.protein|round|int }} g protein</span>
+    <span class="idea-meta">{{ r.minutes }} min · {{ r.kcal|round|int }} kcal</span>
+    <span class="idea-have{{ ' ok' if pantry and not d.need }}">{% if pantry %}{{ d.have|length }}/{{ d.have|length + d.need|length }} in pantry{% else %}add your pantry{% endif %}</span>
+  </button>
+  {% else %}<p class="muted">No recipes match your diet and dislikes. Relax a preference in "You".</p>{% endfor %}
+</div>
+
+<div class="row"><h2>Today's plan</h2>
+  <form method="post" action="{{ url_for('act', name='build_plan') }}" data-ajax>{{ csrf() }}<button class="link" type="submit">{{ 'Rebuild' if plan else 'Build a plan' }}</button></form></div>
+{% if plan %}
+<ul class="list checklist">
+  {% for p in plan %}
+  <li class="entry">
+    <form method="post" action="{{ url_for('act', name='tick_plan') }}" data-ajax data-autosubmit class="check">
+      {{ csrf() }}<input type="hidden" name="id" value="{{ p.id }}">
+      <label><input type="checkbox" name="done" value="1" {{ 'checked' if p.done }}><span class="box" aria-hidden="true"></span>
+        <span class="entry-main"><strong>{{ SLOT_LABELS[p.slot] }}: {{ p.recipe.name }}</strong>
+          <span>{{ '%g'|format(p.servings) }} serving · +{{ p.protein }} g protein · {{ p.kcal }} kcal</span></span></label>
+    </form>
+    <button type="button" class="x" data-open="{{ url_for('recipe_detail', recipe_id=p.recipe.id, servings=p.servings) }}" aria-label="Open recipe">›</button>
+  </li>
+  {% endfor %}
+</ul>
+<p class="fineprint">Tick a meal when you eat it and it is added to your log. Untick to remove it.</p>
+{% else %}<p class="muted">Build a one-day plan from recipes that fit your diet, pantry and targets.</p>{% endif %}
+
+<h2>Logged today</h2>
+{% set tab = 'today' %}{% include "partials/log_list.html" %}

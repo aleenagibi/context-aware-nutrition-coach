@@ -1,0 +1,23 @@
+{% from "macros.html" import csrf %}
+<p class="eyebrow">LOG A MEAL</p>
+<h1>What did you eat?</h1>
+<p class="sub">Type it the way you would say it. I'll match it to the food table and you confirm before anything is saved.</p>
+<form method="post" action="{{ url_for('act', name='parse_meal') }}" class="card" data-ajax>
+  {{ csrf() }}
+  <label>Your meal<textarea name="meal_text" rows="3" maxlength="600" required placeholder="2 roti, 1 katori dal, 100 g paneer"></textarea></label>
+  <div class="row"><span class="fineprint">{% if has_key %}Read by AI, then checked against the food table.{% else %}No AI key: a simpler reader is used.{% endif %}</span>
+    <button class="btn" type="submit">Read meal</button></div>
+</form>
+
+{% if recent %}
+<h2>Log again</h2>
+<div class="chips">
+  {% for m in recent %}
+  <form method="post" action="{{ url_for('act', name='log_again') }}" data-ajax>{{ csrf() }}<input type="hidden" name="index" value="{{ loop.index0 }}"><input type="hidden" name="tab" value="log">
+    <button class="chip-btn" type="submit" title="{{ m.protein|round|int }} g protein, {{ m.kcal|round|int }} kcal">+ {{ m.label }}</button></form>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2>Logged today</h2>
+{% set tab = 'log' %}{% include "partials/log_list.html" %}

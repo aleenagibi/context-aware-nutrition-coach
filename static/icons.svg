@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="bowl" viewBox="0 0 48 48"><path d="M6 22h36c0 9-7 16-18 16S6 31 6 22z"/><path d="M15 15c0-3 3-3 3-6M24 15c0-3 3-3 3-6M33 15c0-3 3-3 3-6"/></symbol>
+  <symbol id="plate" viewBox="0 0 48 48"><circle cx="24" cy="26" r="15"/><circle cx="24" cy="26" r="8"/><path d="M6 8v9M10 8v9M14 8v9M10 17v6M42 8c-3 3-3 8 0 11v4"/></symbol>
+  <symbol id="glass" viewBox="0 0 48 48"><path d="M12 10h24l-3 28H15z"/><path d="M13 20h22"/><path d="M30 10l4-6"/></symbol>
+  <symbol id="toast" viewBox="0 0 48 48"><path d="M10 18c-4-6 2-10 8-9 4-2 8-2 12 0 6-1 12 3 8 9v18H10z"/><path d="M17 25h14"/></symbol>
+  <symbol id="egg" viewBox="0 0 48 48"><path d="M24 6c8 0 14 12 14 21a14 14 0 0 1-28 0C10 18 16 6 24 6z"/><circle cx="24" cy="28" r="5"/></symbol>
+  <symbol id="pan" viewBox="0 0 48 48"><circle cx="19" cy="26" r="13"/><path d="M32 22l13-5M12 24c3 3 9 3 12 0"/></symbol>
+</svg>

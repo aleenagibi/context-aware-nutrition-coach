@@ -1,0 +1,547 @@
+[
+ {
+  "text": "2 roti and a katori of dal",
+  "items": [
+   {
+    "food": "roti",
+    "grams": 80
+   },
+   {
+    "food": "dal_toor",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "100 g paneer",
+  "items": [
+   {
+    "food": "paneer",
+    "grams": 100
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "3 idli with sambar",
+  "items": [
+   {
+    "food": "idli",
+    "grams": 120
+   },
+   {
+    "food": "sambar",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 bowl rice and rajma",
+  "items": [
+   {
+    "food": "rice_cooked",
+    "grams": 200
+   },
+   {
+    "food": "rajma_cooked",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "2 boiled eggs",
+  "items": [
+   {
+    "food": "egg",
+    "grams": 100
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "a glass of milk",
+  "items": [
+   {
+    "food": "milk",
+    "grams": 250
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "oats 50 g with milk",
+  "items": [
+   {
+    "food": "oats",
+    "grams": 50
+   },
+   {
+    "food": "milk",
+    "grams": 250
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "chicken curry and 2 roti",
+  "items": [
+   {
+    "food": "chicken_curry",
+    "grams": 150
+   },
+   {
+    "food": "roti",
+    "grams": 80
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "banana",
+  "items": [
+   {
+    "food": "banana",
+    "grams": 110
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "paneer bhurji with toast",
+  "items": [
+   {
+    "food": "paneer_bhurji",
+    "grams": 100
+   },
+   {
+    "food": "bread_wheat",
+    "grams": 30
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "dal tadka, rice",
+  "items": [
+   {
+    "food": "dal_tadka",
+    "grams": 150
+   },
+   {
+    "food": "rice_cooked",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "2 dosa with sambar",
+  "items": [
+   {
+    "food": "dosa",
+    "grams": 180
+   },
+   {
+    "food": "sambar",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 cup curd",
+  "items": [
+   {
+    "food": "curd",
+    "grams": 245
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 scoop whey and 250 ml milk",
+  "items": [
+   {
+    "food": "whey",
+    "grams": 30
+   },
+   {
+    "food": "milk",
+    "grams": 250
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "handful of almonds",
+  "items": [
+   {
+    "food": "almonds",
+    "grams": 30
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 katori chole and 2 roti",
+  "items": [
+   {
+    "food": "chole_masala",
+    "grams": 150
+   },
+   {
+    "food": "roti",
+    "grams": 80
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "a bowl of poha",
+  "items": [
+   {
+    "food": "poha",
+    "grams": 200
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "2 slices bread with peanut butter",
+  "items": [
+   {
+    "food": "bread_wheat",
+    "grams": 60
+   },
+   {
+    "food": "peanut_butter",
+    "grams": 16
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "100 g tuna",
+  "items": [
+   {
+    "food": "tuna",
+    "grams": 100
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 plate chicken biryani",
+  "items": [
+   {
+    "food": "chicken_biryani",
+    "grams": 300
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "an apple and 10 almonds",
+  "items": [
+   {
+    "food": "apple",
+    "grams": 180
+   },
+   {
+    "food": "almonds",
+    "grams": 12
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "2 tbsp peanut butter",
+  "items": [
+   {
+    "food": "peanut_butter",
+    "grams": 32
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "fish curry with rice",
+  "items": [
+   {
+    "food": "fish_curry",
+    "grams": 150
+   },
+   {
+    "food": "rice_cooked",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "omelette and 2 slices of toast",
+  "items": [
+   {
+    "food": "omelette",
+    "grams": 110
+   },
+   {
+    "food": "bread_wheat",
+    "grams": 60
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "1 glass buttermilk",
+  "items": [
+   {
+    "food": "buttermilk",
+    "grams": 250
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "half katori rajma",
+  "items": [
+   {
+    "food": "rajma_cooked",
+    "grams": 75
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "sprouts salad",
+  "items": [
+   {
+    "food": "sprouts",
+    "grams": 100
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "khichdi and curd",
+  "items": [
+   {
+    "food": "khichdi",
+    "grams": 200
+   },
+   {
+    "food": "curd",
+    "grams": 150
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "a piece of fruit",
+  "items": [],
+  "set": "clean"
+ },
+ {
+  "text": "3 egg whites",
+  "items": [
+   {
+    "food": "egg_white",
+    "grams": 99
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "chai",
+  "items": [],
+  "set": "clean"
+ },
+ {
+  "text": "200 g rice",
+  "items": [
+   {
+    "food": "rice_cooked",
+    "grams": 200
+   }
+  ],
+  "set": "clean"
+ },
+ {
+  "text": "rice 200 g",
+  "set": "messy",
+  "items": [
+   {
+    "food": "rice_cooked",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "text": "dal 1 katori and roti 2",
+  "set": "messy",
+  "items": [
+   {
+    "food": "dal_toor",
+    "grams": 150
+   },
+   {
+    "food": "roti",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "text": "had dal chawal for lunch",
+  "set": "messy",
+  "items": [
+   {
+    "food": "dal_toor",
+    "grams": 150
+   },
+   {
+    "food": "rice_cooked",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "a couple of rotis with sabzi",
+  "set": "messy",
+  "items": [
+   {
+    "food": "roti",
+    "grams": 80
+   },
+   {
+    "food": "mixed_veg_sabzi",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "breakfast: 2 idlis, sambar and a cup of chai",
+  "set": "messy",
+  "items": [
+   {
+    "food": "idli",
+    "grams": 80
+   },
+   {
+    "food": "sambar",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "ate six almonds",
+  "set": "messy",
+  "items": [
+   {
+    "food": "almonds",
+    "grams": 7
+   }
+  ]
+ },
+ {
+  "text": "do roti aur ek katori dal",
+  "set": "messy",
+  "items": [
+   {
+    "food": "roti",
+    "grams": 80
+   },
+   {
+    "food": "dal_toor",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "two and a half katori rajma",
+  "set": "messy",
+  "items": [
+   {
+    "food": "rajma_cooked",
+    "grams": 375
+   }
+  ]
+ },
+ {
+  "text": "roti sabzi",
+  "set": "messy",
+  "items": [
+   {
+    "food": "roti",
+    "grams": 40
+   },
+   {
+    "food": "mixed_veg_sabzi",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "dal rice and curd",
+  "set": "messy",
+  "items": [
+   {
+    "food": "dal_toor",
+    "grams": 150
+   },
+   {
+    "food": "rice_cooked",
+    "grams": 150
+   },
+   {
+    "food": "curd",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "text": "morning: 2 egg omelette with 2 toast",
+  "set": "messy",
+  "items": [
+   {
+    "food": "omelette",
+    "grams": 110
+   },
+   {
+    "food": "bread_wheat",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "text": "about 100 grams of grilled chicken",
+  "set": "messy",
+  "items": [
+   {
+    "food": "chicken",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "text": "protein shake with 2 scoops of whey in a glass of milk",
+  "set": "messy",
+  "items": [
+   {
+    "food": "whey",
+    "grams": 60
+   },
+   {
+    "food": "milk",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "text": "no breakfast today",
+  "set": "messy",
+  "items": []
+ }
+]

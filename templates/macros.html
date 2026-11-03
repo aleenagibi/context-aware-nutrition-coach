@@ -1,0 +1,16 @@
+{% macro csrf() -%}<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{%- endmacro %}
+
+{% macro art(rid, key, cls='') -%}
+{%- set img = food_image(rid) -%}
+{%- if img %}<img class="art-img {{ cls }}" src="{{ img }}" alt="" loading="lazy" decoding="async">
+{%- else %}<span class="art-placeholder {{ cls }}" data-food-image="{{ url_for('recipe_image', recipe_id=rid) }}"><svg class="art-svg {{ cls }}" viewBox="0 0 48 48" aria-hidden="true"><use href="{{ url_for('static', filename='icons.svg') }}#{{ key }}"/></svg></span>{% endif -%}
+{%- endmacro %}
+
+{% macro ring(pct) -%}
+<svg class="big-ring" viewBox="0 0 120 120" role="img" aria-label="Protein progress {{ pct }} percent">
+  <circle class="ring-bg" cx="60" cy="60" r="52" pathLength="100"/>
+  <circle class="ring-fg" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="{{ pct }} 100" transform="rotate(-90 60 60)"/>
+</svg>
+{%- endmacro %}
+
+{% macro range(lo, hi) %}{{ lo|round|int }}–{{ hi|round|int }}{% endmacro %}

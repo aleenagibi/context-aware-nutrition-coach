@@ -1,0 +1,782 @@
+[
+  [
+    "",
+    "ALMOND ESSENCE"
+  ],
+  [
+    "",
+    "ALMONDS ESSENCE"
+  ],
+  [
+    "",
+    "Alum Solution (2%)"
+  ],
+  [
+    "",
+    "Ammonium bicarbonate"
+  ],
+  [
+    "",
+    "Banana essence"
+  ],
+  [
+    "",
+    "Banana flavour"
+  ],
+  [
+    "",
+    "CITRIC ACID"
+  ],
+  [
+    "",
+    "COLOUR"
+  ],
+  [
+    "",
+    "Citric Acid"
+  ],
+  [
+    "",
+    "Colour"
+  ],
+  [
+    "",
+    "ESSENCE"
+  ],
+  [
+    "",
+    "Food colour"
+  ],
+  [
+    "",
+    "Fruit essence"
+  ],
+  [
+    "",
+    "GREEN COLOUR"
+  ],
+  [
+    "",
+    "Green colour"
+  ],
+  [
+    "",
+    "Gulkand"
+  ],
+  [
+    "",
+    "KEWRA ESSENCE"
+  ],
+  [
+    "",
+    "Kewra"
+  ],
+  [
+    "",
+    "Kewra essence"
+  ],
+  [
+    "",
+    "LEMON COLOUR"
+  ],
+  [
+    "",
+    "LEMON ESSENCE"
+  ],
+  [
+    "",
+    "LEMON JELLY CRYSTALS"
+  ],
+  [
+    "",
+    "Lemon color"
+  ],
+  [
+    "",
+    "Lemon essence"
+  ],
+  [
+    "",
+    "Mango essence"
+  ],
+  [
+    "",
+    "Nannari root/ Indian sarsaparilla"
+  ],
+  [
+    "",
+    "ORANGE COLOUR"
+  ],
+  [
+    "",
+    "ORANGE DRINK"
+  ],
+  [
+    "",
+    "ORANGE ESSENCE"
+  ],
+  [
+    "",
+    "ORANGE FLAVOURED JELLY CRYSTALS"
+  ],
+  [
+    "",
+    "Orange Essesnce"
+  ],
+  [
+    "",
+    "Orange and green color"
+  ],
+  [
+    "",
+    "Orange colour"
+  ],
+  [
+    "",
+    "Orange essence"
+  ],
+  [
+    "",
+    "PINEAPPLE ESSENCE"
+  ],
+  [
+    "",
+    "Pineapple Essesnce"
+  ],
+  [
+    "",
+    "Pineapple essence"
+  ],
+  [
+    "",
+    "Pineapple syrup"
+  ],
+  [
+    "",
+    "REETHA"
+  ],
+  [
+    "",
+    "Red colour"
+  ],
+  [
+    "",
+    "Rose petals"
+  ],
+  [
+    "",
+    "Rose water"
+  ],
+  [
+    "",
+    "SPINACH POWDER"
+  ],
+  [
+    "",
+    "STRAWBERRY COLOUR"
+  ],
+  [
+    "",
+    "STRAWBERRY ESSENCE"
+  ],
+  [
+    "",
+    "Silver Foil"
+  ],
+  [
+    "",
+    "Strawberry essence"
+  ],
+  [
+    "",
+    "Syrawberry flavour"
+  ],
+  [
+    "",
+    "TOMATO COLOUR"
+  ],
+  [
+    "",
+    "Tartaric acid"
+  ],
+  [
+    "",
+    "YELLOW COLOUR"
+  ],
+  [
+    "",
+    "Yellow color"
+  ],
+  [
+    "",
+    "Yellow colour"
+  ],
+  [
+    "A001",
+    "Amaranth seed, black (Amaranthus cruentus)"
+  ],
+  [
+    "A003",
+    "Bajra (Pennisetum typhoideum)"
+  ],
+  [
+    "A005",
+    "Jowar (Sorghum vulgare)"
+  ],
+  [
+    "A006",
+    "Maize, dry (Zea mays)"
+  ],
+  [
+    "A009",
+    "Quinoa (Chenopodium quinoa)"
+  ],
+  [
+    "A010",
+    "Ragi (Eleusine coracana)"
+  ],
+  [
+    "A011",
+    "Rice flakes (Oryza sativa )"
+  ],
+  [
+    "A012",
+    "Rice puffed (Oryza sativa )"
+  ],
+  [
+    "A014",
+    "Rice, parboiled, milled (Oryza sativa )"
+  ],
+  [
+    "A018",
+    "Wheat flour, refined (Triticum aestivum)"
+  ],
+  [
+    "A019",
+    "Wheat flour, atta (Triticum aestivum)"
+  ],
+  [
+    "A022",
+    "Wheat, semolina (Triticum aestivum)"
+  ],
+  [
+    "A024",
+    "Wheat, vermicelli, roasted (Triticum aestivum)"
+  ],
+  [
+    "B001",
+    "Bengal gram, dal (Cicer arietinum)"
+  ],
+  [
+    "B002",
+    "Bengal gram, whole (Cicer arietinum)"
+  ],
+  [
+    "B003",
+    "Black gram, dal (Phaseolus mungo)"
+  ],
+  [
+    "B004",
+    "Black gram, whole (Phaseolus mungo)"
+  ],
+  [
+    "B005",
+    "Cowpea, brown (Vigna catjang)"
+  ],
+  [
+    "B010",
+    "Green gram, dal (Vigna radiata)"
+  ],
+  [
+    "B011",
+    "Green gram, whole (Vigna radiata)"
+  ],
+  [
+    "B012",
+    "Horse gram, whole (Dolicus biflorus)"
+  ],
+  [
+    "B013",
+    "Lentil dal (Lens culinaris)"
+  ],
+  [
+    "B015",
+    "Lentil whole, yellowish (Lens culinaris)"
+  ],
+  [
+    "B016",
+    "Moth bean (Vigna aconitifolia)"
+  ],
+  [
+    "B020",
+    "Rajmah, red (Phaseolus vulgaris)"
+  ],
+  [
+    "B021",
+    "Red gram, dal (Cajanus cajan)"
+  ],
+  [
+    "B025",
+    "Soya bean, white (Glycine max)"
+  ],
+  [
+    "C004",
+    "Amaranth leaves, red and green mix (Amaranthus gangeticus)"
+  ],
+  [
+    "C008",
+    "Bathua leaves (Chenopodium album)"
+  ],
+  [
+    "C015",
+    "Cabbage, green (Brassica oleracea var. capitata f. alba)"
+  ],
+  [
+    "C020",
+    "Fenugreek leaves (Trigonella foenum graecum)"
+  ],
+  [
+    "C025",
+    "Lettuce (Lactuca sativa)"
+  ],
+  [
+    "C026",
+    "Mustard leaves (Brassica juncea)"
+  ],
+  [
+    "C028",
+    "Parsley (Petroselinum crispum)"
+  ],
+  [
+    "C031",
+    "Radish leaves (Raphanus sativus)"
+  ],
+  [
+    "C033",
+    "Spinach (Spinacia oleracea)"
+  ],
+  [
+    "D002",
+    "Bamboo shoot, tender (Bambusa vulgaris)"
+  ],
+  [
+    "D006",
+    "Bitter gourd, jagged, smooth ridges, elongate (Momordica charantia)"
+  ],
+  [
+    "D007",
+    "Bottle gourd, elongate, pale green (Lagenaria vulgaris)"
+  ],
+  [
+    "D031",
+    "Brinjal - all varieties (Solanum melongena)"
+  ],
+  [
+    "D033",
+    "Capsicum, green (Capsicum annuum)"
+  ],
+  [
+    "D034",
+    "Capsicum, red (Capsicum annuum)"
+  ],
+  [
+    "D036",
+    "Cauliflower (Brassica oleracea var. botrytis)"
+  ],
+  [
+    "D037",
+    "Celery stalk (Apium graveolens)"
+  ],
+  [
+    "D042",
+    "Corn, Baby (Zea mays)"
+  ],
+  [
+    "D043",
+    "Cucumber, green, elongate (Cucumis sativus)"
+  ],
+  [
+    "D046",
+    "Drumstick (Moringa oleifera)"
+  ],
+  [
+    "D050",
+    "French beans, hybrid (Phaseolus vulgaris)"
+  ],
+  [
+    "D056",
+    "Ladies finger (Abelmoschus esculentus)"
+  ],
+  [
+    "D057",
+    "Mango, green, raw (Mangifera indica)"
+  ],
+  [
+    "D058",
+    "Onion, stalk (Allium cepa)"
+  ],
+  [
+    "D059",
+    "Papaya, raw (Carica papaya)"
+  ],
+  [
+    "D061",
+    "Peas, fresh (Pisum sativum)"
+  ],
+  [
+    "D066",
+    "Pumpkin, orange, round (Cucurbita maxima)"
+  ],
+  [
+    "D073",
+    "Tinda, tender (Praecitrullus fistulosus)"
+  ],
+  [
+    "D074",
+    "Tomato, green (Solanum lycopersicum)"
+  ],
+  [
+    "D075",
+    "Tomato, ripe, hybrid (Solanum lycopersicum)"
+  ],
+  [
+    "D091",
+    "LOTUS STEM, dry"
+  ],
+  [
+    "E001",
+    "Apple, big (Malus domestica)"
+  ],
+  [
+    "E005",
+    "Apricot, dried (Prunus armeniaca)"
+  ],
+  [
+    "E006",
+    "Apricot, processed (Prunus armeniaca)"
+  ],
+  [
+    "E009",
+    "Banana, ripe, montham (Musa x paradisiaca)"
+  ],
+  [
+    "E014",
+    "Cherries, red (Prunus cerasus)"
+  ],
+  [
+    "E015",
+    "Currants, black (Ribes nigrum)"
+  ],
+  [
+    "E017",
+    "DATES, dried"
+  ],
+  [
+    "E017",
+    "Dates, dry, pale brown (Phoenix dactylifera)"
+  ],
+  [
+    "E019",
+    "Dates, processed (Phoenix dactylifera)"
+  ],
+  [
+    "E022",
+    "Grapes, seeded, round, black (Vitis vinifera)"
+  ],
+  [
+    "E023",
+    "Grapes, seeded, round, green (Vitis vinifera)"
+  ],
+  [
+    "E028",
+    "Guava, white flesh (Psidium guajava)"
+  ],
+  [
+    "E030",
+    "Jack fruit, ripe (Artocarpus heterophyllus)"
+  ],
+  [
+    "E033",
+    "Lemon, juice (Citrus limon)"
+  ],
+  [
+    "E034",
+    "Lime, sweet,pulp (Citrus limetta)"
+  ],
+  [
+    "E035",
+    "Litchi (Nephelium litchi)"
+  ],
+  [
+    "E036",
+    "Mango, ripe, banganapalli (Mangifera indica)"
+  ],
+  [
+    "E047",
+    "Orange, pulp (Citrus aurantium)"
+  ],
+  [
+    "E050",
+    "Peach (Prunus communis)"
+  ],
+  [
+    "E051",
+    "Pear (Pyrus sp.)"
+  ],
+  [
+    "E053",
+    "Pineapple (Ananas comosus)"
+  ],
+  [
+    "E054",
+    "Plum (Prunus domestica)"
+  ],
+  [
+    "E055",
+    "Pomegranate, maroon seeds (Punica granatum)"
+  ],
+  [
+    "E057",
+    "Raisins, dried, black (Vitis vinifera)"
+  ],
+  [
+    "E062",
+    "Star fruit (Averrhoa carambola)"
+  ],
+  [
+    "E063",
+    "Strawberry (Fragaria x ananassa)"
+  ],
+  [
+    "E064",
+    "Tamarind, pulp (Tamarindus indica)"
+  ],
+  [
+    "E067",
+    "Wood Apple (Limonia acidissima)"
+  ],
+  [
+    "F001",
+    "Beet root (Beta vulgaris)"
+  ],
+  [
+    "F002",
+    "Carrot, orange (Daucus carota)"
+  ],
+  [
+    "F004",
+    "Colocasia (Colocasia esculenta)"
+  ],
+  [
+    "F005",
+    "Lotus root (Nelumbium nelumbo)"
+  ],
+  [
+    "F006",
+    "Potato, brown skin, big (Solanum tuberosum)"
+  ],
+  [
+    "F009",
+    "Radish, elongate, red skin (Raphanus sativus)"
+  ],
+  [
+    "F010",
+    "Radish, elongate, white skin (Raphanus sativus)"
+  ],
+  [
+    "F013",
+    "Sweet potato, brown skin (Ipomoea batatas)"
+  ],
+  [
+    "F018",
+    "Yam, ordinary (Amorphophallus sp.)"
+  ],
+  [
+    "F500",
+    "Beetroot, raw"
+  ],
+  [
+    "G008",
+    "Chillies, green - all varieties (Capsicum annum)"
+  ],
+  [
+    "G009",
+    "Coriander leaves (Coriandrum sativum)"
+  ],
+  [
+    "G010",
+    "Curry leaves (Murraya koenigii)"
+  ],
+  [
+    "G012",
+    "Garlic, small clove (Allium sativum)"
+  ],
+  [
+    "G014",
+    "Ginger, fresh (Zingiber officinale)"
+  ],
+  [
+    "G016",
+    "Mint leaves (Mentha spicata )"
+  ],
+  [
+    "G017",
+    "Onion, big (Allium cepa)"
+  ],
+  [
+    "G019",
+    "Asafoetida (Ferula assa-foetida)"
+  ],
+  [
+    "G020",
+    "Cardamom, green (Elettaria cardamomum)"
+  ],
+  [
+    "G021",
+    "Cardamom, black (Elettaria cardamomum)"
+  ],
+  [
+    "G022",
+    "Chillies, red (Capsicum annum)"
+  ],
+  [
+    "G023",
+    "Cloves (Syzygium aromaticum)"
+  ],
+  [
+    "G024",
+    "Coriander seeds (Coriandrum sativum)"
+  ],
+  [
+    "G025",
+    "Cumin seeds (Cuminum cyminum)"
+  ],
+  [
+    "G026",
+    "Fenugreek seeds (Trigonella foenum graecum)"
+  ],
+  [
+    "G027",
+    "Mace (Myristica fragrans)"
+  ],
+  [
+    "G028",
+    "Nutmeg (Myristica fragrans)"
+  ],
+  [
+    "G031",
+    "Pepper, black (Piper nigrum)"
+  ],
+  [
+    "G032",
+    "Poppy seeds (Papaver somniferum)"
+  ],
+  [
+    "G033",
+    "Turmeric powder (Curcuma domestica)"
+  ],
+  [
+    "H001",
+    "Almond (Prunus amygdalus)"
+  ],
+  [
+    "H005",
+    "Cashew nut (Anacardium occidentale)"
+  ],
+  [
+    "H006",
+    "Coconut, kernal, dry (Cocos nucifera)"
+  ],
+  [
+    "H007",
+    "Coconut, kernel, fresh (Cocos nucifera)"
+  ],
+  [
+    "H011",
+    "Gingelly seeds, white (Sesamum indicum)"
+  ],
+  [
+    "H012",
+    "Ground nut (Arachis hypogea)"
+  ],
+  [
+    "H013",
+    "Mustard seeds (Brassica nigra)"
+  ],
+  [
+    "H017",
+    "Pine seed (Pinus sp.)"
+  ],
+  [
+    "H018",
+    "Pistachio nuts (Pistacla vera)"
+  ],
+  [
+    "H020",
+    "Sunflower seeds (Helianthus annuus)"
+  ],
+  [
+    "H021",
+    "Walnut (Juglans regia)"
+  ],
+  [
+    "I001",
+    "Jaggery, cane (Saccharum officinarum)"
+  ],
+  [
+    "J001",
+    "Button mushroom, fresh (Agaricus sp.)"
+  ],
+  [
+    "L002",
+    "Milk, Cow"
+  ],
+  [
+    "L002",
+    "Milk, whole, Cow"
+  ],
+  [
+    "L003",
+    "Paneer"
+  ],
+  [
+    "L004",
+    "Khoa"
+  ],
+  [
+    "M001",
+    "Egg, poultry, whole, raw"
+  ],
+  [
+    "M002",
+    "Egg, poultry, white, raw"
+  ],
+  [
+    "M003",
+    "Egg, poultry, yolk, raw"
+  ],
+  [
+    "N003",
+    "Chicken, poultry, breast, skinless"
+  ],
+  [
+    "O064",
+    "MUTTON, muscle"
+  ],
+  [
+    "P034",
+    "Mackerel (Rastrelliger kanagurta)"
+  ],
+  [
+    "P057",
+    "Pomfret, white (Pampus argenteus)"
+  ],
+  [
+    "Q007",
+    "Tiger prawns, brown (Solenocera crassicornis)"
+  ],
+  [
+    "S006",
+    "Rohu (Labeo rohita)"
+  ]
+]
