@@ -113,12 +113,32 @@ def seed_foods(conn, path=BASE / "data" / "seed_foods.csv"):
 
 def seed_recipes(conn, path=BASE / "data" / "seed_recipes.json"):
     for r in json.loads(Path(path).read_text(encoding="utf-8")):
-        conn.execute("INSERT OR REPLACE INTO recipes VALUES(?,?,?,?,?,?,?)",
-                     (r["id"], r["name"], r["slot"], r["minutes"], r["art"], json.dumps(r["steps"]), json.dumps(r["extras"])))
-        conn.execute("DELETE FROM recipe_items WHERE recipe_id=?", (r["id"],))
-        conn.executemany("INSERT INTO recipe_items VALUES(?,?,?)", [(r["id"], f, g) for f, g in r["items"]])
+        conn.execute(
+            """
+            INSERT OR REPLACE INTO recipes
+            (id, name, slot, minutes, art, steps, extras)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                r["id"],
+                r["name"],
+                r["slot"],
+                r["minutes"],
+                r["art"],
+                json.dumps(r["steps"]),
+                json.dumps(r["extras"])
+            )
+        )
 
+        conn.execute(
+            "DELETE FROM recipe_items WHERE recipe_id=?",
+            (r["id"],)
+        )
 
+        conn.executemany(
+            "INSERT INTO recipe_items VALUES(?,?,?)",
+            [(r["id"], f, g) for f, g in r["items"]]
+        )
 def init(conn):
     """Create tables; seed foods/recipes only when empty so imported data is never overwritten."""
     conn.executescript(SCHEMA)
