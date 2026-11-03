@@ -51,10 +51,16 @@ DEFAULT_PROFILE = ("Female", 25, 165.0, 60.0, "Light movement", "Maintain", "Veg
 
 
 def connect(path=None):
-    conn = sqlite3.connect(str(path or DB_PATH))
+    conn = sqlite3.connect(
+        str(path or DB_PATH),
+        timeout=30
+    )
     conn.row_factory = sqlite3.Row
+
+    conn.execute("PRAGMA busy_timeout = 30000")
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute("PRAGMA journal_mode = WAL")
+
     return conn
 
 

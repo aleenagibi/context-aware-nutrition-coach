@@ -120,6 +120,7 @@ def require_login():
 KB = rag.load_kb()
 BM25 = rag.BM25(KB)
 READY = set()
+_DB_INIT_LOCK = threading.Lock()
 PANELS = ("today", "log", "pantry", "move", "you")
 SLOT_LABELS = {"breakfast": "Breakfast", "lunch": "Lunch", "snack": "Snack", "dinner": "Dinner", "main": "Main meal"}
 WORKOUT_LABELS = {"strength": "Strength / gym", "running": "Running / jogging", "cycling": "Cycling", "walking": "Walking / hiking",
@@ -134,16 +135,26 @@ def get_db():
         uid = session.get("user_id")
         if not uid:
             abort(401)
+
         path = str(USER_DB_DIR / f"{uid}.db")
         if not Path(path).exists():
             abort(401)
-        conn = db.connect(path)
-        if path not in READY:
-            db.init(conn)
-            READY.add(path)
-        g.db = conn
-    return g.db
 
+        conn = db.connect(path)
+
+        try:
+            with _DB_INIT_LOCK:
+                if path not in READY:
+                    db.init(conn)
+                    READY.add(path)
+
+            g.db = conn
+
+        except Exception:
+            conn.close()
+            raise
+
+    return g.db
 
 @app.teardown_appcontext
 def close_db(_exc):
