@@ -1,129 +1,441 @@
-# Nourish: an AI protein & calorie planner (Flask + SQLite + Groq)
+# Nourish — Your AI-Powered Nutrition & Fitness Companion
 
-Answers one question: **"What should I eat next to reach my protein target with what I have?"**
-It turns a workout and a typed meal into estimates, ranks recipes against your pantry and diet, and answers
-follow-up questions with cited sources. **The LLM reads language and makes decisions; Python computes every number.**
+**Eat smarter. Move better. Build healthier habits.**
 
-## What it does
-- **Today:** protein progress ring, next-meal ideas ranked by remaining protein, pantry coverage, diet and time of day; a one-day plan with tick-to-log checkboxes.
-- **Log a meal:** type "2 roti, 1 katori dal, chutney". The LLM extracts names and quantities, Python matches them to the food table and converts units, and you confirm in an editable sheet before anything is saved. Unknown foods are never given numbers.
-- **Pantry:** tick what you have; suggestions re-rank and show what you would still need.
-- **Move:** tick activities (or describe them) for a calorie-target estimate.
-- **Recipes:** ingredients with have/need marks, servings stepper, steps, and a video *search* link. Nutrition is computed from the ingredients.
-- **Coach:** a tool-calling assistant (targets, food lookup, today's totals, recipe suggestions, cited knowledge-base search).
-- **Responsive from 300 px:** bottom sheets on phones, dialogs on tablets, a side pane on desktop. Your data can be exported or deleted from the You tab.
+[Live Demo](https://nourish-xnmv.onrender.com/) · [GitHub Repository](https://github.com/aleenagibi/context-aware-nutrition-coach)
 
-## GenAI components
-| Component | Where | Notes |
+Nourish is an AI-powered nutrition and fitness companion designed to make everyday health decisions simpler. It brings together Generative AI, contextual personalisation, food-composition data, meal planning and activity tracking to help users make more informed decisions about what they eat and how they stay active.
+
+Instead of functioning as just another calorie tracker, Nourish focuses on a more practical question:
+
+**What should I eat next to meet my nutritional goals using the food I have available?**
+
+The application combines conversational AI with structured nutrition data to turn everyday food descriptions into useful, understandable and actionable guidance.
+
+---
+
+## Application Preview
+
+### Your daily nutrition dashboard
+
+Track your nutritional progress, monitor your protein intake and discover meal suggestions based on your goals.
+
+![Nourish Dashboard](docs/images/dashboard.png)
+
+### Log meals using natural language
+
+Describe your meal in everyday language. The AI-powered meal reader identifies food items and matches them against the food database before you confirm what should be saved.
+
+![Meal Logging](docs/images/meal-logging.png)
+
+### Review AI meal recognition
+
+Check the identified foods, adjust quantities and serving units, and review estimated nutritional values before saving.
+
+![AI Meal Recognition](docs/images/meal-recognition.png)
+
+### Manage your pantry
+
+Keep track of ingredients available at home. Pantry information helps Nourish suggest recipes that make use of ingredients you already have.
+
+![Pantry Management](docs/images/pantry.png)
+
+### Discover personalised recipes
+
+Explore meal recommendations with nutritional information, ingredient availability, serving adjustments and preparation instructions.
+
+![Recipe Details](docs/images/recipe-details.png)
+
+### Build a daily meal plan
+
+Generate a one-day meal plan with breakfast, lunch, snacks and dinner based on your nutritional targets and food preferences.
+
+![Daily Meal Plan](docs/images/meal-plan.png)
+
+### Track physical activity
+
+Record workouts manually or describe your activity naturally for AI-assisted workout interpretation.
+
+![Workout Tracking](docs/images/workout-tracking.png)
+
+### Personalise your nutrition goals
+
+Maintain your profile, including age, height, weight, activity level, food preferences and fitness goals.
+
+![User Profile](docs/images/profile.png)
+
+---
+
+## Key Features
+
+### 1. AI-Powered Nutrition Assistant
+
+Nourish integrates a Large Language Model (LLM) through the Groq API to provide conversational nutrition and fitness assistance.
+
+Users can ask questions about:
+- Daily protein and calorie requirements.
+- Food choices and meal combinations.
+- Nutrition and fitness goals.
+- Meal planning and available ingredients.
+- General nutrition and workout guidance.
+
+The assistant uses relevant application context when constructing prompts, helping generate responses that are more relevant than generic chatbot answers.
+
+### 2. Natural-Language Meal Logging
+
+Users do not need to search through long food lists or manually enter every food item.
+
+They can describe a meal naturally, for example:
+
+`2 roti, 1 katori dal, 100 g paneer`
+
+The AI-powered meal reader interprets the description and identifies possible food items. Nourish then matches the identified foods against its structured food database.
+
+Users can:
+- Review the identified ingredients.
+- Correct food matches.
+- Adjust quantities and serving units.
+- Review estimated nutritional values.
+- Confirm the entries before saving.
+
+The AI assists with interpreting the description; nutritional calculations are based on matched food-composition data rather than values generated directly by the LLM.
+
+### 3. Context-Aware Meal Recommendations
+
+Nourish recommends meals using information such as:
+- Remaining daily protein requirements.
+- Calorie targets.
+- Dietary preferences.
+- Disliked foods.
+- Available pantry ingredients.
+- Cooking time.
+
+Recommendations include estimated protein, calories, preparation time and pantry availability.
+
+### 4. AI-Generated Food Imagery
+
+Nourish integrates Pollinations to generate food images from text prompts.
+
+These images provide visual references for suggested meals and recipes. They are intended for presentation and inspiration, not as a way to determine actual portion sizes or nutritional values.
+
+### 5. Personalised Meal Planning
+
+Generate a one-day meal plan containing different meal categories.
+
+The plan considers available recipes, dietary preferences and nutritional targets. Users can review individual meals and mark them as eaten to add them to their daily food log.
+
+### 6. Pantry Management
+
+Maintain a list of ingredients available at home.
+
+Pantry information is used to:
+- Identify recipes that match available ingredients.
+- Highlight missing ingredients.
+- Distinguish ingredients already available from those that need to be purchased.
+- Support more practical meal recommendations.
+
+### 7. Workout and Activity Tracking
+
+Record physical activities such as:
+- Strength training.
+- Running and jogging.
+- Cycling.
+- Walking and hiking.
+- Swimming.
+- HIIT and circuit training.
+- Yoga and stretching.
+- Other activities.
+
+Users can also describe a workout in natural language for AI-assisted interpretation.
+
+Activity estimates use standard MET values and should be treated as approximations rather than precise measurements.
+
+### 8. Personal Nutrition Dashboard
+
+The dashboard brings important daily information together:
+
+- Calorie intake and estimated daily target.
+- Protein intake and target range.
+- Remaining protein requirements.
+- Movement duration.
+- Suggested meals.
+- Daily meal plan.
+- Logged food entries.
+
+Nourish uses ranges where appropriate to communicate uncertainty in food portions and nutritional estimates.
+
+### 9. User Accounts and Personal Data
+
+Nourish includes account-based authentication and user-specific application data.
+
+Users can maintain their own nutrition profile, meal history, pantry, workout records and preferences.
+
+Additional data controls include downloading personal data in JSON format and deleting account data.
+
+---
+
+## How Generative AI Powers Nourish
+
+Generative AI is a core part of Nourish's interaction model. It allows users to communicate naturally instead of relying entirely on predefined forms and manual database searches.
+
+The main generative AI components are:
+
+| Component | Technology | Role |
 |---|---|---|
-| Structured extraction (workouts, meals) | `core/llm.py` | JSON validated field by field; retries only when the *output* is bad; units outside an allow-list are dropped |
-| Constrained matching | `core/mealparse.py`, `core/foods.py` | alias/partial/fuzzy matching, unit conversion; the model never supplies grams or nutrition |
-| RAG with citations | `core/rag.py`, `data/knowledge.md` | BM25; the app checks every cited `[S#]` was actually retrieved |
-| Tool-calling agent | `core/agent.py` | the user's diet is enforced inside the tools, not trusted to the model |
-| Evaluation | `eval/` | LLM vs rule-based baselines, retrieval hit rate, agent checks |
-| Optional LLM-drawn SVG art | `scripts/gen_svg_art.py` | output is sanitised by an allow-list before it is saved (`core/svgsafe.py`) |
+| Conversational nutrition assistant | Groq-hosted LLM | Generates natural-language nutrition and fitness guidance |
+| Natural-language meal interpretation | Groq-hosted LLM | Interprets meal descriptions and identifies food items |
+| Context-aware prompt construction | Application context and prompt engineering | Supplies relevant user information to the model |
+| Workout description interpretation | Groq-hosted LLM | Interprets natural-language workout descriptions |
+| Food image generation | Pollinations | Generates food-related images from text prompts |
 
-## Run
+### Context-Aware AI Generation
+
+A key feature of Nourish is that AI responses can incorporate relevant information from the application.
+
+For example, when a user asks for a meal suggestion, relevant context can include their nutritional targets, food preferences and pantry ingredients.
+
+The general workflow is:
+
+1. The user submits a natural-language request.
+2. The application retrieves relevant information from the user's data.
+3. The backend constructs a context-aware prompt.
+4. The prompt is sent to the LLM through Groq.
+5. The model generates a response.
+6. The application presents the generated content to the user.
+
+This approach makes the assistant more relevant to the user's current situation.
+
+### AI-Assisted Meal Interpretation
+
+The meal logging workflow demonstrates how generative AI can be combined with structured data.
+
+1. The user describes a meal in natural language.
+2. The LLM interprets the description and identifies food items.
+3. The application matches those items against the food-composition database.
+4. The user reviews and corrects the suggested matches.
+5. Nutritional values are calculated using the matched food data.
+6. The confirmed meal is saved to the user's log.
+
+This separation is important: **the LLM handles language understanding, while the structured food database handles nutritional calculations.**
+
+### AI-Generated Food Images
+
+Pollinations is used to generate food imagery from descriptive prompts. This adds a visual component to the meal recommendation and recipe experience without requiring a manually maintained image for every recipe.
+
+---
+
+## Application Architecture
+
+Nourish follows a client-server architecture in which the Flask backend coordinates user interactions, application logic, database operations and external AI services.
+
+```mermaid
+flowchart TD
+    A[User] --> B[Frontend<br/>HTML, CSS, JavaScript]
+    B --> C[Flask Backend]
+
+    C --> D[Authentication & Session Management]
+    C --> E[Application Logic]
+    C --> F[Context Builder]
+    C --> G[Database Layer]
+
+    E --> H[Meal Interpretation]
+    E --> I[Workout Interpretation]
+    E --> J[Meal Recommendations]
+
+    F --> K[Groq API<br/>Large Language Model]
+    H --> K
+    I --> K
+
+    J --> G
+    H --> L[Food Composition Database]
+    L --> G
+
+    E --> M[Pollinations<br/>Image Generation]
+
+    G --> N[User & Nutrition Data]
+    K --> C
+    M --> C
+    C --> B
+```
+
+### Architecture Components
+
+| Component | Responsibility |
+|---|---|
+| Frontend | User interface and interactions |
+| Flask backend | Request handling, authentication and application logic |
+| Context builder | Collects relevant information for AI prompts |
+| Groq integration | LLM-based text generation and interpretation |
+| Pollinations integration | AI-generated food imagery |
+| Food-composition database | Structured nutritional information |
+| Database layer | User accounts, profiles, meals, pantry and activity records |
+
+---
+
+## Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Backend | Python, Flask |
+| Frontend | HTML5, CSS3, JavaScript |
+| Generative AI | Groq API, Large Language Models |
+| Image Generation | Pollinations |
+| Nutrition Data | Structured food-composition database |
+| Database | SQLite (PostgreSQL migration in progress) |
+| Production Server | Gunicorn |
+| Deployment | Render |
+| Version Control | Git, GitHub |
+
+---
+
+## Getting Started
+
+Follow these instructions to run Nourish locally.
+
+### Prerequisites
+
+- Python 3.10 or later
+- pip
+- Git
+- A Groq API key
+- Internet connection
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aleenagibi/context-aware-nutrition-coach.git
+cd context-aware-nutrition-coach
+```
+
+### 2. Create a virtual environment
+
 ```bash
 python -m venv .venv
-source .venv/bin/activate            # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install -r requirements.txt      
-python app.py                        # open http://127.0.0.1:5000
 ```
-The database (`data/fuel.db`) is created and seeded on first run. Without a Groq key everything works except the coach;
-meal and workout reading fall back to a simpler rule-based reader. Get a free key at console.groq.com and check there for current
-model names and free-tier limits. The default is `openai/gpt-oss-120b`; set `GROQ_MODEL` to change it.
 
-## Tests and evaluation
+Activate the environment.
+
+**Windows (PowerShell):**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux:**
+
 ```bash
-python tests/test_core.py      # 14: calculator, parsers, retrieval, LLM layer, agent (mock clients)
-python tests/test_data.py      # 19: seed data, matching, units, recipes, ranking, plan, SVG safety, importer
-python tests/test_app.py       # 16: routes, CSRF, logging, plan ticking, error paths (no network)
-python tests/test_layout.py    # 1: browser check at 300-1280 px, needs `pip install -r requirements-dev.txt` and `playwright install chromium`
-python eval/run_eval.py        # offline baselines;  add --llm to score the Groq extractors and the agent
+source .venv/bin/activate
 ```
-Offline baseline results (the LLM column is for you to generate with `--llm`):
 
-| Task | Rule-based baseline |
-|---|---|
-| Workout extraction (32 cases) | 66% exact match, F1 73% |
-| Meal logging, clean phrasing (32) | 100% exact |
-| Meal logging, messy phrasing (14) | 29% exact, F1 88%, grams within 25%: 61% |
-| Retrieval (12 questions) | hit@1 83%, hit@3 100% |
+### 3. Install dependencies
 
-The clean meal set is deliberately easy (100% says the pipeline works); the messy set (reversed order, Hinglish, compound dishes, "a couple of")
-is where an LLM should help.
+```bash
+pip install -r requirements.txt
+```
 
-## Data: what is and isn't verified
-- `data/seed_foods.csv` (88 foods) and `data/seed_recipes.json` (34 recipes) were **written by hand from typical published values, not imported from a
-  dataset, and not checked against a source**. A test confirms each row is internally consistent (calories ≈ 4P + 4C + 9F, fibre-aware), which catches typos
-  but does not prove the values match USDA/IFCT/INDB.
-- Every food has a `confidence` (high / medium / low). The 22 prepared dishes (dal tadka, chicken curry...) are low-confidence estimates. Confidence and
-  whether a portion size was assumed set the **range** shown next to protein totals. Those percentages are a rule of thumb, not a measured error.
-- Replace seed values with published data using `scripts/import_csv.py` (examples in its docstring): `--mode update` upgrades existing foods by exact name match
-  and marks them `high`; `--mode add` imports new foods (hidden from vegetarians until you set a diet tag). **Check each dataset's licence** before redistributing a database that contains it.
-- Diet tags on composite dishes are conservative guesses. **Allergies are not handled**: the app says so, and you must check labels yourself.
-- Knowledge-base entries S1 and S8 were checked against the ISSN position stand; the other ten are paraphrases marked `unchecked`.
+### 4. Configure environment variables
 
-## Pictures
-Built-in line icons are used by default. To add pictures, drop `static/img/foods/<recipe id>.webp` (or png/jpg/svg); the app picks them up with no code change.
-- `python scripts/make_image_prompts.py` writes consistent prompts for the image generator of your choice (check its licence terms).
-- `python scripts/gen_svg_art.py` asks the Groq LLM to draw a simple SVG per recipe (sanitised, review by eye).
+Create a `.env` file in the project root.
 
-## Limits
-- Estimates only, not medical advice. BMR and MET formulas carry 10-20% individual error. Not for under-18s, pregnancy, medical conditions or a history of disordered eating.
+```env
+GROQ_API_KEY=your_groq_api_key
+SECRET_KEY=your_secret_key
+```
 
-## Layout
-`app.py` routes and actions | `core/` db, foods, mealparse, suggest, store, calc, workout, llm, agent, rag, svgsafe |
-`templates/` + `static/` UI | `data/` seeds + knowledge base | `scripts/` importer and image tools | `eval/` | `tests/`
+Add any other environment variables required by your application configuration.
 
-## Dataset integration and Pollinations food photography
+Do not commit your `.env` file or expose API credentials publicly.
 
-The dataset integration adds the supplied INDB, recipe, serving-size, recipe-link,
-UK/US food-composition, unit-reference and USDA nutrient-retention workbooks.
-The original curated recipes are preserved; imported dataset recipes use IDs prefixed
-with `dataset_`.
+### 5. Run the application
 
-1. Put the nine original XLSX files in a folder named `source_datasets` (the supplied
-   project bundle includes that folder).
-2. Run `python scripts/import_nutrition_datasets.py --source-dir source_datasets`.
-   The importer is safe to rerun: it updates the imported food rows and dataset recipes
-   without deleting the original curated recipes.
-3. Copy `.env.example` to `.env` and set `POLLINATIONS_API_KEY` to your Pollinations
-   **secret** key (`sk_...`). Do not commit `.env` or expose the key in frontend code.
-4. Start Nourish as usual with `python app.py`.
+```bash
+python app.py
+```
 
-Food photos are generated on the first opening of a recipe detail view and cached in
-`static/img/foods/`. Later views use the cached local image, so they do not call the API
-again. The model can be changed with `POLLINATIONS_IMAGE_MODEL`. If the key is missing
-or the API is unavailable, Nourish keeps its existing SVG fallback and remains usable.
+Open the local address displayed by Flask in your browser.
 
-### Nutrition and matching notes
+---
 
-- Recipe ingredient food codes are matched against UK/US food-composition codes first,
-  then by exact normalized food name. No fuzzy matches or guessed nutrient values are
-  inserted.
-- INDB's per-serving recipe nutrition is used when present; otherwise Nourish calculates
-  from matched ingredients.
-- `data/nutrition/recipe_ingredient_coverage.json` lists recipes with ingredients that
-  could not be matched or converted. Those ingredients are shown as not included in the
-  ingredient-derived calculation.
-- `data/nutrition/unmatched_ingredients.json` and `import_report.json` provide the audit.
-- Generic cup/ml/spoon-to-gram conversions are estimates, not ingredient-specific
-  densities. Units that cannot be converted safely are excluded from ingredient sums.
-- USDA nutrient-retention factors are stored as reference data only; they are not applied
-  again to nutrient values already supplied by the food-composition tables.
+## Project Structure
 
+The application is organised around the Flask backend, supporting modules, templates and static frontend assets.
 
-## Accounts and private user data
+```text
+context-aware-nutrition-coach/
+│
+├── app.py
+├── requirements.txt
+├── .env
+│
+├── core/
+│   ├── db.py
+│   ├── store.py
+│   └── ...
+│
+├── data/
+│   ├── ...
+│
+├── templates/
+│   ├── ...
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── ...
+│
+└── docs/
+    └── images/
+        ├── dashboard.png
+        ├── meal-logging.png
+        ├── meal-recognition.png
+        ├── pantry.png
+        ├── recipe-details.png
+        ├── meal-plan.png
+        ├── workout-tracking.png
+        └── profile.png
+```
 
-Nourish now requires an account before the app can be opened.
+*The structure above highlights the main application areas; individual files may differ in the current repository.*
 
-- Sign up with an email address and a password of at least 10 characters.
-- Passwords are stored as Werkzeug password hashes, not plaintext.
-- The first account created on an existing installation inherits the current local Nourish data.
-- Each later account receives a separate SQLite database file under `data/users/`; its profile, pantry, custom foods, meal logs, workouts, plans and Ask Nourish chat are isolated from other accounts.
-- The food and recipe catalogue is copied into each user's database and remains available to everyone.
-- Account credentials are stored separately in `data/accounts.sqlite3`.
+---
 
+## Security, Privacy and Responsible AI
 
+Nourish incorporates several considerations for handling user information and AI-generated content.
+
+- Passwords are stored as hashes rather than plain text.
+- Session-based authentication is used for account access.
+- Sensitive configuration and API credentials are managed through environment variables.
+- User-specific information is used to personalise application functionality.
+- Users can download their data and request deletion through the application.
+- AI-generated nutritional interpretations are reviewed against structured food data before being saved.
+- Nutritional values and activity estimates are presented as estimates, not medical measurements.
+- AI-generated food images are visual references, not indicators of actual serving sizes.
+
+Nourish is intended for general wellness and informational purposes. It is not a substitute for professional medical advice or individualised clinical nutrition care.
+
+---
+
+## Future Improvements
+
+Planned areas of development include:
+
+- PostgreSQL migration for more robust production database management.
+- Improved contextual retrieval for nutrition and fitness conversations.
+- More flexible meal recommendations based on pantry contents and remaining nutritional targets.
+- Expanded food-composition data and ingredient matching.
+- Improved handling of ambiguous meal descriptions and portion estimates.
+- Further enhancements to personalisation and activity tracking.
+
+---
+
+GitHub: [@aleenagibi](https://github.com/aleenagibi)
+
+Project Repository: [context-aware-nutrition-coach](https://github.com/aleenagibi/context-aware-nutrition-coach)
+
+---
+
+<p align="center">
+  <strong>Nourish</strong><br>
+  Making healthier decisions a little easier, one meal at a time.
+</p>
