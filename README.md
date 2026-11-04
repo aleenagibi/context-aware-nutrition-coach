@@ -8,7 +8,7 @@ Nourish is an AI-powered nutrition and fitness companion designed to make everyd
 
 Instead of functioning as just another calorie tracker, Nourish focuses on a more practical question:
 
-**What should I eat next to meet my nutritional goals using the food I have available?**
+> **What should I eat next to meet my nutritional goals using the food I have available?**
 
 The application combines conversational AI with structured nutrition data to turn everyday food descriptions into useful, understandable and actionable guidance.
 
@@ -16,53 +16,73 @@ The application combines conversational AI with structured nutrition data to tur
 
 ## Application Preview
 
+### Sign in
+
+<p align="center">
+  <img src="docs/images/login.png" width="360" alt="Nourish login screen">
+</p>
+
 ### Your daily nutrition dashboard
 
 Track your nutritional progress, monitor your protein intake and discover meal suggestions based on your goals.
 
-![Nourish Dashboard](docs/images/dashboard.png)
+<p align="center">
+  <img src="docs/images/dashboard.png" width="620" alt="Nourish nutrition dashboard">
+</p>
 
 ### Log meals using natural language
 
 Describe your meal in everyday language. The AI-powered meal reader identifies food items and matches them against the food database before you confirm what should be saved.
 
-![Meal Logging](docs/images/meal-logging.png)
-
-### Review AI meal recognition
-
-Check the identified foods, adjust quantities and serving units, and review estimated nutritional values before saving.
-
-![AI Meal Recognition](docs/images/meal-recognition.png)
+<p align="center">
+  <img src="docs/images/meal-entry.png" width="250" alt="Natural-language meal entry">
+  &nbsp;&nbsp;
+  <img src="docs/images/meal-confirmation.png" width="250" alt="Review AI meal recognition">
+  &nbsp;&nbsp;
+  <img src="docs/images/meal-log-confirmed.png" width="250" alt="Confirmed meal log">
+</p>
 
 ### Manage your pantry
 
 Keep track of ingredients available at home. Pantry information helps Nourish suggest recipes that make use of ingredients you already have.
 
-![Pantry Management](docs/images/pantry.png)
+<p align="center">
+  <img src="docs/images/pantry.png" width="300" alt="Nourish pantry management">
+</p>
 
 ### Discover personalised recipes
 
 Explore meal recommendations with nutritional information, ingredient availability, serving adjustments and preparation instructions.
 
-![Recipe Details](docs/images/recipe-details.png)
+<p align="center">
+  <img src="docs/images/recipe-details.png" width="270" alt="Recipe ingredients and nutrition">
+  &nbsp;&nbsp;
+  <img src="docs/images/recipe-steps.png" width="270" alt="Recipe preparation steps">
+</p>
 
 ### Build a daily meal plan
 
 Generate a one-day meal plan with breakfast, lunch, snacks and dinner based on your nutritional targets and food preferences.
 
-![Daily Meal Plan](docs/images/meal-plan.png)
+<p align="center">
+  <img src="docs/images/meal-plan.png" width="300" alt="Nourish daily meal plan">
+</p>
 
 ### Track physical activity
 
 Record workouts manually or describe your activity naturally for AI-assisted workout interpretation.
 
-![Workout Tracking](docs/images/workout-tracking.png)
+<p align="center">
+  <img src="docs/images/workout-tracking.png" width="300" alt="Nourish workout tracking">
+</p>
 
 ### Personalise your nutrition goals
 
 Maintain your profile, including age, height, weight, activity level, food preferences and fitness goals.
 
-![User Profile](docs/images/profile.png)
+<p align="center">
+  <img src="docs/images/profile.png" width="300" alt="Nourish user profile">
+</p>
 
 ---
 
@@ -73,6 +93,7 @@ Maintain your profile, including age, height, weight, activity level, food prefe
 Nourish integrates a Large Language Model (LLM) through the Groq API to provide conversational nutrition and fitness assistance.
 
 Users can ask questions about:
+
 - Daily protein and calorie requirements.
 - Food choices and meal combinations.
 - Nutrition and fitness goals.
@@ -92,6 +113,7 @@ They can describe a meal naturally, for example:
 The AI-powered meal reader interprets the description and identifies possible food items. Nourish then matches the identified foods against its structured food database.
 
 Users can:
+
 - Review the identified ingredients.
 - Correct food matches.
 - Adjust quantities and serving units.
@@ -103,6 +125,7 @@ The AI assists with interpreting the description; nutritional calculations are b
 ### 3. Context-Aware Meal Recommendations
 
 Nourish recommends meals using information such as:
+
 - Remaining daily protein requirements.
 - Calorie targets.
 - Dietary preferences.
@@ -129,6 +152,7 @@ The plan considers available recipes, dietary preferences and nutritional target
 Maintain a list of ingredients available at home.
 
 Pantry information is used to:
+
 - Identify recipes that match available ingredients.
 - Highlight missing ingredients.
 - Distinguish ingredients already available from those that need to be purchased.
@@ -137,6 +161,7 @@ Pantry information is used to:
 ### 7. Workout and Activity Tracking
 
 Record physical activities such as:
+
 - Strength training.
 - Running and jogging.
 - Cycling.
@@ -178,8 +203,6 @@ Additional data controls include downloading personal data in JSON format and de
 
 Generative AI is a core part of Nourish's interaction model. It allows users to communicate naturally instead of relying entirely on predefined forms and manual database searches.
 
-The main generative AI components are:
-
 | Component | Technology | Role |
 |---|---|---|
 | Conversational nutrition assistant | Groq-hosted LLM | Generates natural-language nutrition and fitness guidance |
@@ -207,7 +230,7 @@ This approach makes the assistant more relevant to the user's current situation.
 
 ### AI-Assisted Meal Interpretation
 
-The meal logging workflow demonstrates how generative AI can be combined with structured data.
+The meal logging workflow demonstrates how generative AI can be combined with structured data:
 
 1. The user describes a meal in natural language.
 2. The LLM interprets the description and identifies food items.
@@ -216,7 +239,7 @@ The meal logging workflow demonstrates how generative AI can be combined with st
 5. Nutritional values are calculated using the matched food data.
 6. The confirmed meal is saved to the user's log.
 
-This separation is important: **the LLM handles language understanding, while the structured food database handles nutritional calculations.**
+**The LLM handles language understanding, while the structured food database handles nutritional calculations.**
 
 ### AI-Generated Food Images
 
@@ -233,7 +256,7 @@ flowchart TD
     A[User] --> B[Frontend<br/>HTML, CSS, JavaScript]
     B --> C[Flask Backend]
 
-    C --> D[Authentication & Session Management]
+    C --> D[Authentication and Session Management]
     C --> E[Application Logic]
     C --> F[Context Builder]
     C --> G[Database Layer]
@@ -252,7 +275,7 @@ flowchart TD
 
     E --> M[Pollinations<br/>Image Generation]
 
-    G --> N[User & Nutrition Data]
+    G --> N[User and Nutrition Data]
     K --> C
     M --> C
     C --> B
@@ -365,18 +388,16 @@ context-aware-nutrition-coach/
 │
 ├── app.py
 ├── requirements.txt
-├── .env
-│
 ├── core/
 │   ├── db.py
 │   ├── store.py
 │   └── ...
 │
 ├── data/
-│   ├── ...
+│   └── ...
 │
 ├── templates/
-│   ├── ...
+│   └── ...
 │
 ├── static/
 │   ├── css/
@@ -385,14 +406,18 @@ context-aware-nutrition-coach/
 │
 └── docs/
     └── images/
+        ├── login.png
         ├── dashboard.png
-        ├── meal-logging.png
-        ├── meal-recognition.png
+        ├── dashboard-empty.png
+        ├── meal-entry.png
+        ├── meal-confirmation.png
+        ├── meal-log-confirmed.png
         ├── pantry.png
-        ├── recipe-details.png
-        ├── meal-plan.png
         ├── workout-tracking.png
-        └── profile.png
+        ├── profile.png
+        ├── meal-plan.png
+        ├── recipe-details.png
+        └── recipe-steps.png
 ```
 
 *The structure above highlights the main application areas; individual files may differ in the current repository.*
@@ -401,7 +426,7 @@ context-aware-nutrition-coach/
 
 ## Security, Privacy and Responsible AI
 
-Nourish incorporates several considerations for handling user information and AI-generated content.
+Nourish incorporates several considerations for handling user information and AI-generated content:
 
 - Passwords are stored as hashes rather than plain text.
 - Session-based authentication is used for account access.
@@ -429,13 +454,12 @@ Planned areas of development include:
 
 ---
 
-GitHub: [@aleenagibi](https://github.com/aleenagibi)
-
-Project Repository: [context-aware-nutrition-coach](https://github.com/aleenagibi/context-aware-nutrition-coach)
-
----
-
 <p align="center">
   <strong>Nourish</strong><br>
   Making healthier decisions a little easier, one meal at a time.
+</p>
+
+<p align="center">
+  <a href="https://github.com/aleenagibi">GitHub: @aleenagibi</a> ·
+  <a href="https://github.com/aleenagibi/context-aware-nutrition-coach">Project Repository</a>
 </p>
