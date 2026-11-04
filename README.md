@@ -35,10 +35,8 @@ Track your nutritional progress, monitor your protein intake and discover meal s
 Describe your meal in everyday language. The AI-powered meal reader identifies food items and matches them against the food database before you confirm what should be saved.
 
 <p align="center">
-  <img src="docs/images/meal-entry.png" width="250" alt="Natural-language meal entry">
-  &nbsp;&nbsp;
-  <img src="docs/images/meal-confirmation.png" width="250" alt="Review AI meal recognition">
-  &nbsp;&nbsp;
+<img src="docs/images/meal-logging.png" width="250" alt="Natural-language meal entry">
+<img src="docs/images/meal-recognition.png" width="250" alt="Review AI meal recognition">
   <img src="docs/images/meal-log-confirmed.png" width="250" alt="Confirmed meal log">
 </p>
 
