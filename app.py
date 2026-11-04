@@ -1,11 +1,10 @@
-"""Flask app for the Fuel nutrition planner. Single-user and local: data lives in one SQLite file.
-Run:  python app.py"""
+"""Flask app for Nourish, backed by a shared PostgreSQL database.
+Run: python app.py"""
 import hmac
 import json
 import os
 import re
 import secrets
-import sqlite3
 import threading
 import uuid
 from contextlib import closing
@@ -22,47 +21,31 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
 from core import agent, calc, db, foods, images, llm, mealparse, rag, store, suggest, workout, recipe_steps  # noqa: E402
+from database.engine import engine, initialize_user_schema, drop_user_schema
+from database.models import Base
 
 
 app = Flask(__name__)
 
 # Keep sessions valid across restarts when no explicit secret is configured.
-_secret_path = BASE_DIR / "data" / "session.secret"
-_secret_path.parent.mkdir(parents=True, exist_ok=True)
-_secret = os.getenv("FLASK_SECRET_KEY")
-if not _secret:
-    if _secret_path.exists():
-        _secret = _secret_path.read_text(encoding="utf-8").strip()
-    else:
-        _secret = secrets.token_urlsafe(48)
-        _secret_path.write_text(_secret, encoding="utf-8")
-        try:
-            os.chmod(_secret_path, 0o600)
-        except OSError:
-            pass
+_secret = os.getenv("FLASK_SECRET_KEY") or secrets.token_urlsafe(48)
 
 app.secret_key = _secret
 app.config.update(DB_PATH=str(db.DB_PATH), SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax",
                   SESSION_COOKIE_SECURE=os.getenv("COOKIE_SECURE", "false").lower() == "true",
                   PERMANENT_SESSION_LIFETIME=60 * 60 * 24 * 14, MAX_CONTENT_LENGTH=64 * 1024)
 
-AUTH_DB = BASE_DIR / "data" / "accounts.sqlite3"
-USER_DB_DIR = BASE_DIR / "data" / "users"
-USER_DB_DIR.mkdir(parents=True, exist_ok=True)
+_AUTH_READY = False
+_AUTH_LOCK = threading.Lock()
 
 def auth_connect():
-    conn = sqlite3.connect(str(AUTH_DB))
-    conn.row_factory = sqlite3.Row
-    conn.execute("""CREATE TABLE IF NOT EXISTS users(
-        id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE COLLATE NOCASE,
-        password_hash TEXT NOT NULL, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-    )""")
-    conn.commit()
-    try:
-        os.chmod(AUTH_DB, 0o600)
-    except OSError:
-        pass
-    return conn
+    global _AUTH_READY
+    if not _AUTH_READY:
+        with _AUTH_LOCK:
+            if not _AUTH_READY:
+                Base.metadata.create_all(engine())
+                _AUTH_READY = True
+    return db.connect("postgresql")
 
 def user_record(user_id):
     if not user_id:
@@ -71,35 +54,14 @@ def user_record(user_id):
         return conn.execute("SELECT id,email FROM users WHERE id=?", (user_id,)).fetchone()
 
 def create_user_db(user_id, first_user=False):
-    destination = USER_DB_DIR / f"{user_id}.db"
-    if destination.exists():
-        return destination
-    # The first registered account inherits the existing local data. Later accounts
-    # receive the same food/recipe catalogue but none of the first user's records.
-    # SQLite's backup API includes committed WAL data; copying only the .db file
-    # can silently miss recent writes when WAL mode is active.
-    source_conn = db.connect(current_app.config["DB_PATH"])
-    target_conn = sqlite3.connect(str(destination))
+    """Provision a clean personal schema inside the shared PostgreSQL database."""
+    initialize_user_schema(user_id)
+    conn = db.connect(user_id + ".db")
     try:
-        source_conn.backup(target_conn)
+        db.init(conn)
     finally:
-        target_conn.close()
-        source_conn.close()
-    try:
-        os.chmod(destination, 0o600)
-    except OSError:
-        pass
-    if not first_user:
-        conn = db.connect(destination)
-        try:
-            conn.execute("PRAGMA foreign_keys=OFF")
-            for table in ("plan_items", "meal_log", "workouts", "pantry", "chat", "kv", "custom_foods", "profile"):
-                conn.execute(f"DELETE FROM {table}")
-            conn.execute("INSERT INTO profile VALUES(1,?,?,?,?,?,?,?,?,?)", db.DEFAULT_PROFILE)
-            conn.commit()
-        finally:
-            conn.close()
-    return destination
+        conn.close()
+    return user_id
 
 def current_user():
     return user_record(session.get("user_id"))
@@ -136,10 +98,9 @@ def get_db():
         if not uid:
             abort(401)
 
-        path = str(USER_DB_DIR / f"{uid}.db")
-        if not Path(path).exists():
+        if not uid:
             abort(401)
-
+        path = str(uid) + ".db"
         conn = db.connect(path)
 
         try:
@@ -581,7 +542,7 @@ def signup():
             error = "The passwords do not match."
         else:
             with closing(auth_connect()) as accounts:
-                if accounts.execute("SELECT 1 FROM users WHERE email=?", (email,)).fetchone():
+                if accounts.execute("SELECT 1 FROM users WHERE lower(email)=lower(?)", (email,)).fetchone():
                     error = "An account with that email already exists. Try logging in."
                 else:
                     first_user = accounts.execute("SELECT COUNT(*) FROM users").fetchone()[0] == 0
@@ -592,8 +553,11 @@ def signup():
                                          (uid, email, generate_password_hash(password)))
                         accounts.commit()
                     except Exception:
-                        (USER_DB_DIR / f"{uid}.db").unlink(missing_ok=True)
-                        app.logger.exception("Could not create Fuel account")
+                        try:
+                            drop_user_schema(uid)
+                        except Exception:
+                            app.logger.exception("Could not clean up an incomplete user schema")
+                        app.logger.exception("Could not create Nourish account")
                         error = "We couldn't create your account. Please try again."
                     else:
                         session.clear()
@@ -611,7 +575,7 @@ def login():
         email = request.form.get("email", "").strip().lower()
         password = request.form.get("password", "")
         with closing(auth_connect()) as accounts:
-            account = accounts.execute("SELECT id,password_hash FROM users WHERE email=?", (email,)).fetchone()
+            account = accounts.execute("SELECT id,password_hash FROM users WHERE lower(email)=lower(?)", (email,)).fetchone()
         if not account or not check_password_hash(account["password_hash"], password):
             error = "Email or password is incorrect."
         else:

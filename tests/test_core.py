@@ -1,3 +1,6 @@
+import os
+import pytest
+pytestmark = pytest.mark.skipif(not os.getenv('DATABASE_URL'), reason='PostgreSQL integration tests require DATABASE_URL')
 """Calculator, workout parsing, retrieval, LLM layer and agent (all with mock clients)."""
 import sys
 from pathlib import Path

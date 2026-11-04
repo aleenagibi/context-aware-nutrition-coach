@@ -3,11 +3,12 @@ import csv
 import json
 import os
 import re
-import sqlite3
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
-DB_PATH = Path(os.getenv("FUEL_DB", BASE / "data" / "fuel.db"))
+DB_PATH = Path("postgresql")
+
+from database.engine import Connection, initialize_catalogue, initialize_user_schema
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS foods(
@@ -51,17 +52,12 @@ DEFAULT_PROFILE = ("Female", 25, 165.0, 60.0, "Light movement", "Maintain", "Veg
 
 
 def connect(path=None):
-    conn = sqlite3.connect(
-        str(path or DB_PATH),
-        timeout=30
-    )
-    conn.row_factory = sqlite3.Row
-
-    conn.execute("PRAGMA busy_timeout = 30000")
-    conn.execute("PRAGMA foreign_keys = ON")
-    conn.execute("PRAGMA journal_mode = WAL")
-
-    return conn
+    """Return a PostgreSQL connection in the authenticated user's isolated schema."""
+    schema = "public"
+    if path and str(path) not in (":memory:", "postgresql"):
+        uid = Path(str(path)).stem
+        if uid and uid != "fuel": schema = "u_" + re.sub(r"[^a-f0-9]", "", uid.lower())
+    return Connection(schema)
 
 
 def norm(text):
@@ -81,21 +77,28 @@ def norm(text):
 
 
 def add_food(conn, row, aliases=(), units=None):
-    """Insert or replace a food plus its aliases and unit sizes. Raises if an alias already belongs to another food."""
-    conn.execute(
-        """INSERT OR REPLACE INTO foods(id,name,state,category,diet_level,kcal,protein,carbs,fat,fibre,confidence,
-           pantry,staple,pantry_key,default_unit,source,source_id)
-           VALUES(:id,:name,:state,:category,:diet_level,:kcal,:protein,:carbs,:fat,:fibre,:confidence,
-           :pantry,:staple,:pantry_key,:default_unit,:source,:source_id)""", row)
+    """Idempotently upsert catalogue food, aliases and serving units."""
+    existing = conn.execute("SELECT id FROM foods WHERE id=?", (row["id"],)).fetchone()
+    if existing:
+        conn.execute("""UPDATE foods SET name=:name,state=:state,category=:category,diet_level=:diet_level,
+          kcal=:kcal,protein=:protein,carbs=:carbs,fat=:fat,fibre=:fibre,confidence=:confidence,
+          pantry=:pantry,staple=:staple,pantry_key=:pantry_key,default_unit=:default_unit,source=:source,source_id=:source_id
+          WHERE id=:id""", row)
+    else:
+        conn.execute("""INSERT INTO foods(id,name,state,category,diet_level,kcal,protein,carbs,fat,fibre,confidence,
+          pantry,staple,pantry_key,default_unit,source,source_id)
+          VALUES(:id,:name,:state,:category,:diet_level,:kcal,:protein,:carbs,:fat,:fibre,:confidence,
+          :pantry,:staple,:pantry_key,:default_unit,:source,:source_id)""", row)
     conn.execute("DELETE FROM food_aliases WHERE food_id=?", (row["id"],))
-    full_name = row["name"].replace("(", " ").replace(")", " ")   # keep "(raw)" / "(cooked)" so states do not collide
+    full_name = row["name"].replace("(", " ").replace(")", " ")
     for alias in {norm(a) for a in [full_name, *aliases] if norm(a)}:
         owner = conn.execute("SELECT food_id FROM food_aliases WHERE alias=?", (alias,)).fetchone()
         if owner and owner["food_id"] != row["id"]:
-            raise ValueError(f"alias {alias!r} already belongs to {owner['food_id']}, cannot add to {row['id']}")
-        conn.execute("INSERT OR IGNORE INTO food_aliases VALUES(?,?)", (alias, row["id"]))
+            raise ValueError(f"alias {alias!r} already belongs to another food")
+        conn.execute("INSERT INTO food_aliases(alias,food_id) VALUES(?,?) ON CONFLICT DO NOTHING", (alias,row["id"]))
     for unit, grams in (units or {}).items():
-        conn.execute("INSERT OR REPLACE INTO food_units VALUES(?,?,?)", (row["id"], unit, float(grams)))
+        conn.execute("""INSERT INTO food_units(food_id,unit,grams) VALUES(?,?,?)
+          ON CONFLICT(food_id,unit) DO UPDATE SET grams=EXCLUDED.grams""", (row["id"],unit,float(grams)))
 
 
 def seed_foods(conn, path=BASE / "data" / "seed_foods.csv"):
@@ -115,9 +118,11 @@ def seed_recipes(conn, path=BASE / "data" / "seed_recipes.json"):
     for r in json.loads(Path(path).read_text(encoding="utf-8")):
         conn.execute(
             """
-            INSERT OR REPLACE INTO recipes
+            INSERT INTO recipes
             (id, name, slot, minutes, art, steps, extras)
             VALUES (?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id) DO UPDATE SET name=EXCLUDED.name, slot=EXCLUDED.slot, minutes=EXCLUDED.minutes,
+              art=EXCLUDED.art, steps=EXCLUDED.steps, extras=EXCLUDED.extras
             """,
             (
                 r["id"],
@@ -140,39 +145,30 @@ def seed_recipes(conn, path=BASE / "data" / "seed_recipes.json"):
             [(r["id"], f, g) for f, g in r["items"]]
         )
 def init(conn):
-    """Create tables; seed foods/recipes only when empty so imported data is never overwritten."""
-    conn.executescript(SCHEMA)
-    # Upgrade existing SQLite databases without deleting user data.
-    recipe_columns = {row["name"] for row in conn.execute("PRAGMA table_info(recipes)")}
-    if "steps_source" not in recipe_columns:
-        conn.execute("ALTER TABLE recipes ADD COLUMN steps_source TEXT NOT NULL DEFAULT 'manual'")
-    # The previous importer wrote the same generic three-step text to every imported recipe.
-    generic_steps = json.dumps([
-        "Prepare and measure the listed ingredients.",
-        "Cook or combine the ingredients using the method appropriate to this dish.",
-        "Adjust seasoning and serve. Nutrition is calculated only from ingredients with verified composition data."
-    ])
-    conn.execute("UPDATE recipes SET steps_source='pending' WHERE id LIKE 'dataset_%' AND steps=?",
-                 (generic_steps,))
+    """Initialize shared catalogue and the current user's personal schema."""
+    initialize_catalogue()
+    # Personal tables are created by initialize_user_schema at account provisioning.
     if not conn.execute("SELECT 1 FROM foods LIMIT 1").fetchone():
         seed_foods(conn)
     if not conn.execute("SELECT 1 FROM recipes LIMIT 1").fetchone():
         seed_recipes(conn)
-    if not conn.execute("SELECT 1 FROM profile").fetchone():
+    if conn.schema != "public" and not conn.execute("SELECT 1 FROM profile LIMIT 1").fetchone():
         conn.execute("INSERT INTO profile VALUES(1,?,?,?,?,?,?,?,?,?)", DEFAULT_PROFILE)
     conn.commit()
     return conn
 
 
 def memory_db():
-    """A fresh in-memory database, used by tests."""
-    return init(connect(":memory:"))
+    """Create an isolated PostgreSQL schema for tests (no SQLite fallback)."""
+    import uuid
+    uid = uuid.uuid4().hex
+    initialize_user_schema(uid)
+    return init(connect(uid + ".db"))
 
 
 if __name__ == "__main__":
-    import sys
-    if "--reset" in sys.argv and DB_PATH.exists():
-        DB_PATH.unlink()
-    conn = init(connect())
-    n = conn.execute("SELECT COUNT(*) FROM foods").fetchone()[0]
-    print(f"{DB_PATH}: {n} foods, {conn.execute('SELECT COUNT(*) FROM recipes').fetchone()[0]} recipes")
+    conn = connect()
+    init(conn)
+    print(f"PostgreSQL: {conn.execute('SELECT COUNT(*) FROM foods').fetchone()[0]} foods, "
+          f"{conn.execute('SELECT COUNT(*) FROM recipes').fetchone()[0]} recipes")
+    conn.close()

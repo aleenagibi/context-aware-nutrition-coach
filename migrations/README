@@ -1,0 +1,1 @@
+Alembic manages shared account and catalogue tables. Personal schemas are provisioned at signup with database.engine.initialize_user_schema().

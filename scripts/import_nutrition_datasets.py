@@ -1,4 +1,4 @@
-"""Clean and import the supplied INDB/recipe/food-composition workbooks into Fuel.
+"""Clean and import the supplied INDB/recipe/food-composition workbooks into Nourish PostgreSQL.
 
 Usage:
   python scripts/import_nutrition_datasets.py --source-dir ./source_datasets
@@ -55,7 +55,7 @@ def safe_text(v, default=""):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--source-dir", type=Path, required=True, help="Folder containing the 9 uploaded XLSX files")
-    ap.add_argument("--db", type=Path, default=None, help="Optional SQLite database path")
+    
     args = ap.parse_args(); src = args.source_dir
     data = {k: load_sheet(src, v) for k, v in FILES.items()}
     indb, ingredients = data["INDB.xlsx"], data["recipes.xlsx"]
@@ -129,11 +129,10 @@ def main():
     link_map = {safe_text(r.get("Food Code")): safe_text(r.get("Link")) for _, r in links.iterrows()}
     recipe_groups = ingredients.groupby("recipe_code", sort=False)
 
-    conn = db.init(db.connect(args.db))
+    conn = db.init(db.connect())
     food_inserted = food_updated = recipe_count = ingredient_count = partial_count = 0
     unmatched_by_recipe = []
     try:
-        conn.execute("BEGIN")
         for item in by_code.values():
             fid = "fct_" + re.sub(r"[^A-Za-z0-9_-]", "_", item["code"])
             row = {"id": fid, "name": item["name"], "state": "as listed", "category": "food composition",
@@ -148,8 +147,8 @@ def main():
             else:
                 conn.execute("INSERT INTO foods(id,name,state,category,diet_level,kcal,protein,carbs,fat,fibre,confidence,pantry,staple,pantry_key,default_unit,source,source_id) VALUES(:id,:name,:state,:category,:diet_level,:kcal,:protein,:carbs,:fat,:fibre,:confidence,:pantry,:staple,:pantry_key,:default_unit,:source,:source_id)", row)
                 food_inserted += 1
-            conn.execute("INSERT OR IGNORE INTO food_aliases(alias,food_id) VALUES(?,?)", (db.norm(item["name"]), fid))
-            conn.execute("INSERT OR REPLACE INTO food_units(food_id,unit,grams) VALUES(?,?,?)", (fid, "g", 1.0))
+            conn.execute("INSERT INTO food_aliases(alias,food_id) VALUES(?,?) ON CONFLICT DO NOTHING", (db.norm(item["name"]), fid))
+            conn.execute("INSERT INTO food_units(food_id,unit,grams) VALUES(?,?,?) ON CONFLICT(food_id,unit) DO UPDATE SET grams=EXCLUDED.grams", (fid, "g", 1.0))
 
         # Approximate kitchen-volume conversions are explicitly medium confidence.
         # Units with unknown mass (sprig, pinch, drops, nos, sheet) remain excluded.
@@ -176,7 +175,9 @@ def main():
                 continue
             extras = sorted(set(missing_rows))
             slot = "breakfast" if any(x in clean_name(rname) for x in ["tea", "coffee", "breakfast", "porridge", "idli", "dosa", "upma", "poha"]) else "snack" if any(x in clean_name(rname) for x in ["drink", "juice", "shake", "snack", "chutney"]) else "main"
-            conn.execute("INSERT OR REPLACE INTO recipes(id,name,slot,minutes,art,steps,extras,steps_source) VALUES(?,?,?,?,?,?,?,?)",
+            conn.execute("""INSERT INTO recipes(id,name,slot,minutes,art,steps,extras,steps_source) VALUES(?,?,?,?,?,?,?,?)
+                         ON CONFLICT(id) DO UPDATE SET name=EXCLUDED.name,slot=EXCLUDED.slot,minutes=EXCLUDED.minutes,
+                         art=EXCLUDED.art,steps=EXCLUDED.steps,extras=EXCLUDED.extras,steps_source=EXCLUDED.steps_source""",
                          (rid, rname, slot, 20, "bowl", json.dumps([]), json.dumps(extras), "pending"))
             conn.execute("DELETE FROM recipe_items WHERE recipe_id=?", (rid,))
             conn.executemany("INSERT INTO recipe_items(recipe_id,food_id,grams) VALUES(?,?,?)", [(rid, f, g) for f,g in mapped_rows])
@@ -188,11 +189,14 @@ def main():
                 values = [num(ref.get("unit_serving_energy_kcal")), num(ref.get("unit_serving_protein_g")),
                           num(ref.get("unit_serving_carb_g")), num(ref.get("unit_serving_fat_g")), num(ref.get("unit_serving_fibre_g"))]
                 if all(v is not None for v in values[:4]):
-                    conn.execute("INSERT OR REPLACE INTO recipe_nutrition_reference(recipe_id,kcal,protein,carbs,fat,fibre,serving_unit,source) VALUES(?,?,?,?,?,?,?,?)",
+                    conn.execute("""INSERT INTO recipe_nutrition_reference(recipe_id,kcal,protein,carbs,fat,fibre,serving_unit,source) VALUES(?,?,?,?,?,?,?,?)
+                                 ON CONFLICT(recipe_id) DO UPDATE SET kcal=EXCLUDED.kcal,protein=EXCLUDED.protein,
+                                 carbs=EXCLUDED.carbs,fat=EXCLUDED.fat,fibre=EXCLUDED.fibre,
+                                 serving_unit=EXCLUDED.serving_unit,source=EXCLUDED.source""",
                                  (rid, *values, safe_text(ref.get("servings_unit")), "INDB per-serving values"))
             source_url = link_map.get(safe_text(code), "")
             if source_url.startswith(("https://", "http://")):
-                conn.execute("INSERT OR REPLACE INTO recipe_sources(recipe_id,source_url) VALUES(?,?)", (rid, source_url))
+                conn.execute("INSERT INTO recipe_sources(recipe_id,source_url) VALUES(?,?) ON CONFLICT(recipe_id) DO UPDATE SET source_url=EXCLUDED.source_url", (rid, source_url))
             recipe_count += 1; ingredient_count += len(mapped_rows)
             if extras: partial_count += 1; unmatched_by_recipe.append({"recipe_code":safe_text(code),"recipe_name":rname,"unmatched_ingredients":extras})
         conn.commit()

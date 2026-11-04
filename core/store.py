@@ -188,18 +188,19 @@ def kv_get(conn, key, default=None):
 
 
 def kv_set(conn, key, value):
-    conn.execute("INSERT OR REPLACE INTO kv VALUES(?,?)", (key, json.dumps(value)))
+    conn.execute("""INSERT INTO kv(key,value) VALUES(?,?)
+                   ON CONFLICT(key) DO UPDATE SET value=EXCLUDED.value""", (key, json.dumps(value)))
     conn.commit()
 
 
 def export_all(conn):
-    tables = ("profile", "pantry", "meal_log", "workouts", "plan_items", "chat")
+    tables = ("profile", "pantry", "meal_log", "workouts", "plan_items", "chat", "custom_foods", "kv")
     return {t: [dict(r) for r in conn.execute(f"SELECT * FROM {t}")] for t in tables}
 
 
 def wipe_user_data(conn):
     """Delete everything the user created. The food and recipe tables are kept."""
-    for t in ("plan_items", "meal_log", "workouts", "pantry", "chat", "kv"):
+    for t in ("plan_items", "meal_log", "workouts", "pantry", "chat", "kv", "custom_foods"):
         conn.execute(f"DELETE FROM {t}")
     conn.execute("DELETE FROM profile")
     conn.commit()

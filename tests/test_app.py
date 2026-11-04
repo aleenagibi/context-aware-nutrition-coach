@@ -1,3 +1,6 @@
+import os
+import pytest
+pytestmark = pytest.mark.skipif(not os.getenv('DATABASE_URL'), reason='PostgreSQL integration tests require DATABASE_URL')
 """Flask route tests against a throwaway database. No network: Groq is stubbed where needed."""
 import os
 import sys
@@ -16,11 +19,21 @@ from core import db, store, suggest  # noqa: E402
 class Env:
     """A fresh client + database. Use as a context manager so env vars and stubs are always restored."""
     def __enter__(self):
-        self.path = tempfile.mktemp(suffix=".db")
-        A.app.config["DB_PATH"] = self.path
+        import uuid
+        self.uid = uuid.uuid4().hex
+        self.path = self.uid + ".db"
+        A.create_user_db(self.uid)
         self.client = A.app.test_client()
-        self.client.get("/")
+        accounts = A.auth_connect()
+        try:
+            accounts.execute("INSERT INTO users(id,email,password_hash) VALUES(?,?,?)",
+                             (self.uid, self.uid + "@test.invalid", "unused"))
+            accounts.commit()
+        finally:
+            accounts.close()
         with self.client.session_transaction() as s:
+            s["user_id"] = self.uid
+            s["csrf"] = __import__("secrets").token_urlsafe(24)
             self.token = s["csrf"]
         self.saved = (A.llm.make_client, A.agent.chat, os.environ.get("GROQ_API_KEY"))
         return self
@@ -30,6 +43,14 @@ class Env:
         os.environ.pop("GROQ_API_KEY", None)
         if self.saved[2]:
             os.environ["GROQ_API_KEY"] = self.saved[2]
+        from database.engine import drop_user_schema
+        drop_user_schema(self.uid)
+        accounts = A.auth_connect()
+        try:
+            accounts.execute("DELETE FROM users WHERE id=?", (self.uid,))
+            accounts.commit()
+        finally:
+            accounts.close()
 
     def post(self, name, ajax=True, **data):
         headers = {"X-CSRF-Token": self.token}

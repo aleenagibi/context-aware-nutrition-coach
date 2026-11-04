@@ -427,15 +427,32 @@
   color: #171717;
   font-size: 21px;
 }
-.fuel-chat-close {
+.fuel-chat-window-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.fuel-chat-control {
+  display: grid;
+  place-items: center;
   width: 34px;
   height: 34px;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: transparent;
   color: var(--text);
-  font-size: 21px;
+  font: 500 20px/1 var(--font);
   cursor: pointer;
+}
+.fuel-chat-control:hover {
+  background: var(--soft, rgba(255,255,255,.06));
+}
+.fuel-chat-maximize {
+  font-size: 19px;
+}
+.fuel-chat-close {
+  font-size: 22px;
 }
 .fuel-chat-mount {
   min-height: 0;
@@ -560,6 +577,22 @@
   padding: 5px 6px;
 }
 
+.fuel-assistant.is-maximized {
+  inset: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 90;
+  align-items: stretch;
+}
+.fuel-assistant.is-maximized .fuel-chat-window {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  min-height: 0;
+  border-radius: 20px;
+}
+
 /* Recipe details should always open as a modal, never reserve a permanent desktop column. */
 @media (min-width: 1024px) {
   .shell {
@@ -608,7 +641,7 @@
 #scrim {
   z-index: 70 !important;
 }
-@media (max-width: 699px) {
+@media (max-width: 698px) {
   .fuel-assistant {
     right: 12px;
     bottom: calc(76px + env(safe-area-inset-bottom));
@@ -643,21 +676,34 @@
     white-space: nowrap;
   }
   .fuel-assistant.is-open {
+    position: fixed;
     inset: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 90;
+    z-index: 100;
+    display: flex;
     align-items: stretch;
-    justify-content: flex-end;
+    justify-content: stretch;
     gap: 0;
-    background: rgba(0, 0, 0, 0.48);
+    background: var(--card);
   }
   .fuel-assistant.is-open .fuel-chat-window {
     display: flex;
     width: 100%;
-    height: min(78dvh, 680px);
-    min-height: 320px;
-    border-radius: 22px 22px 0 0;
+    height: 100%;
+    min-height: 0;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .fuel-assistant.is-open .fuel-chat-window-top {
+    padding-top: calc(12px + env(safe-area-inset-top));
+  }
+  .fuel-assistant.is-open .fuel-chat-mount {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .fuel-assistant.is-open .fuel-chat-maximize {
+    display: none;
   }
   .fuel-chat-mount .coach-prompts {
     max-height: 62px;

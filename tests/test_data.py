@@ -1,3 +1,6 @@
+import os
+import pytest
+pytestmark = pytest.mark.skipif(not os.getenv('DATABASE_URL'), reason='PostgreSQL integration tests require DATABASE_URL')
 """Database seeding and data quality, food matching, meal parsing, recommendations, store, SVG safety, importer."""
 import csv
 import sys
@@ -20,7 +23,8 @@ def test_seed_sizes_and_integrity():
     c = db.memory_db()
     assert c.execute("SELECT COUNT(*) FROM foods").fetchone()[0] >= 80
     assert c.execute("SELECT COUNT(*) FROM recipes").fetchone()[0] >= 30
-    assert c.execute("PRAGMA foreign_key_check").fetchall() == []
+    assert c.execute("SELECT COUNT(*) FROM food_aliases a LEFT JOIN foods f ON f.id=a.food_id WHERE f.id IS NULL").fetchone()[0] == 0
+    assert c.execute("SELECT COUNT(*) FROM recipe_items i LEFT JOIN recipes r ON r.id=i.recipe_id LEFT JOIN foods f ON f.id=i.food_id WHERE r.id IS NULL OR f.id IS NULL").fetchone()[0] == 0
     assert all(r["steps"] != "[]" for r in c.execute("SELECT steps FROM recipes"))
     for r in c.execute("SELECT id, pantry_key FROM foods WHERE pantry_key IS NOT NULL"):
         assert foods.get_food(c, r["pantry_key"]) is not None, r["id"]          # cooked foods point at a real pantry item

@@ -302,7 +302,7 @@ flowchart TD
 | Generative AI | Groq API, Large Language Models |
 | Image Generation | Pollinations |
 | Nutrition Data | Structured food-composition database |
-| Database | SQLite (PostgreSQL migration in progress) |
+| Database | PostgreSQL with SQLAlchemy 2.x and Alembic |
 | Production Server | Gunicorn |
 | Deployment | Render |
 | Version Control | Git, GitHub |
@@ -351,6 +351,8 @@ source .venv/bin/activate
 ### 3. Install dependencies
 
 ```bash
+Copy `.env.example` to `.env` and configure `DATABASE_URL` for your PostgreSQL instance and `FLASK_SECRET_KEY` before running the migration commands below.
+
 pip install -r requirements.txt
 ```
 
@@ -443,7 +445,7 @@ Nourish is intended for general wellness and informational purposes. It is not a
 
 Planned areas of development include:
 
-- PostgreSQL migration for more robust production database management.
+- PostgreSQL persistence with SQLAlchemy, Alembic migrations and isolated personal-data schemas.
 - Improved contextual retrieval for nutrition and fitness conversations.
 - More flexible meal recommendations based on pantry contents and remaining nutritional targets.
 - Expanded food-composition data and ingredient matching.

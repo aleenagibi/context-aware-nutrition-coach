@@ -1,2 +1,2 @@
-# only needed for tests/test_layout.py
-playwright>=1.40
+pytest>=8,<9
+-r requirements.txt
